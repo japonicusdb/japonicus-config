@@ -1,0 +1,1093 @@
+# PomBase Chado load config file  -*- conf -*-
+
+# used for GAF export, for feature_cvterm and feature_relationship
+# creation
+#  - it's added as an "assigned_by" feature_cvtermprop
+#  - source_database prop feature_relationship
+database_name: JaponicusDB
+
+cvs:
+  cvterm_property_type:
+    - nested_extension
+    - extension_relations_status
+    - malacards_disease_name
+    - malacards_displayed_disease_name
+    - malacards_disease_slug
+  PomBase publication types:
+    - paper
+    - null
+  PomBase chadoprop types:
+    - db_creation_datetime
+  synonym_type:
+    - reserved_name
+    - obsolete_name
+  PomBase feature property types:
+    - name: comment
+      definition: >
+        A comment or note about the feature, similar to a /note qualifier in
+        EMBL format files.
+    - symbol
+    - description
+    - allele_type
+    - uniprot_identifier
+    - name: biogrid_interactor_id
+      definition: the ID of this gene in the BioGRID database
+    - canto_session
+    - name: ena_id
+      definition: The European Nucleotide Archive ID of the feature.
+    - genotype_background
+    - genotype_display_name
+    - molecular_weight
+    - average_residue_weight
+    - charge_at_ph7
+    - isoelectric_point
+    - codon_adaptation_index
+    - name: sgd_identifier
+      definition: "An ID like SGD:S000005390"
+    - name: partial_sequence
+      definition: This qualifier is present if the source feature has the EMBL /partial qualifer.
+    - name: annotation_date
+      definition: The date that this feature was added to the database.
+    - name: kegg_pathway
+    - name: rnacentral_identifier
+  PomBase allele types:
+    - name: amino_acid_deletion_and_mutation
+    - name: amino_acid_insertion
+    - name: amino_acid_insertion_and_deletion
+    - name: amino_acid_insertion_and_mutation
+    - name: amino_acid_mutation
+    - name: deletion
+    - name: disruption
+    - name: nonsense_mutation
+    - name: nucleotide_insertion
+    - name: nucleotide_mutation
+    - name: partial_nucleotide_deletion
+    - name: wild_type
+    - name: partial_amino_acid_deletion
+      description: Deletion of part of a gene.
+    - name: unrecorded
+      description: An allele whose type is not apparent from the paper.
+    - name: unknown
+      description: An allele whose type has not been established.
+    - name: other
+    - name: unspecified
+  PomBase annotation extension terms: []
+  PomBase gene products: []
+  PomBase family or domain: []
+  PomBase gene characterisation status:
+    - name: published
+      definition: >
+        A gene product characterised, or partially characterised, in a small
+        scale experiment to provide published information about the biological
+        process. The biological process annotation must be equivalent to, or
+        more specific than, terms in the "GO BP slim"
+        https://www.pombase.org/browse-curation/fission-yeast-bp-go-slim-terms
+    - name: biological role inferred
+      definition: >
+        A gene product whose biological process is inferred from homology to an
+        experimentally characterised gene product. The biological process
+        annotation must be equivalent to, or more specific than, terms in the "GO
+        BP slim"  https://www.pombase.org/browse-curation/fission-yeast-bp-go-slim-terms
+    - name: conserved unknown
+      definition: >
+        A gene product which is conserved more broadly than the
+        Schizosacchaomyces clade, but cannot be assigned a biological process
+        term equivalent to, or more specific than, the terms in the "GO BP slim"
+        https://www.pombase.org/browse-curation/fission-yeast-bp-go-slim-terms based on
+        experimental data from any organism
+    - name: Schizosaccharomyces pombe specific protein, uncharacterized
+      definition: >
+        A gene product which is not conserved outside the Schizosacchaomyces clade
+        and where nothing is published about, or can be inferred from homology
+        about, the biological role
+    - name: Schizosaccharomyces specific protein, uncharacterized
+      definition: >
+        A gene product which is not conserved outside the Schizosacchaomyces clade
+        and where nothing is published about, or can be inferred from homology
+        about, the biological role
+    - name: dubious
+      definition: Unlikely to be coding
+    - name: transposon
+      definition: >
+        A transposon or insertion sequence. An element that can insert
+        in a variety of DNA sequences.
+  PomBase interaction types:
+    - name: interacts_genetically
+    - name: interacts_physically
+  feature_relationshipprop_type:
+    - name: evidence
+    - name: source database
+    - name: source file
+    - name: homology type
+    - name: ortholog qualifier
+    - name: first_approved_timestamp
+    - name: approved_timestamp
+    - name: approver_email
+    - name: curator_name
+    - name: curator_email
+    - name: canto_session
+    - name: interaction_note
+    - name: is_inferred
+      definition: >
+        Set to "yes" for annotation inferred during loading, "no" otherwise.
+  pubprop_type:
+    - name: canto_session
+    - name: canto_first_sent_to_curator_date
+    - name: canto_first_approved_date
+    - name: canto_annotation_status
+    - name: canto_approved_date
+    - name: canto_approver_name
+    - name: canto_approver_email
+    - name: canto_initial_curator_name
+    - name: canto_initial_curator_email
+    - name: canto_curator_name
+    - name: canto_curator_email
+    - name: previous_curator_name
+    - name: canto_curator_role
+    - name: canto_triage_status
+    - name: canto_added_date
+    - name: canto_session_accepted_date
+    - name: canto_session_submitted_date
+    - name: canto_message_for_curators
+    - name: canto_experiment_type
+    - name: pubmed_publication_date
+    - name: pubmed_electronic_publication_date
+    - name: pubmed_entrez_date
+    - name: pubmed_authors
+    - name: pubmed_citation
+    - name: pubmed_abstract
+    - name: pubmed_doi
+  cat_act: []
+  genome_org: []
+  m_f_g: []
+  DNA_binding_specificity: []
+  name_description: []
+  species_dist: []
+  subunit_composition: []
+  gene_ex:
+    - RNA level
+    - protein level
+    - transcription
+    - RNA degradation
+    - translation
+    - protein degradation
+  complementation: []
+  warning: []
+  ex_tools: []
+  external_link: []
+  misc: []
+  disease_associated: []
+  EC numbers: []
+
+# define the allowed extension relation for each annotation type
+extension_restrictions:
+  fission_yeast_phenotype:
+    allowed:
+      - is_bearer_of
+      - has_penetrance
+      - assayed_using
+      - has_severity
+      - occurs_in
+      - occurs_at
+      - assayed_enzyme
+      - assayed_substrate
+  biological_process:
+    allowed:
+      - happens_during
+      - has_input
+      - occurs_at
+      - occurs_in
+      - has_regulation_target
+      - part_of
+      - not_happens_during
+      - regulates_activity_of
+      - directly_positively_regulates
+      - directly_negatively_regulates
+  molecular_function:
+    allowed:
+      - happens_during
+      - has_input
+      - has_direct_input
+      - has_substrate
+      - occurs_at
+      - occurs_in
+      - has_regulation_target
+      - in_presence_of
+      - activated_by
+      - inhibited_by
+      - part_of
+      - not_happens_during
+      - directly_positively_regulates
+      - directly_negatively_regulates
+      - regulates_activity_of
+  cellular_component:
+    allowed:
+      - exists_during
+      - part_of
+      - coincident_with
+      - not_exists_during
+  'PSI-MOD':
+    allowed:
+      - absent_during
+      - added_by
+      - added_during
+      - affected_by
+      - coincident_with
+      - decreased_during
+      - has_direct_input
+      - in_presence_of
+      - increased_during
+      - level_fluctuates_during
+      - occupancy
+      - present_during
+      - removed_by
+      - removed_during
+      - required_for
+  gene_ex:
+    allowed:
+      - during
+      - in_absence_of
+      - in_presence_of
+      - occurs_in
+  PomGeneExRNA:
+    allowed:
+      - during
+      - in_absence_of
+      - in_presence_of
+      - occurs_in
+  PomGeneExProt:
+    allowed:
+      - during
+      - in_absence_of
+      - in_presence_of
+      - occurs_in
+  PomGeneExRD:
+    allowed:
+      - during
+      - in_absence_of
+      - in_presence_of
+  name_description:
+    allowed: []
+  subunit_composition:
+    allowed:
+      - located_in
+
+
+# term IDs where duplicate extensions are allowed
+allowed_duplicate_extensions:
+  - 'FYPO:0000702'
+  - 'FYPO:0000703'
+  - 'FYPO:0000704'
+  - 'FYPO:0000705'
+  - 'FYPO:0001275'
+  - 'FYPO:0001571'
+  - 'FYPO:0001645'
+  - 'FYPO:0002365'
+  - 'FYPO:0003206'
+  - 'FYPO:0003207'
+  - 'FYPO:0003215'
+  - 'FYPO:0004335'
+
+# names of the CVs that extension relation terms can come from
+extension_relation_cv_names:
+  - relationship
+  - go/extensions/gorel
+  - fypo_extension_relations
+  - PSI-MOD_extension_relations
+  - external
+  - fission_yeast_phenotype
+
+extension_relation_transform:
+  cellular_component:
+    happens_during: exists_during
+    occurs_during: exists_during
+    during: exists_during
+
+cv_definitions:
+  biological_process: Gene Ontology biological process terms
+  cat_act: Catalytic activity attributes (Kd, rate, etc.)
+  complementation: gene product complement/complemented by another gene product
+  disease_associated: Orthology to a human disease gene
+  DNA_binding_specificity: Target sequence consensus of a DNA binding protein
+  ex_tools: Uses of gene products as experimental tools (e.g. constructs, selectable markers, antibodies, etc.)
+  gene_ex: GP annotations related to gene expression
+  genome_org: Genome organization attributes (e.g. tandem repeat)
+  m_f_g: Miscellaneous functional groups, not captured by GO (e.g. chaperone)
+  misc: Annotation which does not fit any other ontology
+  name_description: Derivation of the "three letter" gene name
+  PomBase annotation extension terms: Post-composed terms used for annotation cross products
+  PomBase family or domain: Manual annotation of Pfam false negatives and uncaptured subfamilies
+  PomBase gene products: Concise gene product names
+  species_dist: Broad classifiers of taxon distribution (domain/kingdom level)
+  subunit_composition: Stoichiometry of homogeneous complexes
+  warning: Alerts, gross changes and anomalies
+  PSI-MOD: Protein modification terms
+
+dbs:
+  - RFAM
+  - GOA
+  - UniProtKB/Swiss-Prot
+  - UniProtKB/TrEMBL
+  - "EnsemblGenomes-Gn"
+  - "EnsemblGenomes-Tr"
+  - "UniProtKB/Swiss-Prot"
+  - GOA
+  - UniProt
+  - SPD
+  - PMID
+  - EMBL
+  - GOC
+  - GO_REF
+  - KEGG
+  - Pfam
+  - Rfam
+  - GI
+  - InterPro
+  - UniProtKB
+  - UniProtKB/Swiss-Prot
+  - TreeFam
+
+# where to store the identifiers from each /db_xref we see
+db_dest_tables:
+  UniProtKB: dbxref
+  "UniProtKB/TrEMBL": dbxref
+  "EnsemblGenomes-Gn": dbxref
+  "EnsemblGenomes-Tr": dbxref
+  "UniProtKB/Swiss-Prot": dbxref
+  PDB: dbxref
+  GOA: dbxref
+  Rfam: dbxref
+  InterPro: dbxref
+  PMID: pub
+  SPD: dbxref
+  KEGG: dbxref
+  EMBL: pub
+
+taxonid: 4897
+
+allowed_unknown_term_names_files:
+  - /var/pomcur/sources/pombe-embl/chado_load_mappings/cumulative_unknown_term_name_ok.txt
+allowed_term_mismatches_files:
+  - /var/pomcur/sources/pombe-embl/chado_load_mappings/cumulative_ID_ok_mismatches.txt
+  - /var/pomcur/sources/pombe-embl/chado_load_mappings/cumulative_name_ok_mismatches.txt
+
+# This allows species to merged into a parent taxa when loading.  For
+# example when loading annotation from GOA into PomBase we can merge
+# taxon 284812 (Schizosaccharomyces pombe 972h-) into 4896
+# (Schizosaccharomyces pombe) rather than having two organisms for pombe
+# in Chado
+organism_taxon_map:
+  402676: 4897
+  1248645: 4897
+  284812: 4896
+  559292: 4932
+
+# a Perl regular expression that matches the systematic ID / uniquenames
+# in this database
+systematic_id_re: 'SJAG_\d+'
+
+# the default is to use the cv name as the db name
+db_names_for_cvs:
+  biological_process: GO
+  molecular_function: GO
+  cellular_component: GO
+  sequence: SO
+
+geneontology_qualifier_flags:
+  NOT: 1
+  contributes_to: 1
+  colocalizes_with: 1
+
+evidence_types:
+  IMP:
+    name: Inferred from Mutant Phenotype
+    throughput_type: low throughput
+  IDA:
+    name: Inferred from Direct Assay
+    throughput_type: low throughput
+  IGI:
+    name: Inferred from Genetic Interaction
+    throughput_type: low throughput
+    with_gene: 1
+  IPI:
+    name: Inferred from Physical Interaction
+    throughput_type: low throughput
+    with_gene: 1
+  EXP:
+    name: Inferred from Experiment
+    throughput_type: low throughput
+  IEP:
+    name: Inferred from Expression Pattern
+    throughput_type: non-experimental
+  ISS:
+    name: Inferred from Sequence or Structural Similarity
+    throughput_type: non-experimental
+  ISO:
+    name: Inferred from Sequence Orthology
+    throughput_type: non-experimental
+  ISA:
+    name: Inferred from Sequence Alignment
+    throughput_type: non-experimental
+  ISM:
+    name: Inferred from Sequence Model
+    throughput_type: non-experimental
+  IGC:
+    name: Inferred from Genomic Context
+    throughput_type: non-experimental
+  IBA:
+    name: Inferred from Biological aspect of Ancestor
+    throughput_type: non-experimental
+  IBD:
+    name: Inferred from Biological aspect of Descendant
+    throughput_type: non-experimental
+  IKR:
+    name: Inferred from Key Residues
+    throughput_type: non-experimental
+  IRD:
+    name: Inferred from Rapid Divergence
+  RCA:
+    name: inferred from Reviewed Computational Analysis
+  NAS:
+    name: Non-traceable Author Statement
+    throughput_type: non-experimental
+  IC:
+    name: Inferred by Curator
+    throughput_type: non-experimental
+  ND:
+    name: No biological Data available
+  IEA:
+    name: Inferred from Electronic Annotation
+    throughput_type: non-experimental
+  NR:
+    name: Not Recorded
+  TAS:
+    name: Traceable Author Statement
+    throughput_type: non-experimental
+  HTP:
+    name: Inferred from high throughput experiment
+    throughput_type: high throughput
+  HDA:
+    name: Inferred from high throughput direct assay
+    throughput_type: high throughput
+  HEP:
+    name: Inferred from high throughput expression pattern
+    throughput_type: high throughput
+  HGI:
+    name: Inferred from high throughput genetic interaction
+    throughput_type: high throughput
+  HMP:
+    name: Inferred from high throughput mutant phenotype
+    throughput_type: high throughput
+  UNK:
+    name: Unknown
+  Microscopy: ~
+  'Other': ~
+  'Other direct assay': ~
+  'Affinity Capture-Luminescence': ~
+  'Affinity Capture-MS': ~
+  'Affinity Capture-RNA': ~
+  'Affinity Capture-Western': ~
+  'Biochemical Activity': ~
+  'Chromatography evidence': ~
+  'Co-crystal Structure':
+    name: Co-crystal Structure
+    symmetrical: yes
+  'Co-fractionation':
+    name: Co-fractionation
+    symmetrical: yes
+  'Co-localization':
+    name: Co-localization
+    symmetrical: yes
+  'Co-purification':
+    name: Co-purification
+    symmetrical: yes
+  'Dosage Growth Defect': ~
+  'Dosage Lethality': ~
+  'Dosage Rescue': ~
+  'FRET':
+    name: FRET
+  'Far Western': ~
+  'Microarray RNA expression level data': ~
+  'Negative Genetic':
+    name: Negative Genetic
+    symmetrical: yes
+  'PCA':
+    name: PCA
+    symmetrical: yes
+  'Phenotypic Enhancement': ~
+  'Phenotypic Suppression': ~
+  'Positive Genetic':
+    name: Positive Genetic
+    symmetrical: yes
+  'Protein-RNA': ~
+  'Protein-peptide': ~
+  'Reconstituted Complex':
+    name: Reconstituted Complex
+    symmetrical: yes
+  'Synthetic Growth Defect':
+    name: Synthetic Growth Defect
+    symmetrical: yes
+  'Synthetic Haploinsufficiency':
+    name: Synthetic Haploinsufficiency
+    symmetrical: yes
+  'Synthetic Lethality':
+    name: Synthetic Lethality
+    symmetrical: yes
+  'Synthetic Rescue': ~
+  'Two-hybrid': ~
+  'Enzyme assay data': ~
+  'Flow cytometry data': ~
+  'Chromatin immunoprecipitation experiment': ~
+  'Immunolocalization experiment data': ~
+  'Epitope-tagged protein immunolocalization experiment data': ~
+  'Protein localization experiment': ~
+  'Co-immunoprecipitation experiment': ~
+  'Electrophoretic mobility shift assay data': ~
+  'Particle size and count assay': ~
+  'Western blot assay': ~
+  'Substance quantification': ~
+  'Substance quantification evidence': ~
+  'Plasmid maintenance assay evidence': ~
+  'FPR':
+    name: fitness profiling
+    definition: "ECO term name is 'competitive growth assay evidence' (ECO:0000336)"
+  'ECO:0000000':
+    name: evidence
+    definition: A type of information that is used to support an assertion.
+  'ECO:0000007':
+    name: immunofluorescence evidence
+  'ECO:0000049':
+    name: reporter gene assay evidence
+  'ECO:0000106':
+    name: Northern assay evidence
+  'ECO:0000112':
+    name: Western blot evidence
+  'ECO:0000124':
+    name: fusion protein localization evidence
+  'ECO:0000058':
+    name: expression microarray evidence
+  'ECO:0000336':
+    name: competitive growth assay evidence
+  'ECO:0000108':
+    name: reverse transcription polymerase chain reaction transcription evidence
+  'ECO:0000110':
+    name: RNA protection assay evidence
+  'ECO:0000048':
+    name: transcript expression level evidence
+  'ECO:0000231':
+    name: quantitative PCR
+    definition: "ECO term name is 'quantitative polymerase chain reaction evidence'"
+  'ECO:0000006':
+    name: experimental evidence
+  'ECO:0000337':
+    name: gel electrophoresis evidence
+  'ECO:0000221':
+    name: high throughput nucleotide sequencing assay evidence
+  'ECO:0000095':
+    name: cell growth assay evidence
+  'ECO:0000098':
+    name: in situ hybridization assay evidence
+  'ECO:0001096':
+    name: mass spectrometry evidence
+  'ECO:0000059':
+    name: experimental phenotypic evidence
+  'ECO:0000333':
+    name: sodium dodecyl sulfate polyacrylamide gel electrophoresis evidence
+  'ECO:0000279':
+    name: western blot evidence used in manual assertion
+  'ECO:0005653':
+    name: northern assay evidence used in manual assertion
+  'ECO:0005660':
+    name: quantitative polymerase chain reaction evidence used in manual assertion
+  'ECO:0001232':
+    name: microscopy evidence used in manual assertion
+  'ECO:0007087':
+    name: ribosome profiling evidence
+  'ECO:0007464':
+    name: tryptic phosphopeptide mapping assay evidence used in automatic assertion
+  'ECO:0007183':
+    name: protein expression level evidence based on western blot used in manual assertion
+  'ECO:0000295':
+    name: RNA-sequencing evidence
+  'ECO:0001838':
+    name: in situ hybridization evidence used in manual assertion
+
+suppressible_evidence_codes:
+
+# the name of the db to use when creating a cvterm
+db_name_for_cv: PBO
+
+phenotype_cv_name: fission_yeast_phenotype
+parental_strain:
+  4897: 'yFS275'
+
+# for these terms, if there is no evidence, use the given evidence code
+auto_evidence_assignment:
+  inviable vegetative cell population: Microscopy
+  viable vegetative cell population: Microscopy
+  elongated vegetative cell: Microscopy
+  short mitotic spindle: Microscopy
+  T-shaped cell: Microscopy
+  pseudohyphal growth abolished: Microscopy
+  abnormal mitotic spindle: Microscopy
+  branched vegetative cell: Microscopy
+  curved vegetative cell: Microscopy
+  pear-shaped cell: Microscopy
+  spheroid vegetative cell: Microscopy
+  small cell: Microscopy
+  stubby cell: Microscopy
+  spheroid cell: Microscopy
+  swollen cell: Microscopy
+  abnormal microtubule cytoskeleton organization: Microscopy
+  abnormal sporulation: Microscopy
+  increased flocculation: Microscopy
+  large and small daughter nuclei: Microscopy
+  monopolar mitotic spindle: Microscopy
+  long microtubules: Microscopy
+  multinucleate vegetative cell: Microscopy
+  elongated mutiseptate cell: Microscopy
+  abnormal nuclear morphology during vegetative growth: Microscopy
+  abnormal filament morphology: Microscopy
+  abolished septum formation: Microscopy
+  cut with abnormal chromosome segregation: Microscopy
+  abnormal spindle assembly: Microscopy
+  bottle-shaped cell: Microscopy
+  shmoo with long tip: Microscopy
+  mitochondria fused: Microscopy
+  small vacuoles present in greater numbers during vegetative growth: Microscopy
+  abnormal septation: Microscopy
+  inviable elongated vegetative cell: Microscopy
+  abnormal cell morphology: Microscopy
+  lemon-shaped cell: Microscopy
+  elongated multiseptate cell: Microscopy
+  snowman-shaped spore: Microscopy
+  lagging mitotic chromosomes: Microscopy
+  mononucleate vegetative cell: Microscopy
+  contractile ring absent: Microscopy
+  inviable elongated dumbbell-shaped cell: Microscopy
+  large vacuoles during vegetative growth: Microscopy
+  abnormal kinetochore morphology: Microscopy
+  abnormal cytokinesis: Microscopy
+  resistance to 2-deoxyglucose: cell growth assay evidence
+  resistance to 5-azacytidine: cell growth assay evidence
+  resistance to brefeldin A: cell growth assay evidence
+  resistance to thiabendazole: cell growth assay evidence
+  resistance to amphotericin B: cell growth assay evidence
+  resistance to aureobasidin A: cell growth assay evidence
+  resistance to benomyl: cell growth assay evidence
+  resistance to lovastatin: cell growth assay evidence
+  resistance to nystatin: cell growth assay evidence
+  resistance to rapamycin: cell growth assay evidence
+  sensitive to enfumafungin: cell growth assay evidence
+  sensitive to 6-azauracil: cell growth assay evidence
+  sensitive to camptothecin: cell growth assay evidence
+  sensitive to tacrolimus: cell growth assay evidence
+  sensitive to hydrogen peroxide: cell growth assay evidence
+  sensitive to hydroxyurea: cell growth assay evidence
+  sensitive to methyl methanesulfonate: cell growth assay evidence
+  sensitive to cadmium: cell growth assay evidence
+  sensitive to caffeine: cell growth assay evidence
+  sensitive to thiabendazole: cell growth assay evidence
+  sensitive to cycloheximide: cell growth assay evidence
+  sensitive to latrunculin A: cell growth assay evidence
+  sensitive to rapamycin: cell growth assay evidence
+  sensitive to valproic acid: cell growth assay evidence
+  sensitive to zinc: cell growth assay evidence
+  sensitive to heat: cell growth assay evidence
+  sensitive to cold: cell growth assay evidence
+  sensitive to ionizing radiation: cell growth assay evidence
+  sensitive to UV during vegetative growth: cell growth assay evidence
+  sensitive to cisplatin: cell growth assay evidence
+  sensitive to high osmolarity: cell growth assay evidence
+  sensitive to calcium: cell growth assay evidence
+  sensitive to bleomycin: cell growth assay evidence
+  sensitive to benomyl: cell growth assay evidence
+  sensitive to salt stress: cell growth assay evidence
+  sensitive to arsenic: cell growth assay evidence
+  sensitive to N-ethylmaleimide: cell growth assay evidence
+  sensitive to DNA damage: cell growth assay evidence
+  sensitive to pravastatin: cell growth assay evidence
+  decreased cell population growth: cell growth assay evidence
+  abnormal cell population growth: cell growth assay evidence
+  sensitive to menadione: cell growth assay evidence
+  viable cell at high temperature: cell growth assay evidence
+  resistance to L-azetidine-2-carboxylic acid: cell growth assay evidence
+  resistance to K-252a: cell growth assay evidence
+  normal cell population growth: cell growth assay evidence
+  abnormal G1/S phase transcription: transcript expression level evidence
+  abnormal actin cortical patch localization during vegetative growth: Microscopy
+  abnormal actomyosin contractile ring myosin filament organization: Microscopy
+  abnormal cellular respiration: cell growth assay evidence
+  abnormal chromosome condensation: Microscopy
+  abnormal chromosome segregation: Microscopy
+  abnormal cytoplasmic microtubule nucleation during mitotic interphase: Microscopy
+  abnormal endocytosis during vegetative growth: Microscopy
+  abnormal glucan synthesis: Substance quantification evidence
+  abnormal meiosis: Microscopy
+  abnormal meiotic recombination: reporter gene assay evidence
+  abnormal microtubule cytoskeleton organization during vegetative growth: Microscopy
+  abnormal mitotic DNA damage checkpoint: Flow cytometry data
+  abnormal mitotic sister chromatid segregation: Microscopy
+  abnormal mitotic spindle assembly: Microscopy
+  abnormal mitotic spindle elongation: Microscopy
+  abnormal negative regulation of mitotic DNA replication initiation: Flow cytometry data
+  abnormal plasma membrane sterol distribution: Microscopy
+  abnormal regulation of translation in response to nitrogen starvation: cell growth assay evidence
+  abnormal regulation of translation in response to osmotic stress: cell growth assay evidence
+  abnormal regulation of translation in response to oxidative stress: cell growth assay evidence
+  abnormal vegetative cell morphology: Microscopy
+  abnormal vegetative cell polarity: Microscopy
+  abolished DNA damage checkpoint override in response to caffeine: Flow cytometry data
+  abolished cell-substrate adhesion: Other
+  abolished crossover: reporter gene assay evidence
+  actomyosin contractile ring absent: Microscopy
+  "branched, elongated cell": Microscopy
+  chromosome loss during mitotic chromosome segregation: reporter gene assay evidence
+  decreased cell population growth at high temperature: cell growth assay evidence
+  decreased cell population growth at low temperature: cell growth assay evidence
+  decreased cell population growth on ammonia nitrogen source: cell growth assay evidence
+  decreased cell population growth on galactose carbon source: cell growth assay evidence
+  decreased cell population growth on proline nitrogen source: cell growth assay evidence
+  decreased gene conversion during vegetative growth: reporter gene assay evidence
+  decreased vegetative cell population growth: cell growth assay evidence
+  elongated multiseptate vegetative cell: Microscopy
+  fragmented DNA: Microscopy
+  increased DNA recombination at mitotic DNA replication fork barriers: reporter gene assay evidence
+  increased HMG-CoA reductase activity: Enzyme assay data
+  increased centromeric outer repeat transcript level: transcript expression level evidence
+  increased duration of mitotic M phase: Flow cytometry data
+  increased long tract gene conversion: reporter gene assay evidence
+  increased protein oxidation during vegetative growth: Western blot assay
+  increased transcription from MCB promoter: transcript expression level evidence
+  inviable elongated vegetative cell with central constriction: Microscopy
+  mitochondrial nucleoid decreased number: Microscopy
+  mitochondrial nucleoid enlarged: Microscopy
+  mitotic G2/M transition delay: Microscopy
+  mitotic chromosome fragmentation upon segregation: Microscopy
+  mutator: reporter gene assay evidence
+  normal growth on ammonia nitrogen source: cell growth assay evidence
+  normal growth on proline nitrogen source: cell growth assay evidence
+  normal vegetative cell population growth: cell growth assay evidence
+  pear-shaped vegetative cell: Microscopy
+  protein mislocalized to cytoplasm during vegetative growth: Microscopy
+  sensitive to caffeine during vegetative growth: cell growth assay evidence
+  sensitive to osmotic stress: cell growth assay evidence
+  slow vegetative cell population growth: cell growth assay evidence
+  small vegetative cell: Microscopy
+  split actomyosin contractile ring: Microscopy
+  sterile: cell growth assay evidence
+  stubby vegetative cell: Microscopy
+  swollen vegetative cell: Microscopy
+  abnormal septum assembly: Microscopy
+
+check_chado:
+  'PomBase::Check::FeatureCount':
+    min_count: 10000
+  query_checks:
+    - name: pombe_genes
+      expected: '>= 6960'
+      # if true, show the result set content on failure:
+      verbose_fail: false
+      query: |
+        select * from feature f, cvterm cvt, organism o where
+        f.type_id = cvt.cvterm_id and f.organism_id = o.organism_id and
+        o.common_name = 'pombe' and cvt.name = 'gene'
+    - name: enough_isa_cvterm_rels
+      expected: '> 100000'
+      verbose_fail: false
+      query: |
+        select * from cvterm_relationship
+        where type_id in (select cvterm_id from cvterm where name = 'is_a')
+    - name: no_duplicate_pombe_gene_names
+      expected: 0
+      # if true, show the result set content on failure:
+      verbose_fail: true
+      query: |
+        select count(feature_id), name from feature where
+        name is not null and type_id = (select cvterm_id from cvterm where cv_id
+        = (select cv_id from cv where name = 'sequence') and name = 'gene') and
+        name <> 'mat3-Mm' and name <> 'mat3-Mc' and
+        organism_id = (select organism_id from organism where abbreviation =
+        'Spombe') group by name having count(feature_id) > 1
+    - name: alleles_instance_of_gene
+      description: all alleles should be instance_of gene
+      expected: 0
+      verbose_fail: true
+      query: |
+        SELECT f.uniquename, f.name, pt.name from feature f
+          JOIN feature_relationship r ON r.subject_id = f.feature_id
+          JOIN feature p ON r.object_id = p.feature_id
+          JOIN cvterm rt ON rt.cvterm_id = r.type_id
+          JOIN cvterm pt ON pt.cvterm_id = p.type_id
+          WHERE rt.name = 'instance_of' AND pt.name <> 'gene'
+            AND pt.name <> 'pseudogene'
+    - name: no_population_terms_with_penetrance
+      description: no population term should have a has_penetrance relation
+      expected: 0
+      verbose_fail: true
+      query: |
+        SELECT f.name, f.uniquename, res_fc.cvterm_name, pub.uniquename
+          FROM pombase_feature_cvterm_ext_resolved_terms res_fc
+               JOIN pub on res_fc.pub_id = pub.pub_id
+               JOIN feature f on f.feature_id = res_fc.feature_id
+               JOIN cvtermpath path on path.subject_id = res_fc.base_cvterm_id
+          WHERE object_id in
+            (SELECT cvterm_id
+               FROM cvterm t join cv on t.cv_id = cv.cv_id
+              WHERE t.name = 'cell population phenotype' and cv.name = 'fission_yeast_phenotype')
+            AND pathdistance > 0
+            AND cvterm_id in
+              (SELECT subject_id
+                 FROM cvterm_relationship r
+                      JOIN cvterm type on r.type_id = type.cvterm_id
+                      AND type.name = 'has_penetrance')
+            AND path.type_id in (select cvterm_id from cvterm where name = 'is_a')
+    - name: canto_annotations
+      description: check for annotations from Canto
+      expected: '>= 13000'
+      verbose_fail: false
+      query: |
+        SELECT fc.feature_cvterm_id
+          FROM feature_cvterm fc
+          JOIN feature_cvtermprop p ON p.feature_cvterm_id = fc.feature_cvterm_id
+          JOIN cvterm type ON p.type_id = type.cvterm_id
+         WHERE type.name = 'canto_session'
+    - name: annotation_count
+      description: check that we have enough annotations
+      expected: '>= 168000'
+      verbose_fail: false
+      query: |
+        SELECT fc.feature_cvterm_id
+          FROM feature_cvterm fc
+    - name: go_annotation_count
+      description: "check that GO filtering hasn't failed"
+      expected: '<= 40000'
+      verbose_fail: false
+      query: |
+        SELECT fc.feature_cvterm_id
+          FROM feature_cvterm fc
+          JOIN cvterm t ON t.cvterm_id = fc.cvterm_id
+          JOIN cv ON t.cv_id = cv.cv_id
+        WHERE cv.name IN ('biological_process',
+                          'molecular_function',
+                          'cellular_component')
+    - name: quantitative_annotation_qualifiers
+      description: check that all quantitative annotation have a count qualifier
+      expected: 0
+      verbose_fail: false
+      query: |
+        SELECT feature_cvterm_id
+          FROM pombase_feature_cvterm_ext_resolved_terms fc
+          JOIN feature f ON f.feature_id = fc.feature_id
+         WHERE feature_cvterm_id NOT IN
+           (SELECT feature_cvterm_id
+              FROM feature_cvtermprop
+             WHERE type_id IN
+               (SELECT cvterm_id
+                  FROM cvterm
+                 WHERE name = 'quant_gene_ex_avg_copies_per_cell'))
+           AND (base_cvterm_name = 'protein level' OR base_cvterm_name = 'RNA level')
+           AND base_cvterm_name = 'protein level'
+           AND feature_cvterm_id NOT IN
+             (SELECT feature_cvterm_id
+                FROM feature_cvtermprop
+               WHERE type_id IN (SELECT cvterm_id FROM cvterm WHERE name = 'qualifier'))
+    - name: missing_assayed_using
+      description: check that protein binding annotations have two assayed_using extensions
+      expected: 0
+      verbose_fail: true
+      query: |
+        SELECT DISTINCT fc.feature_cvterm_id, f.uniquename || ' <-> ' || cvterm_name,
+                 pub.uniquename,
+                 (SELECT value
+                    FROM feature_cvtermprop p
+                   WHERE p.feature_cvterm_id = fc.feature_cvterm_id
+                     AND p.type_id IN (SELECT cvterm_id FROM cvterm WHERE name = 'canto_session') LIMIT 1) AS session
+          FROM pombase_feature_cvterm_ext_resolved_terms t
+          JOIN feature_cvterm fc ON fc.cvterm_id = t.cvterm_id
+          JOIN feature f ON f.feature_id = fc.feature_id
+          JOIN pub ON fc.pub_id = pub.pub_id
+         WHERE
+           base_cvterm_id IN
+             (SELECT t.cvterm_id
+                FROM cvterm t JOIN dbxref x ON t.dbxref_id = x.dbxref_id
+                              JOIN db ON db.db_id = x.db_id
+               WHERE db.name = 'FYPO'
+                 AND x.accession IN
+                   ('0000702', '0000703', '0000704', '0000705', '0001275', '0001571', '0001645', '0002365', '0003206', '0003207', '0003215', '0004335'))
+           AND t.cvterm_id IN
+             (SELECT cvterm_id FROM pombase_extension_rels_and_values
+               WHERE rel_name = 'assayed_using' GROUP BY cvterm_id, rel_name HAVING COUNT(value) = 1)
+    - name: no_duplicate_orthologs
+      description: "don't store the same ortholog twice"
+      expected: 0
+      verbose_fail: true
+      query: |
+        SELECT
+          tf.uniquename, ef.uniquename, count(*)
+        FROM
+          feature tf
+          JOIN feature_relationship fr ON (tf.feature_id=fr.object_id)
+          JOIN cvterm frt ON (fr.type_id=frt.cvterm_id)
+          JOIN feature ef ON (fr.subject_id=ef.feature_id)
+        WHERE
+          frt.name='orthologous_to'
+        GROUP BY tf.uniquename, ef.uniquename HAVING COUNT(*)>1
+    - name: enough_genetic_interactions
+      expected: '> 100000'
+      query: |
+        SELECT * FROM feature_relationship fr JOIN cvterm frt ON (fr.type_id = frt.cvterm_id)
+          WHERE frt.name = 'interacts_genetically'
+    - name: enough_physical_interactions
+      expected: '> 10000'
+      query: |
+        SELECT * FROM feature_relationship fr JOIN cvterm frt ON (fr.type_id = frt.cvterm_id)
+          WHERE frt.name = 'interacts_physically'
+    - name: only_ascii_characters_in_feature_name
+      description: Check for non-ascii characters in feature names
+      expected: 0
+      verbose_fail: true
+      query: |
+        SELECT uniquename,
+               name,
+          (SELECT distinct value
+           FROM featureprop p
+           JOIN cvterm pt ON pt.cvterm_id = p.type_id
+           WHERE p.feature_id = f.feature_id
+             AND pt.name = 'canto_session'
+           LIMIT 1) AS session
+        FROM feature f
+        WHERE length(name) <> length(regexp_replace(name, '[^\x01-\x7f]', '', 'g'))
+    - name: extension_relation_genes_exist
+      description: Check that gene identifiers used in extensions exist
+      expected: 0
+      verbose_fail: true
+      query: |
+        SELECT value FROM cvtermprop
+          WHERE type_id IN
+            (SELECT cvterm_id FROM cvterm
+              WHERE name LIKE 'annotation_extension_relation-%')
+                AND value LIKE 'SP%'
+                AND value NOT IN (SELECT uniquename FROM feature WHERE uniquename LIKE 'SP%')
+    - name: annotation_with_no_evidence
+      verbose_fail: true
+      expected: 0
+      query: |
+          SELECT pub.uniquename AS pmid, t.name AS term_name, allele.name, allele.uniquename
+          FROM feature_cvterm fc
+          JOIN pub ON fc.pub_id = pub.pub_id
+          JOIN feature f ON f.feature_id = fc.feature_id
+          JOIN cvterm t ON fc.cvterm_id = t.cvterm_id
+          JOIN cv ON t.cv_id = cv.cv_id
+          LEFT OUTER JOIN feature_relationship feat_rel ON fc.feature_id = feat_rel.object_id
+          LEFT OUTER JOIN feature allele ON feat_rel.subject_id = allele.feature_id
+          WHERE cv.name IN ('molecular_function', 'cellular_component', 'biological_process', 'fission_yeast_phenotype')
+            AND fc.feature_cvterm_id NOT IN
+              (SELECT feature_cvterm_id FROM feature_cvtermprop p
+               WHERE p.type_id IN (SELECT cvterm_id FROM cvterm WHERE name = 'evidence'))
+            AND feat_rel.type_id IN
+              (SELECT cvterm_id FROM cvterm WHERE name = 'part_of')
+    - name: duplicate_go_annotation
+      verbose_fail: true
+      description: "All duplicate GO annotation.  Columns are: count, systematic ID, gene name, term name, evidence, PubMed ID, 'with', session ID"
+      expected: 0
+      query: |
+         SELECT count(fc.feature_cvterm_id), f.uniquename as systematic_id, gene.name as gene_name, cvterm_name, evprop.value as evidence, pub.uniquename as pmid, withp.value as with_prop,
+                  array_to_string(array(select value from pubprop where pubprop.pub_id = pub.pub_id and pubprop.type_id in (select cvterm_id from cvterm where name = 'canto_session') ORDER BY value), ',') as session
+           FROM feature f
+           JOIN feature_relationship rel ON rel.subject_id = f.feature_id
+           JOIN feature gene on rel.object_id = gene.feature_id
+           JOIN pombase_feature_cvterm_ext_resolved_terms fc ON fc.feature_id = f.feature_id
+           JOIN pub ON fc.pub_id = pub.pub_id
+           LEFT OUTER JOIN feature_cvtermprop evprop ON evprop.feature_cvterm_id = fc.feature_cvterm_id and evprop.type_id in (select cvterm_id from cvterm where name = 'evidence')
+           LEFT OUTER JOIN feature_cvtermprop afp ON afp.feature_cvterm_id = fc.feature_cvterm_id and afp.type_id = (select cvterm_id from cvterm where name = 'gene_product_form_id')
+           LEFT OUTER JOIN feature_cvtermprop withp ON withp.feature_cvterm_id = fc.feature_cvterm_id and withp.type_id = (select cvterm_id from cvterm where name = 'with')
+          WHERE (fc.base_cv_name = 'cellular_component' OR fc.base_cv_name = 'biological_process' OR fc.base_cv_name = 'molecular_function')
+          GROUP BY f.uniquename, gene.name, cvterm_name, evidence, pub.uniquename, afp.value, with_prop, session
+         HAVING count(fc.feature_cvterm_id) > 1;
+    - name: illegal_with_prefix
+      verbose_fail: true
+      description: "'with' values that have an unsupported DB prefix"
+      expected: 0
+      query: |
+         SELECT distinct substring(value FROM '(.*):.*') AS with_db_prefix,
+            (SELECT value FROM feature_cvtermprop p2
+             JOIN cvterm p2t ON p2.type_id = p2t.cvterm_id
+             WHERE p2t.name = 'canto_session' AND p.feature_cvterm_id = p2.feature_cvterm_id) AS SESSION,
+                 pub.uniquename AS pubmed_id
+          FROM feature_cvtermprop p
+          JOIN cvterm t ON p.type_id = t.cvterm_id
+          JOIN feature_cvterm fc ON fc.feature_cvterm_id = p.feature_cvterm_id
+          JOIN pub ON pub.pub_id = fc.pub_id
+          WHERE t.name = 'with'
+            AND substring(value FROM '(.*):.*')
+                NOT IN ('AGI_LocusCode', 'CBS', 'CGD', 'dictyBase', 'EC', 'ECOGENE', 'FB', 'GO',
+                        'HGNC', 'InterPro', 'MGI', 'PANTHER', 'PDB', 'Pfam', 'PomBase', 'RGD',
+                        'SGD', 'SUPERFAMILY', 'TAIR', 'TAIR:locus', 'UniPathway', 'UniProtKB', 'UniProtKB-KW',
+                        'UniProtKB-SubCell', 'UniRule', 'WB', 'ZFIN');
+    - name: prop_values_with_missing_terms
+      verbose_fail: true
+      description: "relation ranges / annotation properties where the term is missing from the database, eg. from(...) or column_17(...)"
+      github_issue: "https://github.com/pombase/pombase-chado/issues/693"
+      expected: 0
+      query: |
+         WITH all_term_ids AS
+           (SELECT db.name || ':' || x.accession AS term_id
+            FROM dbxref AS x
+            JOIN db ON db.db_id = x.db_id
+            JOIN cvterm ON cvterm.dbxref_id = x.dbxref_id
+            WHERE db.name IN ('GO', 'SO', 'PR'))
+         SELECT
+           (SELECT value
+            FROM feature_cvtermprop p
+            WHERE p.feature_cvterm_id = fc.feature_cvterm_id
+              AND type_id IN
+                (SELECT cvterm_id
+                 FROM cvterm
+                 WHERE name = 'canto_session')),
+           f.uniquename, t.name, fcpt.name, fcp.value
+         FROM feature_cvtermprop fcp
+         JOIN cvterm fcpt ON fcp.type_id = fcpt.cvterm_id
+         JOIN feature_cvterm fc ON fcp.feature_cvterm_id = fc.feature_cvterm_id
+         JOIN feature f ON fc.feature_id = f.feature_id
+         JOIN cvterm t ON fc.cvterm_id = t.cvterm_id
+         WHERE fcpt.name in ('gene_product_form_id', 'from', 'with')
+           AND fcp.value ~ '^(GO|SO|PR):\d+$'
+           AND fcp.value NOT IN
+             (SELECT term_id
+              FROM all_term_ids);
+    - name: duplicate_allele_descriptions
+      verbose_fail: true
+      description: "alleles with the same description that have different names"
+      github_issue: "https://github.com/pombase/canto/issues/828"
+      expected: 0
+      query: |
+         SELECT gene.uniquename,
+                allele1.name as allele1_name,
+                (select value from featureprop fp where fp.feature_id = allele1.feature_id AND fp.type_id in (select cvterm_id from cvterm where name = 'canto_session')  limit 1) as allele1_session,
+                allele1_prop.value AS description,
+                allele2.name as allele2_name,
+                (select value from featureprop fp where fp.feature_id = allele2.feature_id AND fp.type_id in (select cvterm_id from cvterm where name = 'canto_session')  limit 1) as allele2_session
+         FROM feature allele1
+         JOIN featureprop allele1_prop ON allele1_prop.feature_id = allele1.feature_id
+         JOIN cvterm a1_prop_type ON a1_prop_type.cvterm_id = allele1_prop.type_id
+         JOIN feature_relationship rel1 ON allele1.feature_id = rel1.subject_id
+         JOIN cvterm rel1_type ON rel1_type.cvterm_id = rel1.type_id
+         JOIN feature gene ON rel1.object_id = gene.feature_id
+         JOIN feature_relationship rel2 ON rel2.object_id = gene.feature_id
+         JOIN cvterm rel2_type ON rel2.type_id = rel2_type.cvterm_id
+         JOIN feature allele2 ON rel2.subject_id = allele2.feature_id
+         JOIN featureprop allele2_prop ON allele2_prop.feature_id = allele2.feature_id
+         JOIN cvterm a2_prop_type ON a2_prop_type.cvterm_id = allele2_prop.type_id
+         WHERE allele1.feature_id <> allele2.feature_id
+           AND allele1.name <> allele2.name
+           AND rel1_type.name = 'instance_of'
+           AND rel2_type.name = 'instance_of'
+           AND a1_prop_type.name = 'description'
+           AND a2_prop_type.name = 'description'
+           AND allele1_prop.value = allele2_prop.value
+           AND allele1_prop.value <> 'unknown';
+
+external_sources:
+  pubmed_efetch_url: 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&retmode=xml&retmax=99999&id='
+  pubmed_esearch_url: 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&remode=xml&retmax=99999&term='

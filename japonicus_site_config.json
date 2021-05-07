@@ -1,0 +1,3041 @@
+{
+  "site_name": "JaponicusDB",
+  "database_name": "JaponicusDB",
+  "database_long_name": "JaponicusDB, the Schizosaccharomyces japonicus genome database",
+  "database_citation": "PMID:22039153",
+  "logo_file_name": "japonicus-logo.png",
+  "small_logo_file_name": "japonicus-logo-small.png",
+  "tiny_logo_file_name": "japonicus-logo-tiny.png",
+  "header_background_file_name": "japonicus-header-background.png",
+  "funder": "Wellcome Trust",
+  "site_description": "A database for the fission yeast Schizosaccharomyces japonicus",
+  "welcome_message": "This is the <i>Schizosaccharomyces japonicus</i> genome database",
+  "load_organism_taxonid": 4897,
+  "base_url": "http://japonicusdb.kmr.nz",
+  "helpdesk_address": "helpdesk@pombase.org",
+  "gene_systematic_identifier_re": "^SJAG_\\d+$",
+  "transcript_systematic_identifier_re": "^SJAG_\\d+\\.\\d+$",
+  "details_popup_delay": 500,
+  "example_pages": {
+    "gene": "SJAG_04351",
+    "term": "GO:0005759",
+    "reference": "null"
+  },
+  "social_media": false,
+  "has_disease_annotation": false,
+  "news_on_front_page": false,
+  "ensembl_blast_url": "https://fungi.ensembl.org/Schizosaccharomyces_japonicus/Tools/Blast?db=core",
+  "canto_url": "https://curation.pombase.org/japonicus",
+  "canto_data_config": {
+    "browser_track_triage_types": [
+      "Browser datasets, to host",
+      "Browser datasets, hosted",
+      "Transposon related",
+      "Mating-type related",
+      "DNA replication related",
+      "DNA recombination related",
+      "Mitochondrial sequence related"
+    ]
+  },
+  "doc_page_aliases": {
+    "/browse-curation/fission-yeast-go-slim-terms": "/browse-curation/fission-yeast-bp-go-slim-terms"
+  },
+  "sequence_feature_page": {
+    "so_types_to_show": ["regional_centromere", "regional_centromere_central_core"]
+  },
+  "default_jbrowse_tracks": [
+    {
+      "pmed_id": "PMID:11859360",
+      "label": "DNA sequence"
+    },
+    {
+      "pmed_id": "PMID:11859360",
+      "label": "Forward strand features"
+    },
+    {
+      "pmed_id": "PMID:11859360",
+      "label": "Reverse strand features"
+    }
+  ],
+  "reference_page_extra_links": {
+  },
+  "reference_page_jbrowse_columns": [
+    {
+      "name": "label",
+      "display_name": "Label"
+    },
+    {
+      "name": "growth_phase_or_response",
+      "display_name": "Growth phase or response"
+    },
+    {
+      "name": "assayed_gene_product",
+      "display_name": "Localized gene product"
+    },
+    {
+      "name": "background",
+      "display_name": "Background"
+    },
+    {
+      "name": "mating_type",
+      "display_name": "Mating type"
+    },
+    {
+      "name": "conditions",
+      "display_name": "Conditions"
+    },
+    {
+      "name": "assay_type",
+      "display_name": "Assay type"
+    },
+    {
+      "name": "data_type",
+      "display_name": "Data type"
+    },
+    {
+      "name": "alleles",
+      "display_name": "WT or mutant"
+    },
+    {
+      "name": "comment",
+      "display_name": "Comment"
+    },
+    {
+      "name": "source_url",
+      "display_name": "",
+      "download_link": true
+    }
+  ],
+  "missing_browser_images": [
+  ],
+  "search_box_cv_names": ["molecular_function", "biological_process", "cellular_component"],
+  "search_box_config": {
+    "suffixes_to_trim": ["\\\\.1", "\\\\.1:pep"]
+  },
+  "query_builder": {
+    "node_types": [
+      {
+        "id": "canned_queries",
+        "displayName": "Commonly used queries",
+        "nodeType": "canned-queries",
+        "topDescription": [
+          {
+            "text": "Shortcuts for commonly used queries"
+          }
+        ]
+      },
+      {
+        "id": "gene_list",
+        "displayName": "Gene name and IDs",
+        "nodeType": "gene-list",
+        "topDescription": [
+          {
+            "text": "Enter or upload a list of systematic gene IDs or gene names"
+          }
+        ]
+      },
+      {
+        "id": "uniprot_id_list",
+        "displayName": "UniProt accessions",
+        "nodeType": "gene-list",
+        "topDescription": [
+          {
+            "text": "UniProt accession mapping has moved"
+          }
+        ],
+        "extraResultTableColumns": [
+          "uniprot_identifier"
+        ]
+      },
+      {
+        "id": "GO",
+        "displayName": "GO",
+        "nodeType": "ontology",
+        "ontologyName": "GO",
+        "topDescription": [
+          {
+            "text": "Retrieve genes via annotated Gene Ontology terms that describe the activity, process, or location of their products (protein or ncRNA)"
+          }
+        ]
+      },
+      {
+        "id": "product_type",
+        "displayName": "product type",
+        "nodeType": "subset-select",
+        "subsets": [
+          {
+            "name": "feature_type_pseudogene",
+            "displayName": "feature_type:pseudogene"
+          },
+          {
+            "name": "feature_type_mRNA_gene",
+            "displayName": "feature_type:protein"
+          },
+          {
+            "name": "feature_type_tRNA_gene",
+            "displayName": "feature_type:tRNA"
+          },
+          {
+            "name": "feature_type_ncRNA_gene",
+            "displayName": "feature_type:ncRNA"
+          },
+          {
+            "name": "feature_type_snoRNA_gene",
+            "displayName": "feature_type:snoRNA"
+          },
+          {
+            "name": "feature_type_snRNA_gene",
+            "displayName": "feature_type:snRNA"
+          },
+          {
+            "name": "feature_type_rRNA_gene",
+            "displayName": "feature_type:rRNA"
+          }
+        ],
+        "topDescription": [
+          {
+            "text": "Retrieve genes based on product type. Note that \"protein\" includes dubious and transposon protein-coding genes; there is a prepared query that excludes both in the list of commonly used queries"
+          }
+        ]
+      },
+      {
+        "id": "all_domains",
+        "displayName": "protein domain",
+        "nodeType": "subset-input",
+        "subsetPrefix": null,
+        "placeholder": "eg. PF02373 or IPR001138",
+        "topDescription": [
+          {
+            "text": "Retrieve protein-coding genes by specific domains present in the products. To retrieve all domain-containing proteins, search for \"IPR*\" or \"PF*\""
+          }
+        ]
+      },
+      {
+        "id": "SO_protein",
+        "displayName": "protein feature",
+        "nodeType": "ontology",
+        "ontologyName": "SO-protein",
+        "topDescription": [
+          {
+            "text": "Retrieve protein-coding genes based on features annotated using the protein sequence feature branch of the Sequence Ontology (SO)"
+          }
+        ]
+      },
+      {
+        "id": "protein_length",
+        "displayName": "protein length",
+        "nodeType": "int-range",
+        "topDescription": [
+          {
+            "text": "Retrieve protein-coding genes by product length (in amino acids)"
+          }
+        ]
+      },
+      {
+        "id": "protein_mol_weight",
+        "displayName": "protein mol. weight",
+        "nodeType": "float-range",
+        "topDescription": [
+          {
+            "text": "Retrieve protein-coding genes by product molecular weight in kDa"
+          }
+        ]
+      },
+      {
+        "id": "tm_domain_count",
+        "displayName": "Number of TM domains",
+        "nodeType": "int-range",
+        "topDescription": [
+          {
+            "text": "Retrieve protein-coding genes by number of predicted transmembrane domains in the product"
+          }
+        ]
+      },
+      {
+        "id": "genome_range",
+        "displayName": "Genome location",
+        "nodeType": "genome-range",
+        "topDescription": [
+          {
+            "text": "Retrieve genes in a specified region of a chromosome"
+          }
+        ]
+      },
+      {
+        "id": "exon_count",
+        "displayName": "Number of exons",
+        "nodeType": "int-range",
+        "topDescription": [
+          {
+            "text": "Retrieve genes by number of exons in the primary transcript"
+          }
+        ]
+      },
+      {
+        "id": "transcript_count",
+        "displayName": "Number of transcripts",
+        "nodeType": "int-range",
+        "topDescription": [
+          {
+            "text": "Retrieve genes by number of annotated transcripts"
+          }
+        ]
+      }
+    ]
+  },
+  "organisms": [
+    {
+      "taxonid": 4897,
+      "genus": "Schizosaccharomyces",
+      "species": "japonicus",
+      "common_name": "S. japonicus",
+      "alternative_names": ["japonicus"],
+      "assembly_version": "v1",
+      "example_gene_identifiers": ["SJAG_16016"]
+    },
+    {
+      "taxonid": 4896,
+      "genus": "Schizosaccharomyces",
+      "species": "pombe",
+      "common_name": "S. pombe",
+      "alternative_names": ["fission yeast"],
+      "assembly_version": "ASM294v2",
+      "example_gene_identifiers": ["cdc11", "SPCC18B5.03"],
+      "database_id_prefix": "PomBase"
+    },
+    {
+      "taxonid": 9606,
+      "genus": "Homo",
+      "species": "sapiens",
+      "alternative_names": [],
+      "common_name": "human",
+      "example_gene_identifiers": ["CDK1", "HGNC:1722"],
+      "database_id_prefix": "HGNC"
+    },
+    {
+      "taxonid": 4932,
+      "genus": "Saccharomyces",
+      "species": "cerevisiae",
+      "alternative_names": ["brewer's yeast", "baker's yeast", "budding yeast"],
+      "common_name": "S. cerevisiae",
+      "example_gene_identifiers": ["CDC28", "YBR160W"],
+      "database_id_prefix": "SGD"
+    }
+  ],
+  "ortholog_taxonids": [4932, 9606],
+  "front_page_panels": [
+    {
+      "title": "Some Person et al., 2019",
+      "title_link": null,
+      "panel_type": "spotlight",
+      "head_image": ["spotlight/2019-06-18-30463883-Yukawa-MAPs-microtubule-dynamics.png"],
+      "content": "Here's a dummy Spotlight description about some great research in S. japonicus.",
+      "reference_id": "PMID:30463883",
+      "link_label": "Publication record in JaponicusDB ...",
+      "date_added": "2019-06-18",
+      "show_on_front_page": true
+    },
+    {
+      "title": "Recent community curation",
+      "panel_type": "community",
+      "head_image": ["community/2020-02-24-community_papers_curated.png"],
+      "head_image_link": "https://curation.pombase.org/pombe/stats/annotation",
+      "content": "<app-recent-community-pubs></app-recent-community-pubs>",
+      "date_added": "2017-10-10",
+      "show_on_front_page": true
+    },
+    {
+      "title": "Recent community curation",
+      "panel_type": "community",
+      "head_image": ["community/2017-10-07-community_curation_pie_and_cloud.png"],
+      "content": "<app-recent-community-pubs></app-recent-community-pubs>",
+      "date_added": "2017-10-10",
+      "show_on_front_page": false
+    },
+    {
+      "title": "Data mining",
+      "title_link": null,
+      "panel_type": "explore",
+      "head_image": ["explore/2017-10-13-data_mining.png"],
+      "content": "Use the [Advanced Search](/query) to construct complex queries (GO, phenotypes, taxonomic distribution, domain, chromosomal location).",
+      "date_added": "2017-10-13",
+      "show_on_front_page": true
+    },
+    {
+      "title": "Help!",
+      "title_link": null,
+      "panel_type": "explore",
+      "head_image": ["explore/2017-11-06-help.png"],
+      "content": "JaponicusDB provides extensive documentation and answers many questions in the [FAQ](faq). For any information you can't find there, please <app-contact-email [linkName]=\"'contact the helpdesk'\" [subject]=\"'JaponicusDB question'\"></app-contact-email>.",
+      "date_added": "2017-11-06",
+      "show_on_front_page": false
+    },
+    {
+      "title": "Community curation in Canto",
+      "title_link": null,
+      "panel_type": "explore",
+      "head_image": ["explore/2017-11-06-community_curation.png"],
+      "content": "PomBase has pioneered a community curation system that enables researchers to contribute publication-based annotations directly to database curators. To participate, search for the PubMed ID of your paper [in Canto](https://curation.pombase.org/pombe) or <app-contact-email [linkName]=\"'contact the helpdesk'\" [subject]=\"'PomBase question'\"></app-contact-email>.",
+      "date_added": "2017-11-06",
+      "show_on_front_page": false
+    }
+  ],
+  "predefined_queries": {
+    "canned_query:all_protein_coding_ex_dubious_and_transposon": {
+      "name": "All protein coding genes (ex. dubious and transposon)",
+      "constraints": {
+        "not": [
+          {
+            "not": [
+              {
+                "subset": {
+                  "subset_name": "feature_type_mRNA_gene"
+                }
+              },
+              {
+                "subset": {
+                  "subset_name": "characterisation_status_transposon"
+                }
+              }
+            ]
+          },
+          {
+            "subset": {
+              "subset_name": "characterisation_status_dubious"
+            }
+          }
+        ]
+      }
+    },
+    "single_allele_chemical_resistance": {
+      "name": "chemical resistance (single mutants)",
+      "constraints": {
+        "term": {
+          "termid": "FYPO:0002682",
+          "name": "increased resistance to chemical",
+          "single_or_multi_locus": "single",
+          "expression": "any"
+        }
+      }
+    },
+    "single_allele_chemical_sensitivity": {
+      "name": "chemical sensitivity (single mutants)",
+      "constraints": {
+        "term": {
+          "termid": "FYPO:0002683",
+          "name": "increased sensitivity to chemical",
+          "single_or_multi_locus": "single",
+          "expression": "any"
+        }
+      }
+    },
+    "null_inviable": {
+      "constraints": {"term":{"termid":"FYPO:0002061","name":"inviable vegetative cell population","single_or_multi_locus":"single","expression":"null"}}
+    },
+    "null_viable": {
+      "constraints": {"term":{"termid":"FYPO:0002060","name":"viable vegetative cell population","single_or_multi_locus":"single","expression":"null"}}
+    },
+    "null_viable_and_inviable": {
+      "constraints": {"and":[{"term":{"termid":"FYPO:0002061","name":"inviable vegetative cell population","single_or_multi_locus":"single","expression":"null"}},{"term":{"termid":"FYPO:0002060","name":"viable vegetative cell population","single_or_multi_locus":"single","expression":"null"}}]}
+    },
+    "GO_976_or_GO_3700": {
+      "name": "GO:0000976 or GO:0003700",
+      "constraints": {"or":[{"term":{"termid":"GO:0003700","name":"DNA binding transcription factor activity","single_or_multi_locus":null,"expression":null}},{"term":{"termid":"GO:0000976","name":"transcription regulatory region sequence-specific DNA binding","single_or_multi_locus":null,"expression":null}}]}
+    },
+    "GO_978_and_published": {
+      "name": "GO:0000978 and published",
+      "constraints": {"and":[{"term":{"termid":"GO:0000978","name":"RNA polymerase II proximal promoter sequence-specific DNA binding","single_or_multi_locus":null,"expression":null}},{"subset":{"subset_name":"characterisation_status_published"}}]}
+    },
+    "transposons": {
+      "name": "Transposons",
+      "constraints": {"subset":{"subset_name":"characterisation_status_transposon"}}
+    },
+    "canned_query:all_genes": {
+      "name": "All genes",
+      "constraints": {"or":[{"subset":{"subset_name":"feature_type_ncRNA_gene"}},{"subset":{"subset_name":"feature_type_mRNA_gene"}},{"subset":{"subset_name":"feature_type_pseudogene"}},{"subset":{"subset_name":"feature_type_rRNA_gene"}},{"subset":{"subset_name":"feature_type_snoRNA_gene"}},{"subset":{"subset_name":"feature_type_snRNA_gene"}},{"subset":{"subset_name":"feature_type_tRNA_gene"}}]}
+    },
+    "2-20_exons": {
+      "name": "protein-coding genes with 2-20 exons",
+      "constraints": {"int_range":{"range_type":"exon_count","start":2,"end":20}}
+    },
+    "chr2_1000000-2000000": {
+      "name": "genes between coordinates 1000000-2000000 on chromosome 2",
+      "constraints":{"genome_range": {"start":1000000,"end":2000000,"chromosome_name":"chromosome_2"}}
+    },
+    "MOD_696": {
+      "name": "phosphorylated residue",
+      "constraints": {"term":{"termid":"MOD:00696","name":"phosphorylated residue","single_or_multi_locus":null,"expression":null}}
+    },
+    "SO_1528": {
+      "name": "nuclear localization signal",
+      "constraints": {"term":{"termid":"SO:0001528","name":"nuclear_localization_signal","single_or_multi_locus":null,"expression":null}}
+    },
+    "FYPO_17_all": {
+      "name": "elongated cell",
+      "constraints": {"term":{"termid":"FYPO:0000017","name":"elongated cell","single_or_multi_locus":"single","expression":"any"}}
+    },
+    "Pfam_PF00004": {
+      "name": "ATPase, AAA-type, core",
+      "constraints": {"subset":{"subset_name":"PF00004"}}
+    },
+    "GO_4721": {
+      "name": "phosphoprotein phosphatase activity",
+      "constraints": {"term":{"termid":"GO:0004721","name":"phosphoprotein phosphatase activity","single_or_multi_locus":null,"expression":null}}
+    },
+    "GO_5634": {
+      "name": "nucleus",
+      "constraints": {"term":{"termid":"GO:0005634","name":"nucleus","single_or_multi_locus":null,"expression":null}}
+    },
+    "7TM": {
+      "name": "proteins with 7 transmembrane domains",
+      "constraints": {"int_range":{"range_type":"tm_domain_count","start":7,"end":7}}
+    },
+    "rrna_genes": {
+      "name": "rRNA genes",
+      "constraints": {"subset":{"subset_name":"feature_type_rRNA_gene"}}
+    },
+    "cancer": {
+      "name": "cancer",
+      "constraints": {"term":{"termid":"MONDO:0004992","name":"cancer","single_or_multi_locus":null,"expression":null}}
+    },
+    "snorna_genes": {
+      "name": "snoRNA genes",
+      "constraints": {"subset":{"subset_name":"feature_type_snoRNA_gene"}}
+    },
+    "FYPO_78_or_GO_45333": {
+      "name": "FYPO:0000078 or GO:0045333",
+      "constraints": {"or":[{"term":{"termid":"FYPO:0000078","name":"abnormal cellular respiration","single_or_multi_locus":"single","expression":"any"}},{"term":{"termid":"GO:0045333","name":"cellular respiration","single_or_multi_locus":null,"expression":null}}]}
+    },
+    "canned_query:viable_deletions": {
+      "name": "Viable deletions and disruptions",
+      "constraints": { "term": { "termid": "FYPO:0002060", "name": "viable vegetative cell population", "single_or_multi_locus": "single", "expression": "null" } }
+    },
+    "canned_query:inviable_deletions": {
+      "name": "Inviable deletions and disruptions",
+      "constraints": { "term": { "termid": "FYPO:0002061", "name": "inviable vegetative cell population", "single_or_multi_locus": "single", "expression": "null" } }
+    }
+  },
+  "canned_query_ids": [
+    "all_genes", "viable_deletions",
+    "inviable_deletions"
+  ],
+  "api_seq_chunk_sizes": [10000, 200000],
+  "chromosomes": {
+    "supercont5.1": {
+      "export_id": "supercont5.1",
+      "export_file_id": "supercont5.1",
+      "short_display_name": "supercont5.1",
+      "long_display_name": "supercont5.1"
+    },
+    "supercont5.2": {
+      "export_id": "supercont5.2",
+      "export_file_id": "supercont5.2",
+      "short_display_name": "supercont5.2",
+      "long_display_name": "supercont5.2"
+    },
+    "supercont5.3": {
+      "export_id": "supercont5.3",
+      "export_file_id": "supercont5.3",
+      "short_display_name": "supercont5.3",
+      "long_display_name": "supercont5.3"
+    },
+    "supercont5.4": {
+      "export_id": "supercont5.4",
+      "export_file_id": "supercont5.4",
+      "short_display_name": "supercont5.4",
+      "long_display_name": "supercont5.4"
+    },
+    "supercont5.5": {
+      "export_id": "supercont5.5",
+      "export_file_id": "supercont5.5",
+      "short_display_name": "supercont5.5",
+      "long_display_name": "supercont5.5"
+    },
+    "supercont5.6": {
+      "export_id": "supercont5.6",
+      "export_file_id": "supercont5.6",
+      "short_display_name": "supercont5.6",
+      "long_display_name": "supercont5.6"
+    },
+    "supercont5.7": {
+      "export_id": "supercont5.7",
+      "export_file_id": "supercont5.7",
+      "short_display_name": "supercont5.7",
+      "long_display_name": "supercont5.7"
+    },
+    "supercont5.8": {
+      "export_id": "supercont5.8",
+      "export_file_id": "supercont5.8",
+      "short_display_name": "supercont5.8",
+      "long_display_name": "supercont5.8"
+    },
+    "supercont5.9": {
+      "export_id": "supercont5.9",
+      "export_file_id": "supercont5.9",
+      "short_display_name": "supercont5.9",
+      "long_display_name": "supercont5.9"
+    },
+    "supercont5.10": {
+      "export_id": "supercont5.10",
+      "export_file_id": "supercont5.10",
+      "short_display_name": "supercont5.10",
+      "long_display_name": "supercont5.10"
+    },
+    "supercont5.11": {
+      "export_id": "supercont5.11",
+      "export_file_id": "supercont5.11",
+      "short_display_name": "supercont5.11",
+      "long_display_name": "supercont5.11"
+    },
+    "supercont5.12": {
+      "export_id": "supercont5.12",
+      "export_file_id": "supercont5.12",
+      "short_display_name": "supercont5.12",
+      "long_display_name": "supercont5.12"
+    },
+    "supercont5.13": {
+      "export_id": "supercont5.13",
+      "export_file_id": "supercont5.13",
+      "short_display_name": "supercont5.13",
+      "long_display_name": "supercont5.13"
+    },
+    "supercont5.14": {
+      "export_id": "supercont5.14",
+      "export_file_id": "supercont5.14",
+      "short_display_name": "supercont5.14",
+      "long_display_name": "supercont5.14"
+    },
+    "supercont5.15": {
+      "export_id": "supercont5.15",
+      "export_file_id": "supercont5.15",
+      "short_display_name": "supercont5.15",
+      "long_display_name": "supercont5.15"
+    },
+    "supercont5.16": {
+      "export_id": "supercont5.16",
+      "export_file_id": "supercont5.16",
+      "short_display_name": "supercont5.16",
+      "long_display_name": "supercont5.16"
+    },
+    "supercont5.17": {
+      "export_id": "supercont5.17",
+      "export_file_id": "supercont5.17",
+      "short_display_name": "supercont5.17",
+      "long_display_name": "supercont5.17"
+    },
+    "supercont5.18": {
+      "export_id": "supercont5.18",
+      "export_file_id": "supercont5.18",
+      "short_display_name": "supercont5.18",
+      "long_display_name": "supercont5.18"
+    },
+    "supercont5.19": {
+      "export_id": "supercont5.19",
+      "export_file_id": "supercont5.19",
+      "short_display_name": "supercont5.19",
+      "long_display_name": "supercont5.19"
+    },
+    "supercont5.20": {
+      "export_id": "supercont5.20",
+      "export_file_id": "supercont5.20",
+      "short_display_name": "supercont5.20",
+      "long_display_name": "supercont5.20"
+    },
+    "supercont5.21": {
+      "export_id": "supercont5.21",
+      "export_file_id": "supercont5.21",
+      "short_display_name": "supercont5.21",
+      "long_display_name": "supercont5.21"
+    },
+    "supercont5.22": {
+      "export_id": "supercont5.22",
+      "export_file_id": "supercont5.22",
+      "short_display_name": "supercont5.22",
+      "long_display_name": "supercont5.22"
+    },
+    "supercont5.23": {
+      "export_id": "supercont5.23",
+      "export_file_id": "supercont5.23",
+      "short_display_name": "supercont5.23",
+      "long_display_name": "supercont5.23"
+    },
+    "supercont5.24": {
+      "export_id": "supercont5.24",
+      "export_file_id": "supercont5.24",
+      "short_display_name": "supercont5.24",
+      "long_display_name": "supercont5.24"
+    },
+    "supercont5.25": {
+      "export_id": "supercont5.25",
+      "export_file_id": "supercont5.25",
+      "short_display_name": "supercont5.25",
+      "long_display_name": "supercont5.25"
+    },
+    "supercont5.26": {
+      "export_id": "supercont5.26",
+      "export_file_id": "supercont5.26",
+      "short_display_name": "supercont5.26",
+      "long_display_name": "supercont5.26"
+    },
+    "supercont5.27": {
+      "export_id": "supercont5.27",
+      "export_file_id": "supercont5.27",
+      "short_display_name": "supercont5.27",
+      "long_display_name": "supercont5.27"
+    },
+    "supercont5.28": {
+      "export_id": "supercont5.28",
+      "export_file_id": "supercont5.28",
+      "short_display_name": "supercont5.28",
+      "long_display_name": "supercont5.28"
+    },
+    "supercont5.29": {
+      "export_id": "supercont5.29",
+      "export_file_id": "supercont5.29",
+      "short_display_name": "supercont5.29",
+      "long_display_name": "supercont5.29"
+    },
+    "supercont5.30": {
+      "export_id": "supercont5.30",
+      "export_file_id": "supercont5.30",
+      "short_display_name": "supercont5.30",
+      "long_display_name": "supercont5.30"
+    },
+    "supercont5.31": {
+      "export_id": "supercont5.31",
+      "export_file_id": "supercont5.31",
+      "short_display_name": "supercont5.31",
+      "long_display_name": "supercont5.31"
+    },
+    "supercont5.32": {
+      "export_id": "supercont5.32",
+      "export_file_id": "supercont5.32",
+      "short_display_name": "supercont5.32",
+      "long_display_name": "supercont5.32"
+    }
+  },
+  "extension_display_names": [
+    {
+      "rel_name": "activated_by",
+      "display_name": "activated by"
+    },
+    {
+      "rel_name": "coincident_with",
+      "display_name": "at"
+    },
+    {
+      "rel_name": "directly_negatively_regulates",
+      "display_name": "directly inhibits",
+      "reciprocal_display": "directly inhibited by"
+    },
+    {
+      "rel_name": "directly_positively_regulates",
+      "display_name": "directly activates",
+      "reciprocal_display": "directly activated by"
+    },
+    {
+      "rel_name": "during",
+      "display_name": "during"
+    },
+    {
+      "rel_name": "exists_during",
+      "display_name": "during"
+    },
+    {
+      "rel_name": "happens_during",
+      "display_name": "during"
+    },
+    {
+      "rel_name": "has_regulation_target",
+      "if_descendant_of": "GO:0000976",
+      "display_name": "regulates transcription of",
+      "reciprocal_display": "transcription regulated by"
+    },
+    {
+      "rel_name": "has_regulation_target",
+      "if_descendant_of": "GO:0001216",
+      "display_name": "activates transcription of",
+      "reciprocal_display": "transcription activated by"
+    },
+    {
+      "rel_name": "has_regulation_target",
+      "if_descendant_of": "GO:0001217",
+      "display_name": "represses transcription of",
+      "reciprocal_display": "transcription repressed by"
+    },
+    {
+      "rel_name": "has_regulation_target",
+      "if_descendant_of": "GO:0003713",
+      "display_name": "activates transcription of",
+      "reciprocal_display": "transcription activated by"
+    },
+    {
+      "rel_name": "has_regulation_target",
+      "if_descendant_of": "GO:0003714",
+      "display_name": "represses transcription of",
+      "reciprocal_display": "transcription repressed by"
+    },
+    {
+      "rel_name": "has_regulation_target",
+      "if_descendant_of": "GO:0030234",
+      "display_name": "regulates activity of",
+      "reciprocal_display": "activity regulated by"
+    },
+    {
+      "rel_name": "has_regulation_target",
+      "if_descendant_of": "GO:0008047",
+      "display_name": "activates",
+      "reciprocal_display": "activated by"
+    },
+    {
+      "rel_name": "has_regulation_target",
+      "if_descendant_of": "GO:0004857",
+      "display_name": "inhibits",
+      "reciprocal_display": "inhibited by"
+    },
+    {
+      "rel_name": "has_regulation_target",
+      "if_descendant_of": "GO:0008150",
+      "display_name": "regulates",
+      "reciprocal_display": "regulated by"
+    },
+    {
+      "rel_name": "in_presence_of",
+      "display_name": "in presence of"
+    },
+    {
+      "rel_name": "inhibited_by",
+      "display_name": "inhibited by"
+    },
+    {
+      "rel_name": "not_during",
+      "display_name": "except during"
+    },
+    {
+      "rel_name": "not_exists_during",
+      "display_name": "except during"
+    },
+    {
+      "rel_name": "not_happens_during",
+      "display_name": "except during"
+    },
+    {
+      "rel_name": "occurs_at",
+      "display_name": "at"
+    },
+    {
+      "rel_name": "occurs_in",
+      "display_name": "in"
+    },
+    {
+      "rel_name": "part_of",
+      "if_descendant_of": "GO:0003824",
+      "display_name": "involved in"
+    },
+    {
+      "rel_name": "part_of",
+      "if_descendant_of": "GO:0008150",
+      "display_name": "part of"
+    },
+    {
+      "rel_name": "required_for",
+      "display_name": "required for"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0001216",
+      "display_name": "activates transcription of",
+      "reciprocal_display": "transcription activated by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0001217",
+      "display_name": "represses transcription of",
+      "reciprocal_display": "transcription repressed by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0004842",
+      "display_name": "ubiquitinates",
+      "reciprocal_display": "ubiquitinated by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0004672",
+      "display_name": "phosphorylates",
+      "reciprocal_display": "phosphorylated by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:000472",
+      "display_name": "dephosphorylates",
+      "reciprocal_display": "dephosphorylated by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0003824",
+      "display_name": "has substrate",
+      "reciprocal_display": "substrate of"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0006810",
+      "display_name": "transports",
+      "reciprocal_display": "transported by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0005215",
+      "display_name": "transports",
+      "reciprocal_display": "transported by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0005488",
+      "display_name": "binds",
+      "reciprocal_display": "binds"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0005484",
+      "display_name": "anchors",
+      "reciprocal_display": "anchored by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:8093",
+      "display_name": "anchors",
+      "reciprocal_display": "anchored by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0043495",
+      "display_name": "anchors",
+      "reciprocal_display": "anchored by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0035991",
+      "display_name": "recruits",
+      "reciprocal_display": "recruited by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0140312",
+      "display_name": "recruits",
+      "reciprocal_display": "recruited by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0140463",
+      "display_name": "recruits",
+      "reciprocal_display": "recruited by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0140483",
+      "display_name": "recruits",
+      "reciprocal_display": "recruited by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:1990756",
+      "display_name": "recruits",
+      "reciprocal_display": "recruited by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0051179",
+      "display_name": "localizes",
+      "reciprocal_display": "localized by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0001216",
+      "display_name": "activates transcription of",
+      "reciprocal_display": "transcription activated by"
+    },
+    {
+      "rel_name": "has_direct_input",
+      "if_descendant_of": "GO:0001217",
+      "display_name": "represses transcription of",
+      "reciprocal_display": "transcription repressed by"
+    },
+    {
+      "rel_name": "has_direct_input",
+      "if_descendant_of": "GO:0004842",
+      "display_name": "ubiquitinates",
+      "reciprocal_display": "ubiquitinated by"
+    },
+    {
+      "rel_name": "has_direct_input",
+      "if_descendant_of": "GO:0004672",
+      "display_name": "phosphorylates",
+      "reciprocal_display": "phosphorylated by"
+    },
+    {
+      "rel_name": "has_direct_input",
+      "if_descendant_of": "GO:000472i",
+      "display_name": "dephosphorylates",
+      "reciprocal_display": "dephosphorylated by"
+    },
+    {
+      "rel_name": "has_direct_input",
+      "if_descendant_of": "GO:0003824",
+      "display_name": "has substrate",
+      "reciprocal_display": "substrate of"
+    },
+    {
+      "rel_name": "has_direct_input",
+      "if_descendant_of": "GO:0030234",
+      "display_name": "has substrate",
+      "reciprocal_display": "substrate of"
+    },
+    {
+      "rel_name": "has_direct_input",
+      "if_descendant_of": "GO:0006810",
+      "display_name": "transports",
+      "reciprocal_display": "transported by"
+    },
+    {
+      "rel_name": "has_direct_input",
+      "if_descendant_of": "GO:0005215",
+      "display_name": "transports",
+      "reciprocal_display": "transported by"
+    },
+    {
+      "rel_name": "has_direct_input",
+      "if_descendant_of": "GO:0005488",
+      "display_name": "binds",
+      "reciprocal_display": "binds"
+    },
+    {
+      "rel_name": "has_direct_input",
+      "if_descendant_of": "GO:0051179",
+      "display_name": "localizes",
+      "reciprocal_display": "localized by"
+    },
+    {
+      "rel_name": "has_direct_input",
+      "if_descendant_of": "GO:0005085",
+      "display_name": "positively regulates",
+      "reciprocal_display": "positively regulated by"
+    },
+    {
+      "rel_name": "has_direct_input",
+      "if_descendant_of": "GO:0008047",
+      "display_name": "positively regulates",
+      "reciprocal_display": "positively regulated by"
+    },
+    {
+      "rel_name": "has_direct_input",
+      "if_descendant_of": "GO:0004857",
+      "display_name": "negatively regulates",
+      "reciprocal_display": "negatively regulated by"
+    },
+    {
+      "rel_name": "has_direct_input",
+      "if_descendant_of": "GO:0140313",
+      "display_name": "sequesters",
+      "reciprocal_display": "sequestered by"
+    },
+    {
+      "rel_name": "assayed_using",
+      "if_descendant_of": "FYPO:0001985",
+      "display_name": "affecting",
+      "reciprocal_display": "affected by mutation in"
+    },
+    {
+      "rel_name": "assayed_enzyme",
+      "if_descendant_of": "FYPO:0001985",
+      "display_name": "affecting activity of",
+      "reciprocal_display": "activity affected by mutation in"
+    },
+    {
+      "rel_name": "assayed_substrate",
+      "if_descendant_of": "FYPO:0001985",
+      "display_name": "affecting substrate",
+      "reciprocal_display": "affected by mutation in"
+    },
+    {
+      "rel_name": "assayed_using",
+      "if_descendant_of": "FYPO:0000257",
+      "display_name": "affecting"
+    },
+    {
+      "rel_name": "assayed_enzyme",
+      "if_descendant_of": "FYPO:0000257",
+      "display_name": "affecting activity of"
+    },
+    {
+      "rel_name": "assayed_substrate",
+      "if_descendant_of": "FYPO:0000257",
+      "display_name": "affecting"
+    },
+    {
+      "rel_name": "modified residue",
+      "if_descendant_of": "GO:0005515",
+      "display_name": "binding site"
+    }
+  ],
+  "extension_relation_order": {
+    "relation_order": [
+      "active_form",
+      "modified residue",
+      "directly_positively_regulates",
+      "directly_negatively_regulates",
+      "has_direct_input",
+      "has_input",
+      "has_regulation_target",
+      "binds",
+      "involved_in",
+      "part_of",
+      "occurs_at",
+      "occurs_in",
+      "added_by",
+      "added_during",
+      "increased_during",
+      "present_during",
+      "in_presence_of",
+      "removed_by",
+      "removed_during",
+      "decreased_during",
+      "absent_during",
+      "assayed_using",
+      "assayed_enzyme",
+      "assayed_substrate",
+      "has_severity",
+      "has_penetrance"
+    ],
+    "always_last": [
+      "happens_during",
+      "exists_during"
+    ]
+  },
+  "term_page_extensions_cv_names": [],
+  "evidence_types": {
+    "IMP": {
+      "long": "Inferred from Mutant Phenotype",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_from_Mutant_Phenotype_(IMP)"
+    },
+    "IDA": {
+      "long": "Inferred from Direct Assay",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_from_Direct_Assay_(IDA)"
+    },
+    "IGI": {
+      "long": "Inferred from Genetic Interaction",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_from_Genetic_Interaction_(IGI)"
+    },
+    "IPI": {
+      "long": "Inferred from Physical Interaction",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_from_Physical_Interaction_(IPI)"
+    },
+    "EXP": {
+      "long": "Inferred from Experiment",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_from_Experiment_(EXP)"
+    },
+    "IEP": {
+      "long": "Inferred from Expression Pattern",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_from_Expression_Pattern_(IEP)"
+    },
+    "ISS": {
+      "long": "Inferred from Sequence or Structural Similarity",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_from_Sequence_or_structural_Similarity_(ISS)"
+    },
+    "ISO": {
+      "long": "Inferred from Sequence Orthology",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_from_Sequence_Orthology_(ISO)"
+    },
+    "ISA": {
+      "long": "Inferred from Sequence Alignment",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_from_Sequence_Alignment_(ISA)"
+    },
+    "ISM": {
+      "long": "Inferred from Sequence Model",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_from_Sequence_Model_(ISM)"
+    },
+    "IGC": {
+      "long": "Inferred from Genomic Context",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_from_Genomic_Context_(IGC)"
+    },
+    "IBA": {
+      "long": "Inferred from Biological aspect of Ancestor",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_from_Biological_aspect_of_Ancestor_(IBA)"
+    },
+    "IBD": {
+      "long": "Inferred from Biological aspect of Descendant",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_from_Biological_aspect_of_Descendant_(IBD)"
+    },
+    "IKR": {
+      "long": "Inferred from Key Residues",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_from_Key_Residues_(IKR)"
+    },
+    "IRD": {
+      "long": "Inferred from Rapid Divergence",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_from_Rapid_Divergence(IRD)"
+    },
+    "RCA": {
+      "long": "inferred from Reviewed Computational Analysis",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_from_Reviewed_Computational_Analysis_(RCA)"
+    },
+    "NAS": {
+      "long": "Non-traceable Author Statement",
+      "link": "http://wiki.geneontology.org/index.php/Non-traceable_Author_Statement_(NAS)"
+    },
+    "IC": {
+      "long": "Inferred by Curator",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_by_Curator_(IC)"
+    },
+    "ND": {
+      "long": "No biological Data available",
+      "link": "http://wiki.geneontology.org/index.php/No_biological_Data_available_(ND)_evidence_code"
+    },
+    "IEA": {
+      "long": "Inferred from Electronic Annotation",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_from_Electronic_Annotation_(IEA)"
+    },
+    "NR": {
+      "long": "Not Recorded",
+      "link": "http://wiki.geneontology.org/index.php/Guide_to_GO_Evidence_Codes"
+    },
+    "TAS": {
+      "long": "Traceable Author Statement",
+      "link": "http://wiki.geneontology.org/index.php/Traceable_Author_Statement_(TAS)"
+    },
+    "HTP": {
+      "long": "Inferred from high throughput experiment",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_from_High_Throughput_Experiment_(HTP)"
+    },
+    "HDA": {
+      "long": "Inferred from high throughput direct assay",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_from_High_Throughput_Direct_Assay_(HDA)"
+    },
+    "HEP": {
+      "long": "Inferred from high throughput expression pattern",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_from_High_Throughput_Expression_Pattern_(HEP)"
+    },
+    "HGI": {
+      "long": "Inferred from high throughput genetic interaction",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_from_High_Throughput_Genetic_Interaction_(HGI)"
+    },
+    "HMP": {
+      "long": "Inferred from high throughput mutant phenotype",
+      "link": "http://wiki.geneontology.org/index.php/Inferred_from_High_Throughput_Mutant_Phenotype_(HMP)"
+    },
+    "UNK": {
+      "long": "Unknown"
+    }
+  },
+  "cv_config": {
+    "molecular_function": {
+      "feature_type": "gene",
+      "display_name": "GO molecular function",
+      "columns_to_show": ["desc-rel", "gene", "evidence", "qualifiers", "reference", "count", "extension"],
+      "external_db_link_keys": ["AmiGO", "QuickGO", "BioPortal"],
+      "split_by_parents": [
+        {
+          "config_name": "NOT binding",
+          "termids": ["NOT GO:0005488"],
+          "display_name": "Activities"
+        },
+        {
+          "config_name": "Binding",
+          "termids": ["GO:0005488"],
+          "display_name": "Binds"
+        }
+      ],
+      "summary_relations_to_hide": [],
+      "summary_relation_ranges_to_collect": [
+        "directly_activates",
+        "directly_inhibits",
+        "has_input",
+        "has_direct_input",
+        "has_regulation_target",
+        "has_substrate",
+        "binds"
+      ],
+      "filters": [
+        {
+          "filter_name": "extension",
+          "display_name": "During",
+          "scope": ["gene", "term", "genotype", "reference"],
+          "detailed_view_only": true,
+          "extension_rel_type_name": "exists_during",
+          "extension_categories": [
+            {
+              "display_name": "interphase",
+              "ancestors": ["GO:0051325"]
+            },
+            {
+              "display_name": "G1 phase",
+              "ancestors": ["GO:0051318"]
+            },
+            {
+              "display_name": "S phase",
+              "ancestors": ["GO:0051320"]
+            },
+            {
+              "display_name": "G2 phase",
+              "ancestors": ["GO:0051319"]
+            },
+            {
+              "display_name": "M phase",
+              "ancestors": ["GO:0000279"]
+            },
+            {
+              "display_name": "mitotic prometaphase",
+              "ancestors": ["GO:0000236"]
+            },
+            {
+              "display_name": "prophase",
+              "ancestors": ["GO:0051324"]
+            },
+            {
+              "display_name": "metaphase",
+              "ancestors": ["GO:0051323"]
+            },
+            {
+              "display_name": "anaphase",
+              "ancestors": ["GO:0051322"]
+            },
+            {
+              "display_name": "telophase",
+              "ancestors": ["GO:0051326"]
+            },
+            {
+              "display_name": "G1 to G0 transition",
+              "ancestors": ["GO:0070314"]
+            },
+            {
+              "display_name": "cell quiescence",
+              "ancestors": ["GO:0044838"]
+            }
+          ]
+        },
+        {
+          "filter_name": "throughput",
+          "display_name": "Throughput",
+          "scope": ["gene", "term", "genotype", "reference"],
+          "detailed_view_only": true,
+          "throughput_categories": [
+            {
+              "display_name": "High",
+              "throughput_type": "high"
+            },
+            {
+              "display_name": "Low",
+              "throughput_type": "low"
+            },
+            {
+              "display_name": "Non-experimental",
+              "throughput_type": "non-experimental"
+            }
+          ]
+        }
+      ],
+      "help_route": "/documentation/gene-page-gene-ontology"
+    },
+    "biological_process": {
+      "feature_type": "gene",
+      "display_name": "GO biological process",
+      "columns_to_show": ["desc-rel", "gene", "evidence", "qualifiers", "reference", "count", "extension"],
+      "external_db_link_keys": ["AmiGO", "QuickGO", "BioPortal"],
+      "external_link_config": [
+        {
+          "display_text": "View process term ancestry ...",
+          "url_prefix": "https://www.ebi.ac.uk/QuickGO/services/ontology/go/terms/{ids}/chart?ids="
+        }
+      ],
+      "summary_relation_ranges_to_collect": [
+        "has_input",
+        "has_regulation_target"
+      ],
+      "filters": [
+        {
+          "filter_name": "extension",
+          "display_name": "During",
+          "scope": ["gene", "term", "genotype", "reference"],
+          "detailed_view_only": true,
+          "extension_rel_type_name": "exists_during",
+          "extension_categories": [
+            {
+              "display_name": "interphase",
+              "ancestors": ["GO:0051325"]
+            },
+            {
+              "display_name": "G1 phase",
+              "ancestors": ["GO:0051318"]
+            },
+            {
+              "display_name": "S phase",
+              "ancestors": ["GO:0051320"]
+            },
+            {
+              "display_name": "G2 phase",
+              "ancestors": ["GO:0051319"]
+            },
+            {
+              "display_name": "M phase",
+              "ancestors": ["GO:0000279"]
+            },
+            {
+              "display_name": "mitotic prometaphase",
+              "ancestors": ["GO:0000236"]
+            },
+            {
+              "display_name": "prophase",
+              "ancestors": ["GO:0051324"]
+            },
+            {
+              "display_name": "metaphase",
+              "ancestors": ["GO:0051323"]
+            },
+            {
+              "display_name": "anaphase",
+              "ancestors": ["GO:0051322"]
+            },
+            {
+              "display_name": "telophase",
+              "ancestors": ["GO:0051326"]
+            },
+            {
+              "display_name": "G1 to G0 transition",
+              "ancestors": ["GO:0070314"]
+            },
+            {
+              "display_name": "cell quiescence",
+              "ancestors": ["GO:0044838"]
+            }
+          ]
+        },
+        {
+          "filter_name": "throughput",
+          "display_name": "Throughput",
+          "scope": ["gene", "term", "genotype", "reference"],
+          "detailed_view_only": true,
+          "throughput_categories": [
+            {
+              "display_name": "High",
+              "throughput_type": "high"
+            },
+            {
+              "display_name": "Low",
+              "throughput_type": "low"
+            },
+            {
+              "display_name": "Non-experimental",
+              "throughput_type": "non-experimental"
+            }
+          ]
+        }
+      ],
+      "help_route": "/documentation/gene-page-gene-ontology"
+    },
+    "cellular_component": {
+      "feature_type": "gene",
+      "display_name": "GO cellular component",
+      "columns_to_show": ["desc-rel", "gene", "evidence", "qualifiers", "reference", "count", "extension"],
+      "external_db_link_keys": ["AmiGO", "QuickGO", "BioPortal"],
+      "summary_relation_ranges_to_collect": [
+        "coincident_with",
+        "during",
+        "exists_during",
+        "happens_during"
+      ],
+      "filters": [
+        {
+          "filter_name": "extension",
+          "display_name": "During",
+          "scope": ["gene", "term", "genotype", "reference"],
+          "detailed_view_only": true,
+          "extension_rel_type_name": "exists_during",
+          "extension_categories": [
+            {
+              "display_name": "interphase",
+              "ancestors": ["GO:0051325"]
+            },
+            {
+              "display_name": "G1 phase",
+              "ancestors": ["GO:0051318"]
+            },
+            {
+              "display_name": "S phase",
+              "ancestors": ["GO:0051320"]
+            },
+            {
+              "display_name": "G2 phase",
+              "ancestors": ["GO:0051319"]
+            },
+            {
+              "display_name": "M phase",
+              "ancestors": ["GO:0000279"]
+            },
+            {
+              "display_name": "mitotic prometaphase",
+              "ancestors": ["GO:0000236"]
+            },
+            {
+              "display_name": "prophase",
+              "ancestors": ["GO:0051324"]
+            },
+            {
+              "display_name": "metaphase",
+              "ancestors": ["GO:0051323"]
+            },
+            {
+              "display_name": "anaphase",
+              "ancestors": ["GO:0051322"]
+            },
+            {
+              "display_name": "telophase",
+              "ancestors": ["GO:0051326"]
+            },
+            {
+              "display_name": "G1 to G0 transition",
+              "ancestors": ["GO:0070314"]
+            },
+            {
+              "display_name": "cell quiescence",
+              "ancestors": ["GO:0044838"]
+            }
+          ]
+        },
+        {
+          "filter_name": "throughput",
+          "display_name": "Throughput",
+          "scope": ["gene", "term", "genotype", "reference"],
+          "detailed_view_only": true,
+          "throughput_categories": [
+            {
+              "display_name": "High",
+              "throughput_type": "high"
+            },
+            {
+              "display_name": "Low",
+              "throughput_type": "low"
+            },
+            {
+              "display_name": "Non-experimental",
+              "throughput_type": "non-experimental"
+            }
+          ]
+        }
+      ],
+      "help_route": "/documentation/gene-page-gene-ontology"
+    },
+    "misc": {
+      "feature_type": "gene",
+      "display_name": "Comment",
+      "columns_to_show": ["gene", "evidence", "reference", "count"],
+      "details_only": true
+    },
+    "m_f_g": {
+      "feature_type": "gene",
+      "display_name": "Miscellaneous functional group",
+      "columns_to_show": ["gene", "evidence", "count"],
+      "details_only": true
+    },
+    "complementation": {
+      "feature_type": "gene",
+      "display_name": "Complementation",
+      "columns_to_show": ["desc-rel", "gene", "evidence", "qualifiers", "reference", "count", "extension"]
+    },
+    "transcript_view": {
+      "feature_type": "gene",
+      "display_name": "Transcript details"
+    },
+    "protein_features": {
+      "feature_type": "gene",
+      "display_name": "Protein features"
+    },
+    "PomBase family or domain": {
+      "feature_type": "gene",
+      "display_name": "Protein features",
+      "details_only": true,
+      "no_gene_details_section": true,
+      "columns_to_show": ["gene", "count", "reference"]
+    },
+    "target_of": {
+      "feature_type": "gene",
+      "display_name": "Target of"
+    },
+    "orthologs": {
+      "feature_type": "gene",
+      "display_name": "Orthologs",
+      "columns_to_show": ["species", "ortholog", "description"]
+    },
+    "paralogs": {
+      "feature_type": "gene",
+      "display_name": "Paralogs",
+      "columns_to_show": ["ortholog", "description"]
+    },
+    "sequence": {
+      "feature_type": "gene",
+      "display_name": "Protein sequence feature",
+      "columns_to_show": ["desc-rel", "gene", "evidence", "qualifiers", "residue", "reference", "count", "extension"],
+      "details_only": true,
+      "external_db_link_keys": ["MISO"]
+    },
+    "_DEFAULT_": {
+      "feature_type": "gene",
+      "display_name": null,
+      "columns_to_show": ["desc-rel", "gene", "evidence", "qualifiers", "reference", "count", "extension"]
+    }
+  },
+  "target_of_config": {
+    "ontology_labels": {
+      "molecular_function": "GO",
+      "biological_process": "GO",
+      "cellular_component": "GO"
+    },
+    "relation_priority": {
+      "directly activated by": 20,
+      "directly inhibited by": 20,
+      "phosphorylated by": 15,
+      "ubiquitinated by": 15,
+      "activity regulated by": 13,
+      "substrate of": 11,
+      "binds": 10,
+      "transported by": 9,
+      "localized by": 8,
+      "anchored by": 8,
+      "sequestered by": 8,
+      "transcription activated by": 7,
+      "transcription repressed by": 7,
+      "transcription regulated by": 7,
+      "regulated by": 6,
+      "activity affected by mutation in": 5,
+      "affected by mutation in": 4
+    }
+  },
+  "phenotype_id_prefixes": ["FYPO"],
+  "annotation_type_order": [
+    "molecular_function",
+    "biological_process",
+    "cellular_component",
+    "single_locus_phenotype",
+    "multi_locus_phenotype",
+    "phenotype_condition",
+    "complementation",
+    "target_of",
+    "transcript_view",
+    "protein_features",
+    "PSI-MOD",
+    "qualitative_gene_expression",
+    "quantitative_gene_expression",
+    "PomBase family or domain",
+    "misc",
+    "cat_act",
+    "m_f_g",
+    "genome_org",
+    "ex_tools",
+    "physical_interactions",
+    "genetic_interactions",
+    "orthologs",
+    "paralogs",
+    "species_dist",
+    "mondo",
+    "warning",
+    "subunit_composition"
+  ],
+  "interesting_parents": [
+    {
+      "termid": "GO:0005515",
+      "rel_name": "is_a"
+    },
+    {
+      "termid": "GO:0003723",
+      "rel_name": "is_a"
+    },
+    {
+      "termid": "GO:0032991",
+      "rel_name": "is_a"
+    },
+    {
+      "termid": "GO:0032991",
+      "rel_name": "part_of"
+    },
+    {
+      "termid": "SO:0000839",
+      "rel_name": "is_a"
+    }
+  ],
+  "external_gene_references": [
+    {
+      "ref_type": "Sequence Resources",
+      "feature_types": ["rRNA gene", "tRNA gene", "snRNA gene", "snoRNA gene", "ncRNA gene"],
+      "name": "RNAcentral",
+      "description": "Non-coding RNA sequence database",
+      "field_name": "rnacentral_urs_identifier",
+      "url": "https://rnacentral.org/rna/<<IDENTIFIER>>/<<TAXONID>>"
+    },
+    {
+      "ref_type": "Sequence Resources",
+      "feature_types": ["mRNA gene", "pseudogene"],
+      "name": "UniProtKB/SwissProt",
+      "description": "Protein database ",
+      "field_name": "uniprot_identifier",
+      "go_xrf_abbrev": "UniProtKB"
+    },
+    {
+      "ref_type": "Sequence Resources",
+      "feature_types": ["ALL"],
+      "name": "NCBI",
+      "description": "Query all NCBI databases",
+      "field_name": "NCBI_ALL_IDS",
+      "url": "https://www.ncbi.nlm.nih.gov/gquery/?term=(<<IDENTIFIER>>)+AND+(pombe+OR+fission+yeast)"
+    },
+    {
+      "ref_type": "Sequence Resources",
+      "feature_types": ["ALL"],
+      "name": "Ensembl",
+      "description": "Genome browser",
+      "field_name": "uniquename",
+      "url": "http://fungi.ensembl.org/Schizosaccharomyces_japonicus/Location/View?db=core;g=<<IDENTIFIER>>"
+    },
+    {
+      "ref_type": "Orthologs",
+      "feature_types": ["mRNA gene", "pseudogene"],
+      "name": "DIOPT",
+      "description": "DRSC Integrative Ortholog Prediction Tool",
+      "field_name": "uniquename",
+      "show_in_sections": ["orthologs"],
+      "url": "http://www.flyrnai.org/cgi-bin/DRSC_orthologs.pl?input_species=4896&output_species=0&additional_filter=None&search_fields=***&search_datasets=***&gene_list=<<IDENTIFIER>>"
+    },
+   {
+      "ref_type": "Orthologs",
+      "feature_types": ["mRNA gene", "pseudogene"],
+      "name": "HCOP",
+      "description": "Integrated human orthologs",
+      "field_name": "uniquename",
+      "show_in_sections": ["orthologs"],
+      "url": "https://www.genenames.org/tools/hcop/#!/?q=<<IDENTIFIER>>&qtype=pombase&qtax_id=284812&ttax_id=9606&submit=true"
+    },
+   {
+      "ref_type": "Orthologs",
+      "feature_types": ["mRNA gene", "pseudogene"],
+      "name": "Ensembl Fungal Compara",
+      "description": "Alignments, gene trees, orthologs, families",
+      "field_name": "uniquename",
+      "show_in_sections": ["orthologs"],
+      "url": "http://fungi.ensembl.org/Schizosaccharomyces_pombe/Gene/Compara?db=core;g=<<IDENTIFIER>>"
+    },
+
+   {
+      "ref_type": "Orthologs",
+      "feature_types": ["mRNA gene", "pseudogene"],
+      "name": "Ensembl Pan-taxonomic Compara",
+      "description": " Gene tree, orthologs",
+      "field_name": "uniquename",
+      "show_in_sections": ["orthologs"],
+      "url": "http://fungi.ensembl.org/Schizosaccharomyces_pombe/Gene/PanCompara?db=core;g=<<IDENTIFIER>>"
+    },
+
+   {
+      "ref_type": "Orthologs",
+      "feature_types": ["mRNA gene", "pseudogene"],
+      "name": "PANTHER",
+      "description": "Orthologs, gene trees, alignments",
+      "field_name": "uniprot_identifier",
+      "show_in_sections": ["orthologs"],
+      "url": "http://www.pantherdb.org/genes/gene.do?acc=SCHPO%7CPomBase%3D<<UNIQUENAME>>%7CUniProtKB%3D<<IDENTIFIER>>"
+    }
+  ],
+  "external_term_references": [
+    {
+      "name": "BioPortal",
+      "url": "http://bioportal.bioontology.org/ontologies/[conf_db_prefix]?p=classes&conceptid=[example_id]#details"
+    },
+    {
+      "name": "MISO",
+      "url": "http://www.sequenceontology.org/browser/current_svn/term/[example_id]"
+    },
+    {
+      "name": "Reactome",
+      "url": "https://reactome.org/content/query?species=Schizosaccharomyces+pombe&q=[example_id]"
+    }
+  ],
+  "viability_terms": {
+    "viable": "FYPO:0002060",
+    "inviable": "FYPO:0002061"
+  },
+  "slims": {
+    "cc_goslim_pombe": {
+      "slim_display_name": "Cellular Component slim",
+      "doc_path": "/documentation/pombase-go-slim-documentation",
+      "full_slim_path": "/browse-curation/fission-yeast-cc-go-slim-terms",
+      "description": "S. pombe high level GO cellular component terms",
+      "slim_results_description": "A \"GO slim\" is a subset of the Gene Ontology terms selected for a specific purpose in interpreting the functional annotations in an entire organism, or a gene product list derived from an experiment.",
+      "cv_name": "cellular_component",
+      "terms": [
+        {
+          "name": "cytosol",
+          "termid": "GO:0005829"
+        },
+        {
+          "name": "cytoplasmic vesicle",
+          "termid": "GO:0031410"
+        },
+        {
+          "name": "division septum",
+          "termid": "GO:0000935"
+        },
+        {
+          "name": "prospore membrane",
+          "termid": "GO:0005628"
+        },
+        {
+          "name": "extracellular region",
+          "termid": "GO:0005576"
+        },
+        {
+          "name": "cell surface",
+          "termid": "GO:0009986"
+        },
+        {
+          "name": "endoplasmic reticulum membrane",
+          "termid": "GO:0005789"
+        },
+        {
+          "name": "actin cytoskeleton",
+          "termid": "GO:0015629"
+        },
+        {
+          "name": "cytoplasmic stress granule",
+          "termid": "GO:0010494"
+        },
+        {
+          "name": "P-body",
+          "termid": "GO:0000932"
+        },
+        {
+          "name": "phagophore assembly site",
+          "termid": "GO:0000407"
+        },
+        {
+          "name": "peroxisome",
+          "termid": "GO:0005777"
+        },
+        {
+          "name": "Golgi apparatus",
+          "termid": "GO:0005794"
+        },
+        {
+          "name": "cell cortex",
+          "termid": "GO:0005938"
+        },
+        {
+          "name": "cell wall",
+          "termid": "GO:0005618"
+        },
+        {
+          "name": "cytosolic ribosome",
+          "termid": "GO:0022626"
+        },
+        {
+          "name": "actin cortical patch",
+          "termid": "GO:0030479"
+        },
+        {
+          "name": "nucleus",
+          "termid": "GO:0005634"
+        },
+        {
+          "name": "kinetochore",
+          "termid": "GO:0000776"
+        },
+        {
+          "name": "microtubule cytoskeleton",
+          "termid": "GO:0015630"
+        },
+        {
+          "name": "nuclear pore",
+          "termid": "GO:0005643"
+        },
+        {
+          "name": "nuclear periphery",
+          "termid": "GO:0034399"
+        },
+        {
+          "name": "nucleolus",
+          "termid": "GO:0005730"
+        },
+        {
+          "name": "nucleoplasm",
+          "termid": "GO:0005654"
+        },
+        {
+          "name": "endosome",
+          "termid": "GO:0005768"
+        },
+        {
+          "name": "vacuole",
+          "termid": "GO:0005773"
+        },
+        {
+          "name": "contractile ring",
+          "termid": "GO:0070938"
+        },
+        {
+          "name": "mitotic spindle",
+          "termid": "GO:0072686"
+        },
+        {
+          "name": "spindle pole body",
+          "termid": "GO:0005816"
+        },
+        {
+          "name": "endoplasmic reticulum",
+          "termid": "GO:0005783"
+        },
+        {
+          "name": "plasma membrane",
+          "termid": "GO:0005886"
+        },
+        {
+          "name": "mitochondrion",
+          "termid": "GO:0005739"
+        },
+        {
+          "name": "chromosome",
+          "termid": "GO:0005694"
+        },
+        {
+          "name": "preribosome",
+          "termid": "GO:0030684"
+        }
+      ]
+    },
+    "bp_goslim_pombe": {
+      "slim_display_name": "Biological Process slim",
+      "doc_path": "/documentation/pombase-go-slim-documentation",
+      "full_slim_path": "/browse-curation/fission-yeast-bp-go-slim-terms",
+      "description": "S. pombe high level GO biological process terms",
+      "slim_results_description": "A \"GO slim\" is a subset of the Gene Ontology terms selected for a specific purpose in interpreting the functional annotations in an entire organism, or a gene product list derived from an experiment.  PomBase has created a GO slim to provide a simple summary of S. pombe's biological capabilities by grouping gene products using broad biological process classifiers.",
+      "cv_name": "biological_process",
+      "external_link_config": {
+        "description": "Physical network interaction",
+        "link_text": "esyN",
+        "link_config_key": "esyn",
+        "icon_image": "esyn_icon.png"
+      },
+      "terms": [
+        {
+          "name": "DNA recombination",
+          "termid": "GO:0006310"
+        },
+        {
+          "name": "DNA repair",
+          "termid": "GO:0006281"
+        },
+        {
+          "name": "DNA replication",
+          "termid": "GO:0006260"
+        },
+        {
+          "name": "actin cytoskeleton organization",
+          "termid": "GO:0030036"
+        },
+        {
+          "name": "ascospore formation",
+          "termid": "GO:0030437"
+        },
+        {
+          "name": "autophagy",
+          "termid": "GO:0006914"
+        },
+        {
+          "name": "carbohydrate metabolic process",
+          "termid": "GO:0005975"
+        },
+        {
+          "name": "cell adhesion",
+          "termid": "GO:0007155"
+        },
+        {
+          "name": "cell wall organization or biogenesis",
+          "termid": "GO:0071554"
+        },
+        {
+          "name": "cellular amino acid metabolic process",
+          "termid": "GO:0006520"
+        },
+        {
+          "name": "chromatin organization",
+          "termid": "GO:0006325"
+        },
+        {
+          "name": "conjugation with cellular fusion",
+          "termid": "GO:0000747"
+        },
+        {
+          "name": "cytoplasmic translation",
+          "termid": "GO:0002181"
+        },
+        {
+          "name": "detoxification",
+          "termid": "GO:0098754"
+        },
+        {
+          "name": "establishment or maintenance of cell polarity",
+          "termid": "GO:0007163"
+        },
+        {
+          "name": "generation of precursor metabolites and energy",
+          "termid": "GO:0006091"
+        },
+        {
+          "name": "iron-sulfur cluster assembly",
+          "termid": "GO:0016226"
+        },
+        {
+          "name": "lipid metabolic process",
+          "termid": "GO:0006629"
+        },
+        {
+          "name": "mRNA metabolic process",
+          "termid": "GO:0016071"
+        },
+        {
+          "name": "meiotic nuclear division",
+          "termid": "GO:0140013"
+        },
+        {
+          "name": "membrane organization",
+          "termid": "GO:0061024"
+        },
+        {
+          "name": "metal ion homeostasis",
+          "termid": "GO:0055065"
+        },
+        {
+          "name": "microtubule cytoskeleton organization",
+          "termid": "GO:0000226"
+        },
+        {
+          "name": "meiotic drive",
+          "termid": "GO:0110134"
+        },
+        {
+          "name": "mitochondrial gene expression",
+          "termid": "GO:0140053"
+        },
+        {
+          "name": "mitochondrion organization",
+          "termid": "GO:0007005"
+        },
+        {
+          "name": "mitotic cytokinesis",
+          "termid": "GO:0000281"
+        },
+        {
+          "name": "mitotic sister chromatid segregation",
+          "termid": "GO:0000070"
+        },
+        {
+          "name": "nitrogen cycle metabolic process",
+          "termid": "GO:0071941"
+        },
+        {
+          "name": "nucleobase-containing small molecule metabolic process",
+          "termid": "GO:0055086"
+        },
+        {
+          "name": "nucleocytoplasmic transport",
+          "termid": "GO:0006913"
+        },
+        {
+          "name": "organelle localization by membrane tethering",
+          "termid": "GO:0140056"
+        },
+        {
+          "name": "peroxisome organization",
+          "termid": "GO:0007031"
+        },
+        {
+          "name": "protein catabolic process",
+          "termid": "GO:0030163"
+        },
+        {
+          "name": "protein-containing complex assembly",
+          "termid": "GO:0065003"
+        },
+        {
+          "name": "protein folding",
+          "termid": "GO:0006457"
+        },
+        {
+          "name": "protein glycosylation",
+          "termid": "GO:0006486"
+        },
+        {
+          "name": "protein maturation",
+          "termid": "GO:0051604"
+        },
+        {
+          "name": "protein modification by small protein conjugation or removal",
+          "termid": "GO:0070647"
+        },
+        {
+          "name": "protein targeting",
+          "termid": "GO:0006605"
+        },
+        {
+          "name": "pteridine-containing compound biosynthetic process",
+          "termid": "GO:0042559"
+        },
+        {
+          "name": "mitotic cell cycle phase transition",
+          "termid": "GO:0044772"
+        },
+        {
+          "name": "regulation of transcription, DNA-templated",
+          "termid": "GO:0006355"
+        },
+        {
+          "name": "ribosome biogenesis",
+          "termid": "GO:0042254"
+        },
+        {
+          "name": "secondary metabolic process",
+          "termid": "GO:0019748"
+        },
+        {
+          "name": "signaling",
+          "termid": "GO:0023052"
+        },
+        {
+          "name": "snoRNA metabolic process",
+          "termid": "GO:0016074"
+        },
+        {
+          "name": "snRNA metabolic process",
+          "termid": "GO:0016073"
+        },
+        {
+          "name": "sulfur compound metabolic process",
+          "termid": "GO:0006790"
+        },
+        {
+          "name": "tRNA metabolic process",
+          "termid": "GO:0006399"
+        },
+        {
+          "name": "telomere organization",
+          "termid": "GO:0032200"
+        },
+        {
+          "name": "tetrapyrrole metabolic process",
+          "termid": "GO:0033013"
+        },
+        {
+          "name": "transcription, DNA-templated",
+          "termid": "GO:0006351"
+        },
+        {
+          "name": "transmembrane transport",
+          "termid": "GO:0055085"
+        },
+        {
+          "name": "ubiquinone biosynthetic process",
+          "termid": "GO:0006744"
+        },
+        {
+          "name": "vesicle-mediated transport",
+          "termid": "GO:0016192"
+        },
+        {
+          "name": "vitamin metabolic process",
+          "termid": "GO:0006766"
+        }
+      ]
+    },
+    "mf_goslim_pombe": {
+      "slim_display_name": "Molecular Function slim",
+      "doc_path": "/documentation/pombase-go-slim-documentation",
+      "full_slim_path": "/browse-curation/fission-yeast-mf-go-slim-terms",
+      "description": "S. pombe high level GO molecular function terms",
+      "slim_results_description": "A \"GO slim\" is a subset of the Gene Ontology terms selected for a specific purpose in interpreting the functional annotations in an entire organism, or a gene product list derived from an experiment.",
+      "cv_name": "molecular_function",
+      "terms": [
+        {
+          "name": "1,3-beta-glucanosyltransferase activity",
+          "termid": "GO:0042124"
+        },
+        {
+          "name": "ATPase activity",
+          "termid": "GO:0016887"
+        },
+        {
+          "name": "DNA-binding transcription factor activity",
+          "termid": "GO:0003700"
+        },
+        {
+          "name": "GTPase activity",
+          "termid": "GO:0003924"
+        },
+        {
+          "name": "actin binding",
+          "termid": "GO:0003779"
+        },
+        {
+          "name": "catalytic activity, acting on DNA",
+          "termid": "GO:0140097"
+        },
+        {
+          "name": "catalytic activity, acting on RNA",
+          "termid": "GO:0140098"
+        },
+        {
+          "name": "catalytic activity, acting on a protein",
+          "termid": "GO:0140096"
+        },
+        {
+          "name": "catalytic activity, acting on a tRNA",
+          "termid": "GO:0140101"
+        },
+        {
+          "name": "cell adhesion mediator activity",
+          "termid": "GO:0098631"
+        },
+        {
+          "name": "cyclase activity",
+          "termid": "GO:0009975"
+        },
+        {
+          "name": "deacetylase activity",
+          "termid": "GO:0019213"
+        },
+        {
+          "name": "disulfide oxidoreductase activity",
+          "termid": "GO:0015036"
+        },
+        {
+          "name": "enzyme regulator activity",
+          "termid": "GO:0030234"
+        },
+        {
+          "name": "exonuclease activity",
+          "termid": "GO:0004527"
+        },
+        {
+          "name": "general transcription initiation factor activity",
+          "termid": "GO:0140223"
+        },
+        {
+          "name": "guanyl-nucleotide exchange factor activity",
+          "termid": "GO:0005085"
+        },
+        {
+          "name": "histone demethylase activity",
+          "termid": "GO:0032452"
+        },
+        {
+          "name": "hydrolase activity, acting on carbon-nitrogen (but not peptide) bonds",
+          "termid": "GO:0016810"
+        },
+        {
+          "name": "hydrolase activity, acting on ester bonds",
+          "termid": "GO:0016788"
+        },
+        {
+          "name": "hydrolase activity, acting on glycosyl bonds",
+          "termid": "GO:0016798"
+        },
+        {
+          "name": "intramembrane lipid transporter activity",
+          "termid": "GO:0140303"
+        },
+        {
+          "name": "isomerase activity",
+          "termid": "GO:0016853"
+        },
+        {
+          "name": "kinase activity",
+          "termid": "GO:0016301"
+        },
+        {
+          "name": "ligase activity",
+          "termid": "GO:0016874"
+        },
+        {
+          "name": "lipid binding",
+          "termid": "GO:0008289"
+        },
+        {
+          "name": "lipid transfer activity",
+          "termid": "GO:0120013"
+        },
+        {
+          "name": "lyase activity",
+          "termid": "GO:0016829"
+        },
+        {
+          "name": "microtubule binding",
+          "termid": "GO:0008017"
+        },
+        {
+          "name": "molecular adaptor activity",
+          "termid": "GO:0060090"
+        },
+        {
+          "name": "molecular carrier activity",
+          "termid": "GO:0140104"
+        },
+        {
+          "name": "motor activity",
+          "termid": "GO:0003774"
+        },
+        {
+          "name": "nucleocytoplasmic carrier activity",
+          "termid": "GO:0140142"
+        },
+        {
+          "name": "nucleoside-triphosphate diphosphatase activity",
+          "termid": "GO:0047429"
+        },
+        {
+          "name": "nucleotidyltransferase activity",
+          "termid": "GO:0016779"
+        },
+        {
+          "name": "oxidoreductase activity",
+          "termid": "GO:0016491"
+        },
+        {
+          "name": "peptidase activity",
+          "termid": "GO:0008233"
+        },
+        {
+          "name": "peptide N-acetyltransferase activity",
+          "termid": "GO:0034212"
+        },
+        {
+          "name": "peroxiredoxin activity",
+          "termid": "GO:0051920"
+        },
+        {
+          "name": "pheromone activity",
+          "termid": "GO:0005186"
+        },
+        {
+          "name": "phosphoprotein phosphatase activity",
+          "termid": "GO:0004721"
+        },
+        {
+          "name": "phosphotransferase activity, for other substituted phosphate groups",
+          "termid": "GO:0016780"
+        },
+        {
+          "name": "protein deacetylase activity",
+          "termid": "GO:0033558"
+        },
+        {
+          "name": "protein kinase activity",
+          "termid": "GO:0004672"
+        },
+        {
+          "name": "protein methyltransferase activity",
+          "termid": "GO:0008276"
+        },
+        {
+          "name": "protein sequestering activity",
+          "termid": "GO:0140311"
+        },
+        {
+          "name": "protein tag",
+          "termid": "GO:0031386"
+        },
+        {
+          "name": "protein transporter activity",
+          "termid": "GO:0140318"
+        },
+        {
+          "name": "signal sequence binding",
+          "termid": "GO:0005048"
+        },
+        {
+          "name": "signaling receptor activity",
+          "termid": "GO:0038023"
+        },
+        {
+          "name": "structural molecule activity",
+          "termid": "GO:0005198"
+        },
+        {
+          "name": "topological DNA entrapment activity",
+          "termid": "GO:0061776"
+        },
+        {
+          "name": "transcription coactivator activity",
+          "termid": "GO:0003713"
+        },
+        {
+          "name": "transcription coregulator activity",
+          "termid": "GO:0003712"
+        },
+        {
+          "name": "transcription elongation regulator activity",
+          "termid": "GO:0003711"
+        },
+        {
+          "name": "transferase activity, transferring acyl groups",
+          "termid": "GO:0016746"
+        },
+        {
+          "name": "transferase activity, transferring aldehyde or ketonic groups",
+          "termid": "GO:0016744"
+        },
+        {
+          "name": "transferase activity, transferring alkyl or aryl (other than methyl) groups",
+          "termid": "GO:0016765"
+        },
+        {
+          "name": "transferase activity, transferring glycosyl groups",
+          "termid": "GO:0016757"
+        },
+        {
+          "name": "transferase activity, transferring nitrogenous groups",
+          "termid": "GO:0016769"
+        },
+        {
+          "name": "transferase activity, transferring one-carbon groups",
+          "termid": "GO:0016741"
+        },
+        {
+          "name": "transferase activity, transferring sulfur-containing groups",
+          "termid": "GO:0016782"
+        },
+        {
+          "name": "translation factor activity, RNA binding",
+          "termid": "GO:0008135"
+        },
+        {
+          "name": "transmembrane transporter activity",
+          "termid": "GO:0022857"
+        },
+        {
+          "name": "ubiquitin-like protein transferase activity",
+          "termid": "GO:0019787"
+        },
+        {
+          "name": "unfolded protein binding",
+          "termid": "GO:0051082"
+        }
+      ]
+    }
+  },
+  "reference_page_config": {
+    "triage_status_to_ignore": []
+  },
+  "extra_database_aliases": {
+    "tigrfams": "JCVI_TIGRFAMS",
+    "ssf": "SUPERFAMILY",
+    "mobidblt": "MobiDB",
+    "amigo": "GO",
+    "cathgene3d": "Gene3D",
+    "scanprosite": "Prosite"
+  },
+  "misc_external_links": {
+    "esyn": "http://www.esyn.org//builder.php?type=Graph&term=<<IDENTIFIER>>&interactionType=physical&source=pombase&includeInteractors=false",
+    "MalaCards": "https://www.malacards.org/card/<<IDENTIFIER>>"
+  },
+  "interpro": {
+    "dbnames_to_filter": []
+  },
+  "protein_features": {
+    "track_config": {
+      "CATHGENE3D": {
+        "colour": "#228b22"
+      },
+      "PFAM": {
+        "colour": "#884"
+      },
+      "PROSITE": {
+        "colour": "#ffa500"
+      },
+      "PROFILE": {
+        "colour": "#368ec9"
+      },
+      "PANTHER": {
+        "colour": "#a2d"
+      },
+      "SMART": {
+        "colour": "#66cd00"
+      },
+      "SSF": {
+        "colour": "#0000ff"
+      },
+      "TIGRFAMs": {
+        "colour": "#ff0000"
+      },
+      "CDD": {
+        "colour": "#926b22"
+      },
+      "Pfam-disordered": {
+        "colour": "#b54"
+      },
+      "Pfam-low-complexity": {
+        "colour": "#25a"
+      },
+      "ncoils": {
+        "colour": "#492"
+      }
+    }
+  },
+  "server": {
+    "subsets": {
+      "prefixes_to_remove": [
+        "interpro:CDD", "interpro:MOBIDBLT", "interpro:PANTHER",
+        "interpro:PANTHER", "interpro:PFAM", "interpro:PIRSF",
+        "interpro:PRINTS", "interpro:PRODOM", "interpro:PROFILE",
+        "interpro:PROSITE", "interpro:SFLD", "interpro:SMART",
+        "interpro:SSF", "interpro:TIGRFAMs", "interpro"
+      ]
+    },
+    "solr_url": "http://localhost:8983/solr",
+    "django_url": "http://localhost:8999",
+    "close_synonym_boost": 0.3,
+    "distant_synonym_boost": 0.1,
+    "term_definition_boost": 0.05,
+    "cv_name_for_terms_search": "(molecular_function OR biological_process OR cellular_component)",
+    "gene_uniquename_re": "^SJAG_\\d+$"
+  },
+  "gene_results": {
+    "sortable_columns": ["name", "uniquename", "product"],
+    "field_config": {
+      "uniquename": {
+        "display_name": "Systematic ID",
+        "column_type": "value"
+      },
+      "name": {
+        "display_name": "Gene name",
+        "column_type": "value"
+      },
+      "synonyms": {
+        "display_name": "Synonyms",
+        "column_type": "list"
+      },
+      "product": {
+        "display_name": "Product description",
+        "column_type": "value"
+      },
+      "uniprot_identifier": {
+        "display_name": "UniProt ID",
+        "column_type": "value"
+      },
+      "feature_type": {
+        "display_name": "Feature type",
+        "column_type": "value"
+      },
+      "start_pos": {
+        "display_name": "Start position",
+        "column_type": "value"
+      },
+      "end_pos": {
+        "display_name": "End position",
+        "column_type": "value"
+      },
+      "chromosome_name": {
+        "display_name": "Chromosome",
+        "column_type": "value"
+      },
+      "strand": {
+        "display_name": "Strand",
+        "column_type": "value"
+      },
+      "orthologs:4932": {
+        "display_name": "Budding yeast orthologs",
+        "column_type": "orthologs"
+      },
+      "orthologs:9606": {
+        "display_name": "Human orthologs",
+        "column_type": "orthologs"
+      },
+      "ortholog_taxonids:4932": {
+        "display_name": "Budding yeast ortholog",
+        "column_type": "ortholog",
+        "attr_values": [
+          {
+            "name": "absent",
+            "color": "#c32"
+          },
+          {
+            "name": "present",
+            "color": "#3c2"
+          }
+        ]
+      },
+      "ortholog_taxonids:9606": {
+        "display_name": "Human ortholog",
+        "column_type": "ortholog",
+        "attr_values": [
+          {
+            "name": "absent",
+            "color": "#c32"
+          },
+          {
+            "name": "present",
+            "color": "#3c2"
+          }
+        ]
+      },
+      "tmm": {
+        "display_name": "Transmembrane domain",
+        "column_type": "attribute",
+        "attr_values": [
+          {
+            "name": "present",
+            "color": "#283048"
+          },
+          {
+            "name": "absent",
+            "color": "#f8f8f8"
+          },
+          {
+            "name": "not_applicable",
+            "display_name": "not applicable",
+            "color": "#bbf"
+          }
+        ]
+      },
+      "go_process_superslim": {
+        "display_name": "GO process",
+        "column_type": "ontology_term",
+        "attr_values": [
+          {
+            "name": "signaling",
+            "termid": "GO:0023052",
+            "color": "#9b9144"
+          },
+          {
+            "name": "gene expression",
+            "termid": "GO:0010467",
+            "color": "#5f1827"
+          },
+          {
+            "name": "chromatin remodeling",
+            "termid": "GO:0006338",
+            "color": "#9d7b69"
+          },
+          {
+            "name": "protein folding",
+            "termid": "GO:0006457",
+            "color": "#5544ff"
+          },
+          {
+            "name": "cellular component biogenesis",
+            "termid": "GO:0044085",
+            "color": "#da4837"
+          },
+          {
+            "name": "DNA metabolic process",
+            "termid": "GO:0006259",
+            "color": "#198744"
+          },
+          {
+            "name": "cell cycle",
+            "termid": "GO:0007049",
+            "color": "#e41532"
+          },
+          {
+            "name": "cytoskeleton organization",
+            "termid": "GO:0007010",
+            "color": "#cc64d9"
+          },
+          {
+            "name": "membrane organization",
+            "termid": "GO:0061024",
+            "color": "#efbf98"
+          },
+          {
+            "name": "organelle localization",
+            "termid": "GO:0051640",
+            "color": "#c8b35b"
+          },
+          {
+            "name": "lipid metabolic process",
+            "termid": "GO:0006629",
+            "color": "#394b2d"
+          },
+          {
+            "name": "small molecule metabolic process",
+            "termid": "GO:0044281",
+            "color": "#d998f5"
+          },
+          {
+            "name": "generation of precursor metabolites and energy",
+            "termid": "GO:0006091",
+            "color": "#e5c17c"
+          },
+          {
+            "name": "transport",
+            "termid": "GO:0006810",
+            "color": "#c2dd36"
+          },
+          {
+            "name": "cellular catabolic process",
+            "termid": "GO:0044248",
+            "color": "#bbc9b7"
+          },
+          {
+            "name": "detoxification",
+            "termid": "GO:0098754",
+            "color": "#9960d8"
+          },
+          {
+            "name": "other",
+            "color": "#a73"
+          },
+          {
+            "name": "unknown",
+            "color": "#fff"
+          }
+        ]
+      },
+      "go_component": {
+        "display_name": "GO component",
+        "column_type": "ontology_term",
+        "attr_values": [
+          {
+            "name": "nucleus",
+            "termid": "GO:0005634",
+            "color": "#e05"
+          },
+          {
+            "name": "endoplasmic reticulum",
+            "termid":  "GO:0005783",
+            "color": "#4f4"
+          },
+          {
+            "name": "mitochondrion",
+            "termid":  "GO:0005739",
+            "color": "#04f"
+          },
+          {
+            "name": "cytoplasm",
+            "termid":  "GO:0005737",
+            "color": "#a30"
+          },
+          {
+            "name": "other",
+            "color": "#fb0"
+          },
+          {
+            "name": "unknown",
+            "color": "#fff"
+          }
+        ]
+      },
+      "go_function": {
+        "display_name": "GO function",
+        "column_type": "ontology_term",
+        "attr_values": [
+          {
+            "name": "oxidoreductase activity",
+            "termid": "GO:0016491",
+            "color": "#89a6a1"
+          },
+          {
+            "name": "hydrolase activity",
+            "termid": "GO:0016787",
+            "color": "#2a394a"
+          },
+          {
+            "name": "transferase activity",
+            "termid": "GO:0016740",
+            "color": "#6d3ba4"
+          },
+          {
+            "name": "ligase activity",
+            "termid": "GO:0016874",
+            "color": "#da9d46"
+          },
+          {
+            "name": "cyclase activity",
+            "termid": "GO:0009975",
+            "color": "#d770f5"
+          },
+          {
+            "name": "lyase activity",
+            "termid": "GO:0016829",
+            "color": "#99a1c0"
+          },
+          {
+            "name": "catalytic activity",
+            "termid": "GO:0003824",
+            "color": "#dd37de",
+            "display_name": "other catalytic activity"
+          },
+          {
+            "name": "enzyme regulator activity",
+            "termid": "GO:0030234",
+            "color": "#feb62f"
+          },
+          {
+            "name": "DNA binding",
+            "termid": "GO:0003677",
+            "color": "#821fad"
+          },
+          {
+            "name": "transcription regulator activity",
+            "termid": "GO:0140110",
+            "color": "#cb3063"
+          },
+          {
+            "name": "transporter activity",
+            "termid": "GO:0005215",
+            "color": "#f498f0"
+          },
+          {
+            "name": "cytoskeletal protein binding",
+            "termid": "GO:0008092",
+            "color": "#6ba420"
+          },
+          {
+            "name": "unfolded protein binding",
+            "termid": "GO:0051082",
+            "color": "#21a18f"
+          },
+          {
+            "name": "RNA binding",
+            "termid": "GO:0003723",
+            "color": "#f6a0cd"
+          },
+          {
+            "name": "metal ion binding",
+            "termid": "GO:0046872",
+            "color": "#bc6384"
+          },
+          {
+            "name": "lipid binding",
+            "termid": "GO:0008289",
+            "color": "#22849b"
+          },
+          {
+            "name": "cell adhesion mediator activity",
+            "termid": "GO:0098631",
+            "color": "#3f6865"
+          },
+          {
+            "name": "structural molecule activity",
+            "termid": "GO:0005198",
+            "color": "#cdb4da"
+          },
+          {
+            "name": "other",
+            "color": "#a73"
+          },
+          {
+            "name": "unknown",
+            "color": "#fff"
+          }
+        ]
+      },
+      "molecular_weight": {
+        "display_name": "Protein molecular weight",
+        "column_type": "value"
+      },
+      "protein_length": {
+        "display_name": "Protein length",
+        "column_type": "value"
+      },
+      "protein_length_bin": {
+        "display_name": "Protein length (bins)",
+        "column_type": "value_bins",
+        "attr_values": [
+          {
+            "name": "1-100",
+            "color": "#e14e4e",
+            "bin_start": 1,
+            "bin_end": 100
+          },
+          {
+            "name": "101-200",
+            "color": "#d0804b",
+            "bin_start": 101,
+            "bin_end": 200
+          },
+          {
+            "name": "201-300",
+            "color": "#e0b030",
+            "bin_start": 201,
+            "bin_end": 300
+          },
+          {
+            "name": "301-400",
+            "color": "#3c2",
+            "bin_start": 301,
+            "bin_end": 400
+          },
+          {
+            "name": "401-500",
+            "color": "#40d3a6",
+            "bin_start": 401,
+            "bin_end": 500
+          },
+          {
+            "name": "501-600",
+            "color": "#30a0d0",
+            "bin_start": 501,
+            "bin_end": 600
+          },
+          {
+            "name": "601-700",
+            "color": "#6a5be0",
+            "bin_start": 601,
+            "bin_end": 700
+          },
+          {
+            "name": "701-",
+            "color": "#d054e3",
+            "bin_start": 701,
+            "bin_end": 999999999
+          },
+          {
+            "name": "unknown",
+            "display_name": "unknown / not applicable",
+            "color": "#777"
+          }
+        ]
+      }
+    },
+    "gene_summary_field_names": [
+      "uniquename",
+      "name",
+      "product",
+      "uniprot_identifier",
+      "synonyms",
+      "feature_type",
+      "start_pos",
+      "end_pos",
+      "chromosome_name",
+      "strand",
+      "orthologs:4932",
+      "orthologs:9606"
+    ],
+    "gene_table_field_names": [
+      "uniquename",
+      "name",
+      "product",
+      "uniprot_identifier",
+      "synonyms",
+      "feature_type",
+      "start_pos",
+      "end_pos",
+      "chromosome_name",
+      "strand",
+      "orthologs:4932",
+      "orthologs:9606",
+      "tmm",
+      "molecular_weight",
+      "protein_length",
+      "protein_length_bin"
+    ],
+    "visualisation_field_names": [
+      "ortholog_taxonids:4932",
+      "ortholog_taxonids:9606",
+      "tmm",
+      "go_process_superslim",
+      "go_component",
+      "go_function",
+      "protein_length_bin"
+    ],
+    "slim_table_slim_names": ["mf_goslim_pombe", "bp_goslim_pombe", "cc_goslim_pombe"]
+  },
+  "file_exports": {
+    "site_map_term_prefixes": ["GO:"],
+    "site_map_reference_prefixes": ["PMID:"],
+    "macromolecular_complexes": {
+      "parent_complex_termid": "GO:0032991",
+      "excluded_terms": [
+        "GO:0099023", "GO:0022624", "GO:0005834", "GO:0000153", "GO:0000835",
+        "GO:1990904", "GO:0032806", "GO:0000307", "GO:0016461", "GO:1990421",
+        "GO:0008023", "GO:0017102", "GO:0044796", "GO:0032777", "GO:0033100",
+        "GO:0000113", "GO:0034457", "GO:0030685", "GO:0097648",
+        "GO:0098802", "GO:0097648", "GO:0044796", "GO:0038037", "GO:0045267",
+        "GO:0098797", "GO:0098796", "GO:0061695", "GO:0098797", "GO:0098798",
+        "GO:0098799", "GO:0098800", "GO:0098803", "GO:1902555", "GO:0000015",
+        "GO:0000109", "GO:0000118", "GO:0000120", "GO:0000123",
+        "GO:0000151", "GO:0000152", "GO:0000159", "GO:0000178", "GO:0000313",
+        "GO:0000314", "GO:0000315", "GO:0000428", "GO:0000445",
+        "GO:0000775", "GO:0000776", "GO:0000777", "GO:0000778", "GO:0000779",
+        "GO:0000780", "GO:0000782", "GO:0000785", "GO:0000786",
+        "GO:0000790", "GO:0000791", "GO:0000792", "GO:0000796", "GO:0000808",
+        "GO:0000941", "GO:0000942", "GO:0002178", "GO:0005667", "GO:0005677",
+        "GO:0005681", "GO:0005719", "GO:0005720", "GO:0005721", "GO:0005724",
+        "GO:0005732", "GO:0005761", "GO:0005818", "GO:0005838", "GO:0005840",
+        "GO:0005844", "GO:0005871", "GO:0005874", "GO:0005875",
+        "GO:0005891", "GO:0005952", "GO:0008012", "GO:0008278", "GO:0008287",
+        "GO:0009331", "GO:0015934", "GO:0015935", "GO:0016459", "GO:0016469",
+        "GO:0016471", "GO:0016585", "GO:0017053", "GO:0017059", "GO:0022626",
+        "GO:0030117", "GO:0030118", "GO:0030119", "GO:0030120", "GO:0030125",
+        "GO:0030128", "GO:0030130", "GO:0030131", "GO:0030132", "GO:0030529",
+        "GO:0030530", "GO:0030532", "GO:0030681", "GO:0030684", "GO:0030686",
+        "GO:0030687", "GO:0030874", "GO:0030880", "GO:0030892", "GO:0030893",
+        "GO:0030894", "GO:0031211", "GO:0031248", "GO:0031332", "GO:0031379",
+        "GO:0031414", "GO:0031461", "GO:0031618", "GO:0031933",
+        "GO:0031934", "GO:0032300", "GO:0032301", "GO:0032302", "GO:0032991",
+        "GO:0032993", "GO:0033177", "GO:0033178", "GO:0033202", "GO:0033553",
+        "GO:0033573", "GO:0034702", "GO:0034703", "GO:0034704", "GO:0034707",
+        "GO:0034708", "GO:0035339", "GO:0035770", "GO:0036464",
+        "GO:0042788", "GO:0043189", "GO:0043234", "GO:0043235", "GO:0043527",
+        "GO:0043601", "GO:0044391", "GO:0044798", "GO:0044815", "GO:0045239",
+        "GO:0045259", "GO:0045263", "GO:0045271", "GO:0045274", "GO:0045282",
+        "GO:0046930", "GO:0055029", "GO:0070069", "GO:0070461", "GO:0070603",
+        "GO:0070822", "GO:0071010", "GO:0071819", "GO:0090544", "GO:0090568",
+        "GO:0090575", "GO:0097346", "GO:0097361", "GO:1902377", "GO:1902493",
+        "GO:1902494", "GO:1902495", "GO:1902554", "GO:1902562", "GO:1902911",
+        "GO:1903293", "GO:1990104", "GO:1990204", "GO:1990234", "GO:1990342",
+        "GO:1990351", "GO:1990391", "GO:0031261"
+      ]
+    },
+    "rnacentral": {
+      "export_so_ids": ["SO:0000252", "SO:0000253", "SO:0000274", "SO:0000275", "SO:0000655"]
+    },
+    "annotation_subsets": [
+    ],
+    "nd_reference": "GO_REF:0000015",
+    "gpad_gpi": {
+      "go_aspect_terms": {
+        "molecular_function": "GO:0003674",
+        "cellular_component": "GO:0005575",
+        "biological_process": "GO:0008150"
+      },
+      "extension_relation_mappings": {
+        "not_happens_during": null,
+        "not_exists_during": null,
+        "activated_by": null,
+        "exists_during": "GOREL:0000032",
+        "has_direct_input": "RO:0002233",
+        "regulates_activity_of": "RO:0002233",
+        "has_regulation_target": "RO:0002233",
+        "directly_negatively_regulates": "RO:0002233",
+        "directly_positively_regulates": "RO:0002233",
+        "regulates_expression_of": "RO:0002233",
+        "regulates_transcription_of": "RO:0002233",
+        "regulates_translation_of": "RO:0002233",
+        "occurs_at": "BFO:0000066",
+        "coincident_with": "RO:0002008",
+        "has_input": "RO_0002233"
+      },
+      "transcript_gene_so_term_map": {
+        "SO:0000234": "SO:0001217",
+        "SO:0000516": "SO:0000336",
+        "SO:0000252": "SO:0001637",
+        "SO:0000253": "SO:0001272",
+        "SO:0000274": "SO:0001268",
+        "SO:0000275": "SO:0001267",
+        "SO:0000655": "SO:0001263"
+      }
+    }
+  },
+  "term_display_names": {
+    "regional_centromere": "centromere",
+    "regional_centromere_central_core": "centromere central core"
+  },
+  "gene_expression": {
+    "datasets": [
+    ]
+  }
+}
