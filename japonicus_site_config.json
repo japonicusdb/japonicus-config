@@ -24,7 +24,7 @@
   "social_media": false,
   "has_disease_annotation": false,
   "news_on_front_page": false,
-  "ensembl_blast_url": "https://fungi.ensembl.org/Schizosaccharomyces_japonicus/Tools/Blast?db=core",
+  "ensembl_blast_url": "https://fungi.ensembl.org/Schizosaccharomyces_japonicus/Tools/Blast",
   "canto_url": "https://curation.pombase.org/japonicus",
   "canto_data_config": {
     "browser_track_triage_types": [
