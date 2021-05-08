@@ -1683,7 +1683,7 @@
       "name": "NCBI",
       "description": "Query all NCBI databases",
       "field_name": "NCBI_ALL_IDS",
-      "url": "https://www.ncbi.nlm.nih.gov/gquery/?term=(<<IDENTIFIER>>)+AND+(pombe+OR+fission+yeast)"
+      "url": "https://www.ncbi.nlm.nih.gov/gquery/?term=(<<IDENTIFIER>>)+AND+(Schizosaccharomyces+japonicus)"
     },
     {
       "ref_type": "Sequence Resources",
@@ -1718,7 +1718,7 @@
       "description": "Alignments, gene trees, orthologs, families",
       "field_name": "uniquename",
       "show_in_sections": ["orthologs"],
-      "url": "http://fungi.ensembl.org/Schizosaccharomyces_pombe/Gene/Compara?db=core;g=<<IDENTIFIER>>"
+      "url": "http://fungi.ensembl.org/Schizosaccharomyces_japonicus/Gene/Compara?db=core;g=<<IDENTIFIER>>"
     },
 
    {
@@ -1728,7 +1728,7 @@
       "description": " Gene tree, orthologs",
       "field_name": "uniquename",
       "show_in_sections": ["orthologs"],
-      "url": "http://fungi.ensembl.org/Schizosaccharomyces_pombe/Gene/PanCompara?db=core;g=<<IDENTIFIER>>"
+      "url": "http://fungi.ensembl.org/Schizosaccharomyces_japonicus/Gene/PanCompara?db=core;g=<<IDENTIFIER>>"
     },
 
    {
@@ -1752,7 +1752,7 @@
     },
     {
       "name": "Reactome",
-      "url": "https://reactome.org/content/query?species=Schizosaccharomyces+pombe&q=[example_id]"
+      "url": "https://reactome.org/content/query?species=Schizosaccharomyces+japonicus&q=[example_id]"
     }
   ],
   "viability_terms": {
