@@ -45,15 +45,15 @@
   },
   "default_jbrowse_tracks": [
     {
-      "pmed_id": "PMID:11859360",
+      "pmed_id": "PMID:21511999",
       "label": "DNA sequence"
     },
     {
-      "pmed_id": "PMID:11859360",
+      "pmed_id": "PMID:21511999",
       "label": "Forward strand features"
     },
     {
-      "pmed_id": "PMID:11859360",
+      "pmed_id": "PMID:21511999",
       "label": "Reverse strand features"
     }
   ],
