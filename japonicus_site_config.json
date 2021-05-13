@@ -1227,6 +1227,273 @@
     }
   },
   "cv_config": {
+    "fission_yeast_phenotype": {
+      "feature_type": "genotype",
+      "display_name": "Phenotype",
+      "columns_to_show": ["desc-rel", "genotype", "genotype_background",
+                          "evidence", "conditions", "reference", "extension"],
+      "external_db_link_keys": ["BioPortal"],
+      "filters": [
+        {
+          "filter_name": "ploidiness",
+          "display_name": "Haploid/Diploid",
+          "scope": ["gene", "term", "reference"],
+          "detailed_view_only": false
+        },
+        {
+          "filter_name": "term",
+          "display_name": "Term",
+          "scope": ["gene", "genotype", "reference"],
+          "detailed_view_only": false,
+          "term_categories": [
+            {
+              "ancestors": [
+                "FYPO:0000257"
+              ],
+              "display_name": "Normal phenotype"
+            },
+            {
+              "ancestors": [
+                "FYPO:0001985"
+              ],
+              "display_name": "Abnormal phenotype"
+            },
+            {
+              "ancestors": [
+                "FYPO:0001320"
+              ],
+              "display_name": "Vegetative cell phenotype"
+            },
+            {
+              "ancestors": [
+                "FYPO:0002683"
+              ],
+              "display_name": "Sensitive to chemical"
+            },
+            {
+              "ancestors": [
+                "FYPO:0005447"
+              ],
+              "display_name": "Abnormal biological process"
+            },
+            {
+              "ancestors": [
+                "FYPO:0000005"
+              ],
+              "display_name": "Abnormal cell morphology"
+            },
+            {
+              "ancestors": [
+                "FYPO:0000631"
+              ],
+              "display_name": "Cell cycle phenotype"
+            },
+            {
+              "ancestors": [
+                "FYPO:0000138"
+              ],
+              "display_name": "Localization phenotype"
+            },
+            {
+              "ancestors": [
+                "FYPO:0000004"
+              ],
+              "display_name": "Cell viability"
+            },
+            {
+              "ancestors": [
+                "FYPO:0002057"
+              ],
+              "display_name": "Cell population viability"
+            },
+            {
+              "ancestors": [
+                "FYPO:0000707"
+              ],
+              "display_name": "Abnormal molecular function"
+            },
+            {
+              "ancestors": [
+                "FYPO:0000702"
+              ],
+              "display_name": "Protein-protein interaction"
+            },
+            {
+              "ancestors": [
+                "FYPO:0000661"
+              ],
+              "display_name": "Abnormal catalytic activity"
+            }
+          ]
+        },
+        {
+          "filter_name": "evidence",
+          "display_name": "Evidence",
+          "scope": ["gene", "term", "genotype", "reference"],
+          "detailed_view_only": true,
+          "evidence_categories": [
+            {
+              "display_name": "Microscopy",
+              "evidence_codes": ["Microscopy",
+                                 "immunofluorescence",
+                                 "Epitope-tagged protein immunolocalization experiment data",
+                                 "Immunolocalization experiment data",
+                                 "Fusion protein localization",
+                                 "In situ hybridization assay"]
+            },
+            {
+              "display_name": "Gel electrophoresis",
+              "evidence_codes": ["Gel electrophoresis",
+                                 "Sodium dodecyl sulfate polyacrylamide gel electrophoresis",
+                                 "RNA protection assay"]
+            },
+            {
+              "display_name": "Western blot",
+              "evidence_codes": ["Western blot",
+                                 "Western blot assay"]
+            },
+            {
+              "display_name": "Co-immunoprecipitation experiment",
+              "evidence_codes": ["Co-immunoprecipitation experiment"]
+            },
+            {
+              "display_name": "Cell growth assay",
+              "evidence_codes": ["Cell growth assay"]
+            },
+            {
+              "display_name": "Chromatin immunoprecipitation experiment",
+              "evidence_codes": ["Chromatin immunoprecipitation experiment"]
+            },
+            {
+              "display_name": "Chromatography",
+              "evidence_codes": ["Chromatography"]
+            },
+            {
+              "display_name": "Competitive growth assay",
+              "evidence_codes": ["Competitive growth assay"]
+            },
+            {
+              "display_name": "Electrophoretic mobility shift assay data",
+              "evidence_codes": ["Electrophoretic mobility shift assay data"]
+            },
+            {
+              "display_name": "Enzyme assay data",
+              "evidence_codes": ["Enzyme assay data"]
+            },
+            {
+              "display_name": "Experimental phenotypic",
+              "evidence_codes": ["Experimental phenotypic"]
+            },
+            {
+              "display_name": "Flow cytometry data",
+              "evidence_codes": ["Flow cytometry data"]
+            },
+            {
+              "display_name": "High throughput nucleotide sequencing assay",
+              "evidence_codes": ["High throughput nucleotide sequencing assay"]
+            },
+            {
+              "display_name": "Inferred from Mutant Phenotype",
+              "evidence_codes": ["Inferred from Mutant Phenotype"]
+            },
+            {
+              "display_name": "Northern assay",
+              "evidence_codes": ["Northern assay"]
+            },
+            {
+              "display_name": "Particle size and count assay",
+              "evidence_codes": ["Particle size and count assay"]
+            },
+            {
+              "display_name": "Plasmid maintenance assay",
+              "evidence_codes": ["Plasmid maintenance assay"]
+            },
+            {
+              "display_name": "Quantitative PCR",
+              "evidence_codes": ["Quantitative PCR"]
+            },
+            {
+              "display_name": "Reporter gene assay",
+              "evidence_codes": ["Reporter gene assay"]
+            },
+            {
+              "display_name": "Substance quantification",
+              "evidence_codes": ["Substance quantification"]
+            },
+            {
+              "display_name": "Transcript expression level",
+              "evidence_codes": ["Transcript expression level"]
+            },
+            {
+              "display_name": "Other",
+              "evidence_codes": ["Other", "Other direct assay"]
+            }
+          ]
+        },
+        {
+          "filter_name": "throughput",
+          "display_name": "Throughput",
+          "scope": ["gene", "term", "genotype", "reference"],
+          "detailed_view_only": true,
+          "throughput_categories": [
+            {
+              "display_name": "High",
+              "throughput_type": "high"
+            },
+            {
+              "display_name": "Low",
+              "throughput_type": "low"
+            },
+            {
+              "display_name": "Non-experimental",
+              "throughput_type": "non-experimental"
+            }
+          ]
+        }
+      ],
+      "split_by_parents": [
+        {
+          "config_name": "population_phenotype",
+          "termids": ["FYPO:0000003", "FYPO:0001155"],
+          "display_name": "Population phenotype"
+        },
+        {
+          "config_name": "cell_phenotype",
+          "termids": [
+            "FYPO:0000002", "FYPO:0000652", "FYPO:0000301", "FYPO:0000680",
+            "FYPO:0001312", "FYPO:0002928", "FYPO:0002931", "FYPO:0002929",
+            "FYPO:0003048", "FYPO:0003093", "FYPO:0003290", "FYPO:0003324",
+            "FYPO:0003427", "FYPO:0003480", "FYPO:0004914", "FYPO:0004915",
+            "FYPO:0004942", "FYPO:0005156", "FYPO:0005157", "FYPO:0006297",
+            "FYPO:0006790", "FYPO:0006793", "FYPO:0007135", "FYPO:0007170",
+            "FYPO:0007394", "FYPO:0007477", "FYPO:0007479", "FYPO:0007491"],
+          "display_name": "Cell phenotype"
+        }
+      ],
+      "summary_relations_to_hide": [
+        "has_penetrance",
+        "has_severity"
+      ],
+      "summary_relation_ranges_to_collect": [
+        "assayed_enzyme",
+        "assayed_substrate",
+        "assayed_using"
+      ]
+    },
+    "single_locus_phenotype": {
+      "feature_type": "genotype",
+      "display_name": "Single locus phenotype",
+      "inherits_from": "fission_yeast_phenotype",
+      "single_or_multi_locus": "single",
+      "help_route": "/documentation/gene-page-phenotypes"
+    },
+    "multi_locus_phenotype": {
+      "feature_type": "genotype",
+      "display_name": "Multi-locus phenotype",
+      "inherits_from": "fission_yeast_phenotype",
+      "single_or_multi_locus": "multi",
+      "help_route": "/documentation/gene-page-phenotypes"
+    },
     "molecular_function": {
       "feature_type": "gene",
       "display_name": "GO molecular function",
