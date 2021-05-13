@@ -1896,8 +1896,6 @@
     "m_f_g",
     "genome_org",
     "ex_tools",
-    "physical_interactions",
-    "genetic_interactions",
     "orthologs",
     "paralogs",
     "species_dist",
