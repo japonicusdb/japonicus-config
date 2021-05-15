@@ -16,6 +16,9 @@
   "gene_systematic_identifier_re": "^SJAG_\\d+$",
   "transcript_systematic_identifier_re": "^SJAG_\\d+\\.\\d+$",
   "details_popup_delay": 500,
+  "data_sources": {
+    "interactions": []
+  },
   "example_pages": {
     "gene": "SJAG_04351",
     "term": "GO:0005759",
