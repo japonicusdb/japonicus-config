@@ -13,6 +13,7 @@
   "load_organism_taxonid": 4897,
   "base_url": "http://japonicusdb.kmr.nz",
   "helpdesk_address": "helpdesk@pombase.org",
+  "show_names_of_staff_curators": true,
   "gene_systematic_identifier_re": "^SJAG_\\d+$",
   "transcript_systematic_identifier_re": "^SJAG_\\d+\\.\\d+$",
   "details_popup_delay": 500,
