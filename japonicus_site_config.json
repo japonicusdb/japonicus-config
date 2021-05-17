@@ -2068,12 +2068,12 @@
   ],
   "external_gene_references": [
     {
-      "ref_type": "Sequence Resources",
-      "feature_types": ["rRNA gene", "tRNA gene", "snRNA gene", "snoRNA gene", "ncRNA gene"],
-      "name": "RNAcentral",
-      "description": "Non-coding RNA sequence database",
-      "field_name": "rnacentral_urs_identifier",
-      "url": "https://rnacentral.org/rna/<<IDENTIFIER>>/<<TAXONID>>"
+      "ref_type": "GO annotation",
+      "feature_types": ["mRNA gene"],
+      "name": "QuickGO",
+      "field_name": "uniprot_identifier",
+      "description": "QuickGO Gene Ontology annotation viewer",
+      "url": "https://www.ebi.ac.uk/QuickGO/annotations?geneProductId=<<IDENTIFIER>>"
     },
     {
       "ref_type": "Interactions",
@@ -2084,12 +2084,12 @@
       "url": "https://string-db.org/cgi/network.pl?species=4896&identifier=<<IDENTIFIER>>"
     },
     {
-      "ref_type": "GO annotation",
-      "feature_types": ["mRNA gene"],
-      "name": "QuickGO",
-      "field_name": "uniprot_identifier",
-      "description": "QuickGO Gene Ontology annotation viewer",
-      "url": "https://www.ebi.ac.uk/QuickGO/annotations?geneProductId=<<IDENTIFIER>>"
+      "ref_type": "Sequence Resources",
+      "feature_types": ["rRNA gene", "tRNA gene", "snRNA gene", "snoRNA gene", "ncRNA gene"],
+      "name": "RNAcentral",
+      "description": "Non-coding RNA sequence database",
+      "field_name": "rnacentral_urs_identifier",
+      "url": "https://rnacentral.org/rna/<<IDENTIFIER>>/<<TAXONID>>"
     },
     {
       "ref_type": "Sequence Resources",
