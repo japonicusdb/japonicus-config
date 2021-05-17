@@ -2076,6 +2076,22 @@
       "url": "https://rnacentral.org/rna/<<IDENTIFIER>>/<<TAXONID>>"
     },
     {
+      "ref_type": "Interactions",
+      "feature_types": ["ALL"],
+      "name": "STRING",
+      "description": "Network display of known and predicted interactions and functional associations",
+      "field_name": "uniprot_identifier",
+      "url": "https://string-db.org/cgi/network.pl?species=4896&identifier=<<IDENTIFIER>>"
+    },
+    {
+      "ref_type": "GO annotation",
+      "feature_types": ["mRNA gene"],
+      "name": "QuickGO",
+      "field_name": "uniprot_identifier",
+      "description": "QuickGO Gene Ontology annotation viewer",
+      "url": "https://www.ebi.ac.uk/QuickGO/annotations?geneProductId=<<IDENTIFIER>>"
+    },
+    {
       "ref_type": "Sequence Resources",
       "feature_types": ["mRNA gene", "pseudogene"],
       "name": "UniProtKB/SwissProt",
