@@ -532,46 +532,46 @@
       "long_display_name": "Mitochondrial chromosome"
     },
     "supercont5.1": {
-      "export_id": "supercont5.1",
-      "export_file_id": "supercont5.1",
-      "short_display_name": "supercont5.1",
-      "long_display_name": "supercont5.1"
+      "export_id": "I_left_arm",
+      "export_file_id": "chromosome_I_left_arm",
+      "short_display_name": "I left_arm",
+      "long_display_name": "Chromosome I left arm"
     },
     "supercont5.2": {
-      "export_id": "supercont5.2",
-      "export_file_id": "supercont5.2",
-      "short_display_name": "supercont5.2",
-      "long_display_name": "supercont5.2"
+      "export_id": "III_left_arm",
+      "export_file_id": "chromosome_III_left_arm",
+      "short_display_name": "III left arm",
+      "long_display_name": "Chromosome III left arm"
     },
     "supercont5.3": {
-      "export_id": "supercont5.3",
-      "export_file_id": "supercont5.3",
-      "short_display_name": "supercont5.3",
-      "long_display_name": "supercont5.3"
+      "export_id": "I_right_arm",
+      "export_file_id": "chromosome_I_right_arm",
+      "short_display_name": "I right arm",
+      "long_display_name": "Chromosome I right arm"
     },
     "supercont5.4": {
-      "export_id": "supercont5.4",
-      "export_file_id": "supercont5.4",
-      "short_display_name": "supercont5.4",
-      "long_display_name": "supercont5.4"
+      "export_id": "II_left_arm",
+      "export_file_id": "chromosome_II_left_arm",
+      "short_display_name": "II left arm",
+      "long_display_name": "Chromosome II left arm"
     },
     "supercont5.5": {
-      "export_id": "supercont5.5",
-      "export_file_id": "supercont5.5",
-      "short_display_name": "supercont5.5",
-      "long_display_name": "supercont5.5"
+      "export_id": "II_right_arm_telomere_distal",
+      "export_file_id": "chromosome_II_right_arm_telomere_distal",
+      "short_display_name": "II right arm telomere distal",
+      "long_display_name": "Chromosome II right arm telomere distal"
     },
     "supercont5.6": {
-      "export_id": "supercont5.6",
-      "export_file_id": "supercont5.6",
-      "short_display_name": "supercont5.6",
-      "long_display_name": "supercont5.6"
+      "export_id": "III_right_arm",
+      "export_file_id": "chromosome_III_right_arm",
+      "short_display_name": "III right arm",
+      "long_display_name": "Chromosome III right arm"
     },
     "supercont5.7": {
-      "export_id": "supercont5.7",
-      "export_file_id": "supercont5.7",
-      "short_display_name": "supercont5.7",
-      "long_display_name": "supercont5.7"
+      "export_id": "II_right_arm_centromere_distal",
+      "export_file_id": "chromosome_II_right_arm_centromere_distal",
+      "short_display_name": "II right arm centromere distal",
+      "long_display_name": "Chromosome II right arm centromere distal"
     },
     "supercont5.8": {
       "export_id": "supercont5.8",
