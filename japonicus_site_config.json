@@ -524,206 +524,239 @@
     "inviable_deletions"
   ],
   "api_seq_chunk_sizes": [10000, 200000],
-  "chromosomes": {
-    "mitochondrial": {
-      "export_id": "mitochondrial",
-      "export_file_id": "mitochondrial_chromosome",
-      "short_display_name": "Mitochondrial",
-      "long_display_name": "Mitochondrial chromosome"
-    },
-    "supercont5.1": {
+  "chromosomes": [
+    {
+      "name": "supercont5.1",
       "export_id": "I_left_arm",
       "export_file_id": "chromosome_I_left_arm",
       "short_display_name": "I (left arm)",
       "long_display_name": "Chromosome I left arm"
     },
-    "supercont5.2": {
+    {
+      "name": "supercont5.2",
       "export_id": "III_left_arm",
       "export_file_id": "chromosome_III_left_arm",
       "short_display_name": "III (left arm)",
       "long_display_name": "Chromosome III left arm"
     },
-    "supercont5.3": {
+    {
+      "name": "supercont5.3",
       "export_id": "I_right_arm",
       "export_file_id": "chromosome_I_right_arm",
       "short_display_name": "I (right arm)",
       "long_display_name": "Chromosome I right arm"
     },
-    "supercont5.4": {
+    {
+      "name": "supercont5.4",
       "export_id": "II_left_arm",
       "export_file_id": "chromosome_II_left_arm",
       "short_display_name": "II (left arm)",
       "long_display_name": "Chromosome II left arm"
     },
-    "supercont5.5": {
+    {
+      "name": "supercont5.5",
       "export_id": "II_right_arm_telomere_distal",
       "export_file_id": "chromosome_II_right_arm_telomere_distal",
       "short_display_name": "II (right arm telomere distal)",
       "long_display_name": "Chromosome II right arm telomere distal"
     },
-    "supercont5.6": {
+    {
+      "name": "supercont5.6",
       "export_id": "III_right_arm",
       "export_file_id": "chromosome_III_right_arm",
       "short_display_name": "III (right arm)",
       "long_display_name": "Chromosome III right arm"
     },
-    "supercont5.7": {
+    {
+      "name": "supercont5.7",
       "export_id": "II_right_arm_centromere_distal",
       "export_file_id": "chromosome_II_right_arm_centromere_distal",
       "short_display_name": "II (right arm centromere distal)",
       "long_display_name": "Chromosome II right arm centromere distal"
     },
-    "supercont5.8": {
+    {
+      "name": "mitochondrial",
+      "export_id": "mitochondrial",
+      "export_file_id": "mitochondrial_chromosome",
+      "short_display_name": "Mitochondrial",
+      "long_display_name": "Mitochondrial chromosome"
+    },
+    {
+      "name": "supercont5.8",
       "export_id": "supercont5.8",
       "export_file_id": "supercont5.8",
       "short_display_name": "supercont5.8",
       "long_display_name": "supercont5.8"
     },
-    "supercont5.9": {
+    {
+      "name": "supercont5.9",
       "export_id": "supercont5.9",
       "export_file_id": "supercont5.9",
       "short_display_name": "supercont5.9",
       "long_display_name": "supercont5.9"
     },
-    "supercont5.10": {
+    {
+      "name": "supercont5.10",
       "export_id": "supercont5.10",
       "export_file_id": "supercont5.10",
       "short_display_name": "supercont5.10",
       "long_display_name": "supercont5.10"
     },
-    "supercont5.11": {
+    {
+      "name": "supercont5.11",
       "export_id": "supercont5.11",
       "export_file_id": "supercont5.11",
       "short_display_name": "supercont5.11",
       "long_display_name": "supercont5.11"
     },
-    "supercont5.12": {
+    {
+      "name": "supercont5.12",
       "export_id": "supercont5.12",
       "export_file_id": "supercont5.12",
       "short_display_name": "supercont5.12",
       "long_display_name": "supercont5.12"
     },
-    "supercont5.13": {
+    {
+      "name": "supercont5.13",
       "export_id": "supercont5.13",
       "export_file_id": "supercont5.13",
       "short_display_name": "supercont5.13",
       "long_display_name": "supercont5.13"
     },
-    "supercont5.14": {
+    {
+      "name": "supercont5.14",
       "export_id": "supercont5.14",
       "export_file_id": "supercont5.14",
       "short_display_name": "supercont5.14",
       "long_display_name": "supercont5.14"
     },
-    "supercont5.15": {
+    {
+      "name": "supercont5.15",
       "export_id": "supercont5.15",
       "export_file_id": "supercont5.15",
       "short_display_name": "supercont5.15",
       "long_display_name": "supercont5.15"
     },
-    "supercont5.16": {
+    {
+      "name": "supercont5.16",
       "export_id": "supercont5.16",
       "export_file_id": "supercont5.16",
       "short_display_name": "supercont5.16",
       "long_display_name": "supercont5.16"
     },
-    "supercont5.17": {
+    {
+      "name": "supercont5.17",
       "export_id": "supercont5.17",
       "export_file_id": "supercont5.17",
       "short_display_name": "supercont5.17",
       "long_display_name": "supercont5.17"
     },
-    "supercont5.18": {
+    {
+      "name": "supercont5.18",
       "export_id": "supercont5.18",
       "export_file_id": "supercont5.18",
       "short_display_name": "supercont5.18",
       "long_display_name": "supercont5.18"
     },
-    "supercont5.19": {
+    {
+      "name": "supercont5.19",
       "export_id": "supercont5.19",
       "export_file_id": "supercont5.19",
       "short_display_name": "supercont5.19",
       "long_display_name": "supercont5.19"
     },
-    "supercont5.20": {
+    {
+      "name": "supercont5.20",
       "export_id": "supercont5.20",
       "export_file_id": "supercont5.20",
       "short_display_name": "supercont5.20",
       "long_display_name": "supercont5.20"
     },
-    "supercont5.21": {
+    {
+      "name": "supercont5.21",
       "export_id": "supercont5.21",
       "export_file_id": "supercont5.21",
       "short_display_name": "supercont5.21",
       "long_display_name": "supercont5.21"
     },
-    "supercont5.22": {
+    {
+      "name": "supercont5.22",
       "export_id": "supercont5.22",
       "export_file_id": "supercont5.22",
       "short_display_name": "supercont5.22",
       "long_display_name": "supercont5.22"
     },
-    "supercont5.23": {
+    {
+      "name": "supercont5.23",
       "export_id": "supercont5.23",
       "export_file_id": "supercont5.23",
       "short_display_name": "supercont5.23",
       "long_display_name": "supercont5.23"
     },
-    "supercont5.24": {
+    {
+      "name": "supercont5.24",
       "export_id": "supercont5.24",
       "export_file_id": "supercont5.24",
       "short_display_name": "supercont5.24",
       "long_display_name": "supercont5.24"
     },
-    "supercont5.25": {
+    {
+      "name": "supercont5.25",
       "export_id": "supercont5.25",
       "export_file_id": "supercont5.25",
       "short_display_name": "supercont5.25",
       "long_display_name": "supercont5.25"
     },
-    "supercont5.26": {
+    {
+      "name": "supercont5.26",
       "export_id": "supercont5.26",
       "export_file_id": "supercont5.26",
       "short_display_name": "supercont5.26",
       "long_display_name": "supercont5.26"
     },
-    "supercont5.27": {
+    {
+      "name": "supercont5.27",
       "export_id": "supercont5.27",
       "export_file_id": "supercont5.27",
       "short_display_name": "supercont5.27",
       "long_display_name": "supercont5.27"
     },
-    "supercont5.28": {
+    {
+      "name": "supercont5.28",
       "export_id": "supercont5.28",
       "export_file_id": "supercont5.28",
       "short_display_name": "supercont5.28",
       "long_display_name": "supercont5.28"
     },
-    "supercont5.29": {
+    {
+      "name": "supercont5.29",
       "export_id": "supercont5.29",
       "export_file_id": "supercont5.29",
       "short_display_name": "supercont5.29",
       "long_display_name": "supercont5.29"
     },
-    "supercont5.30": {
+    {
+      "name": "supercont5.30",
       "export_id": "supercont5.30",
       "export_file_id": "supercont5.30",
       "short_display_name": "supercont5.30",
       "long_display_name": "supercont5.30"
     },
-    "supercont5.31": {
+    {
+      "name": "supercont5.31",
       "export_id": "supercont5.31",
       "export_file_id": "supercont5.31",
       "short_display_name": "supercont5.31",
       "long_display_name": "supercont5.31"
     },
-    "supercont5.32": {
+    {
+      "name": "supercont5.32",
       "export_id": "supercont5.32",
       "export_file_id": "supercont5.32",
       "short_display_name": "supercont5.32",
       "long_display_name": "supercont5.32"
     }
-  },
+  ],
   "extension_display_names": [
     {
       "rel_name": "activated_by",
