@@ -368,6 +368,9 @@ db_dest_tables:
 
 taxonid: 4897
 
+organism_prefixes:
+  Schizosaccharomyces_pombe: PomBase
+
 allowed_unknown_term_names_files:
   - /var/pomcur/sources/pombe-embl/chado_load_mappings/cumulative_unknown_term_name_ok.txt
 allowed_term_mismatches_files:
