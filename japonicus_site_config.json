@@ -326,7 +326,7 @@
       "database_id_prefix": "SGD"
     }
   ],
-  "ortholog_taxonids": [4896],
+  "ortholog_taxonids": [4896, 4932],
   "front_page_panels": [
     {
       "title": "Some Person et al., 2019",
@@ -2981,8 +2981,26 @@
         "display_name": "S. pombe orthologs",
         "column_type": "orthologs"
       },
+      "orthologs:4932": {
+        "display_name": "S. cerevisiae orthologs",
+        "column_type": "orthologs"
+      },
       "ortholog_taxonids:4896": {
         "display_name": "S. pombe ortholog",
+        "column_type": "ortholog",
+        "attr_values": [
+          {
+            "name": "absent",
+            "color": "#c32"
+          },
+          {
+            "name": "present",
+            "color": "#3c2"
+          }
+        ]
+      },
+      "ortholog_taxonids:4932": {
+        "display_name": "S. cerevisiae ortholog",
         "column_type": "ortholog",
         "attr_values": [
           {
@@ -3326,7 +3344,8 @@
       "end_pos",
       "chromosome_name",
       "strand",
-      "orthologs:4896"
+      "orthologs:4896",
+      "orthologs:4932"
     ],
     "gene_table_field_names": [
       "uniquename",
@@ -3340,6 +3359,7 @@
       "chromosome_name",
       "strand",
       "orthologs:4896",
+      "orthologs:4932",
       "tmm",
       "molecular_weight",
       "protein_length",
@@ -3347,6 +3367,7 @@
     ],
     "visualisation_field_names": [
       "ortholog_taxonids:4896",
+      "ortholog_taxonids:4932",
       "tmm",
       "go_process_superslim",
       "go_component",
