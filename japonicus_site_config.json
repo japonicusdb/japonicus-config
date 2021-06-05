@@ -2936,7 +2936,6 @@
     "gene_uniquename_re": "^SJAG_\\d+$"
   },
   "gene_results": {
-    "sortable_columns": ["name", "uniquename", "product"],
     "field_config": {
       "uniquename": {
         "display_name": "Systematic ID",
