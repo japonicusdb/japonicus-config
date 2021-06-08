@@ -528,52 +528,24 @@
   "chromosomes": [
     {
       "name": "supercont5.1",
-      "export_id": "I_left_arm",
-      "export_file_id": "chromosome_I_left_arm",
-      "short_display_name": "I (left arm)",
-      "long_display_name": "Chromosome I left arm"
-    },
-    {
-      "name": "supercont5.3",
-      "export_id": "I_right_arm",
-      "export_file_id": "chromosome_I_right_arm",
-      "short_display_name": "I (right arm)",
-      "long_display_name": "Chromosome I right arm"
-    },
-    {
-      "name": "supercont5.4",
-      "export_id": "II_left_arm",
-      "export_file_id": "chromosome_II_left_arm",
-      "short_display_name": "II (left arm)",
-      "long_display_name": "Chromosome II left arm"
-    },
-    {
-      "name": "supercont5.7",
-      "export_id": "II_right_arm_centromere_distal",
-      "export_file_id": "chromosome_II_right_arm_centromere_distal",
-      "short_display_name": "II (right arm centromere distal)",
-      "long_display_name": "Chromosome II right arm centromere distal"
-    },
-    {
-      "name": "supercont5.5",
-      "export_id": "II_right_arm_telomere_distal",
-      "export_file_id": "chromosome_II_right_arm_telomere_distal",
-      "short_display_name": "II (right arm telomere distal)",
-      "long_display_name": "Chromosome II right arm telomere distal"
+      "export_id": "I",
+      "export_file_id": "chromosome_I",
+      "short_display_name": "I",
+      "long_display_name": "Chromosome I"
     },
     {
       "name": "supercont5.2",
-      "export_id": "III_left_arm",
-      "export_file_id": "chromosome_III_left_arm",
-      "short_display_name": "III (left arm)",
-      "long_display_name": "Chromosome III left arm"
+      "export_id": "II",
+      "export_file_id": "chromosome_II",
+      "short_display_name": "II",
+      "long_display_name": "Chromosome II"
     },
     {
-      "name": "supercont5.6",
-      "export_id": "III_right_arm",
-      "export_file_id": "chromosome_III_right_arm",
-      "short_display_name": "III (right arm)",
-      "long_display_name": "Chromosome III right arm"
+      "name": "supercont5.3",
+      "export_id": "III",
+      "export_file_id": "chromosome_III",
+      "short_display_name": "III",
+      "long_display_name": "Chromosome III"
     },
     {
       "name": "mitochondrial",
@@ -581,6 +553,34 @@
       "export_file_id": "mitochondrial_chromosome",
       "short_display_name": "Mitochondrial",
       "long_display_name": "Mitochondrial chromosome"
+    },
+    {
+      "name": "supercont5.4",
+      "export_id": "supercont5.4",
+      "export_file_id": "supercont5.4",
+      "short_display_name": "supercont5.4",
+      "long_display_name": "supercont5.4"
+    },
+    {
+      "name": "supercont5.5",
+      "export_id": "supercont5.5",
+      "export_file_id": "supercont5.5",
+      "short_display_name": "supercont5.5",
+      "long_display_name": "supercont5.5"
+    },
+    {
+      "name": "supercont5.6",
+      "export_id": "supercont5.6",
+      "export_file_id": "supercont5.6",
+      "short_display_name": "supercont5.6",
+      "long_display_name": "supercont5.6"
+    },
+    {
+      "name": "supercont5.7",
+      "export_id": "supercont5.7",
+      "export_file_id": "supercont5.7",
+      "short_display_name": "supercont5.7",
+      "long_display_name": "supercont5.7"
     },
     {
       "name": "supercont5.8",
