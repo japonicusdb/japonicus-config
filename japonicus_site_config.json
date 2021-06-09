@@ -10,6 +10,10 @@
   "funder": "Wellcome Trust",
   "site_description": "A database for the fission yeast Schizosaccharomyces japonicus",
   "welcome_message": "This is the <i>Schizosaccharomyces japonicus</i> genome database",
+  "footer": {
+    "funders": "PomBase is funded by the <a href=\"http://www.wellcome.ac.uk/\">Wellcome Trust</a> and run by the <a href=\"http://www.cam.ac.uk/\">University of Cambridge</a> and <a href=\"http://www.ucl.ac.uk/\">University College London</a>",
+    "is_elixir_node": false
+  },
   "load_organism_taxonid": 4897,
   "base_url": "http://japonicusdb.kmr.nz",
   "helpdesk_address": "helpdesk@pombase.org",
