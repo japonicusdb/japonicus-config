@@ -167,6 +167,19 @@
         ]
       },
       {
+        "id": "FYPO",
+        "displayName": "phenotype",
+        "nodeType": "ontology",
+        "ontologyName": "FYPO",
+        "annotationFeatureType": "genotype",
+        "topDescription": [
+          {
+            "text": "Retrieve genes based on mutant phenotypes annotated using Fission Yeast Phenotype Ontology (FYPO)"
+          }
+        ],
+        "phenotypeConditionNamespace": "phenotype_condition"
+      },
+      {
         "id": "product_type",
         "displayName": "product type",
         "nodeType": "subset-select",
@@ -1121,9 +1134,57 @@
       "display_name": "affecting"
     },
     {
+      "rel_name": "assayed_protein",
+      "if_descendant_of": "FYPO:0001985",
+      "display_name": "affecting",
+      "reciprocal_display": "affected by mutation in"
+    },
+    {
+      "rel_name": "assayed_protein",
+      "if_descendant_of": "FYPO:0000257",
+      "display_name": "affecting"
+    },
+    {
+      "rel_name": "assayed_transcript",
+      "if_descendant_of": "FYPO:0001985",
+      "display_name": "affecting",
+      "reciprocal_display": "affected by mutation in"
+    },
+    {
+      "rel_name": "assayed_transcript",
+      "if_descendant_of": "FYPO:0000257",
+      "display_name": "affecting"
+    },
+    {
+      "rel_name": "assayed_region",
+      "if_descendant_of": "FYPO:0001985",
+      "display_name": "affected region",
+      "reciprocal_display": "affected by mutation in"
+    },
+    {
+      "rel_name": "assayed_region",
+      "if_descendant_of": "FYPO:0000257",
+      "display_name": "affected region"
+    },
+    {
       "rel_name": "modified residue",
       "if_descendant_of": "GO:0005515",
       "display_name": "binding site"
+    },
+    {
+      "rel_name": "active_form",
+      "if_descendant_of": "GO:0003674",
+      "display_name": "active form"
+    },
+    {
+      "rel_name": "active_form",
+      "if_descendant_of": "GO:0008150",
+      "display_name": "active form"
+    },
+    {
+      "rel_name": "active_form",
+      "if_descendant_of": "GO:0005575",
+      "display_name": "localized form"
     }
   ],
   "extension_relation_order": {
@@ -1152,6 +1213,9 @@
       "assayed_using",
       "assayed_enzyme",
       "assayed_substrate",
+      "assayed_protein",
+      "assayed_transcript",
+      "assayed_region",
       "has_severity",
       "has_penetrance"
     ],
