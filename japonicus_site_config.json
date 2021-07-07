@@ -1729,6 +1729,10 @@
         "has_input",
         "has_regulation_target"
       ],
+      "slim_subset_name": "bp_goslim_pombe",
+      "slim_description": "Biological process overview (GO slim)",
+      "slim_link": "/browse-curation/fission-yeast-go-slim-terms",
+      "slim_no_category_text": "biological process GO Slim category",
       "filters": [
         {
           "filter_name": "extension",
