@@ -1594,6 +1594,10 @@
       "display_name": "GO molecular function",
       "columns_to_show": ["desc-rel", "gene", "evidence", "qualifiers", "reference", "count", "extension"],
       "external_db_link_keys": ["AmiGO", "QuickGO", "BioPortal"],
+      "slim_subset_name": "mf_goslim_pombe",
+      "slim_description": "Molecular function overview (GO slim)",
+      "slim_link": "/browse-curation/fission-yeast-mf-go-slim-terms",
+      "slim_no_category_text": "molecular function GO Slim category",
       "split_by_parents": [
         {
           "config_name": "NOT binding",
@@ -1802,6 +1806,10 @@
       "display_name": "GO cellular component",
       "columns_to_show": ["desc-rel", "gene", "evidence", "qualifiers", "reference", "count", "extension"],
       "external_db_link_keys": ["AmiGO", "QuickGO", "BioPortal"],
+      "slim_subset_name": "cc_goslim_pombe",
+      "slim_description": "Cellular component overview (GO slim)",
+      "slim_link": "/browse-curation/fission-yeast-cc-go-slim-terms",
+      "slim_no_category_text": "cellular component GO Slim category",
       "summary_relation_ranges_to_collect": [
         "coincident_with",
         "during",
