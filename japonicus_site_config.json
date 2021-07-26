@@ -348,14 +348,36 @@
   "ortholog_taxonids": [4896, 4932, 9606],
   "front_page_panels": [
     {
-      "title": "Some Person et al., 2019",
+      "title": "Gu et al., 2015",
       "title_link": null,
       "panel_type": "spotlight",
-      "head_image": ["spotlight/2019-06-18-30463883-Yukawa-MAPs-microtubule-dynamics.png"],
-      "content": "Here's a dummy Spotlight description about some great research in S. japonicus.",
-      "reference_id": "PMID:30463883",
-      "link_label": "Publication record in JaponicusDB ...",
-      "date_added": "2019-06-18",
+      "head_image": ["spotlight/2021-05-17-25866389-Mid1-Gu-Oliferenko.png"],
+      "content": "Rewiring of cellular division site selection in evolution of fission yeasts..\nOriginally published in <a href='Curr Biol'>https://doi.org/10.1016/j.cub.2015.02.056</a>.",
+      "reference_id": "PMID:25866389",
+      "link_label": "Publication record in Japonicus DB ...",
+      "date_added": "2021-05-12",
+      "show_on_front_page": true
+    },
+    {
+      "title": "Gómez-Gil et al., 2020",
+      "title_link": null,
+      "panel_type": "spotlight",
+      "head_image": ["spotlight/2021-05-17-32915139-Sty1-Cansando.png"],
+      "content": "Stress-activated MAPK signalling controls fission yeast actomyosin ring integrity by modulating formin For3 levels.\nOriginally published in <a href='https://elifesciences.org/articles/57951'>eLife</a>.",
+      "reference_id": "PMID:32915139",
+      "link_label": "Publication record in Japonicus DB ...",
+      "date_added": "2021-05-13",
+      "show_on_front_page": true
+    },
+    {
+      "title": "An et al., 2021",
+      "title_link": null,
+      "panel_type": "spotlight",
+      "head_image": ["spotlight/2021-05-17-26343758-Mis16-An_Cho.png"],
+      "content": "Mis16 Independently Recognizes Histone H4 and the CENP-ACnp1-Specific Chaperone Scm3sp.\normalizeAnimationDetailsiginally published in <a href='https://doi.org/10.10/j.jmb.2015.08.022'>J Mol Biol</a>.",
+      "reference_id": "PMID:26343758",
+      "link_label": "Publication record in Japonicus DB ...",
+      "date_added": "X2021-05-13",
       "show_on_front_page": true
     },
     {
