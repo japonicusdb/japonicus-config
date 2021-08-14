@@ -78,7 +78,7 @@
     "/browse-curation/fission-yeast-go-slim-terms": "/browse-curation/fission-yeast-bp-go-slim-terms"
   },
   "sequence_feature_page": {
-    "so_types_to_show": ["regional_centromere", "regional_centromere_central_core"]
+    "so_types_to_show": ["regional_centromere", "regional_centromere_central_core", "long_terminal_repeat", "LTR_retrotransposon"]
   },
   "default_jbrowse_tracks": [
     {
