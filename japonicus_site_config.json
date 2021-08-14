@@ -411,10 +411,10 @@
     {
       "title": "Recent community curation",
       "panel_type": "community",
-      "head_image": ["community/2020-02-24-community_papers_curated.png"],
-      "head_image_link": "https://curation.pombase.org/pombe/stats/annotation",
+      "head_image": ["explore/2017-11-06-community_curation.png"],
+      "head_image_link": "/reference_list/community",
       "content": "<app-recent-community-pubs></app-recent-community-pubs>",
-      "date_added": "2017-10-10",
+      "date_added": "2021-08-14",
       "show_on_front_page": true
     },
     {
