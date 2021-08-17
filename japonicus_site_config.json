@@ -409,6 +409,17 @@
       "show_on_front_page": true
     },
     {
+      "title": "Kinnaer et al., 2021",
+      "title_link": null,
+      "panel_type": "spotlight",
+      "head_image": ["spotlight/Kinnear-Martin-30726171.mov"],
+      "content": "Yeast-to-hypha transition of Schizosaccharomyces japonicus in response to environmental stimuli.\nOriginally published in <a href='https://www.molbiolcell.org/doi/10.1091/mbc.E18-12-0774'>Mol Biol Cell</a>.",
+      "reference_id": "PMID:30726171",
+      "link_label": "Publication record in PomBase ...",
+      "date_added": "2021-06-16",
+      "show_on_front_page": true
+    }    
+    {
       "title": "Recent community curation",
       "panel_type": "community",
       "head_image": ["explore/2017-11-06-community_curation.png"],
