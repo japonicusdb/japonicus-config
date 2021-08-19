@@ -63,6 +63,7 @@
   "has_admin_curation": false,
   "ensembl_blast_url": "https://fungi.ensembl.org/Schizosaccharomyces_japonicus/Tools/Blast",
   "canto_url": "https://curation.pombase.org/japonicus",
+  "community_mailing_list": "https://mailman.kcl.ac.uk/mailman/listinfo/japonicus-list",
   "canto_data_config": {
     "browser_track_triage_types": [
       "Browser datasets, to host",
