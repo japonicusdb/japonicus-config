@@ -484,6 +484,33 @@
         }
       }
     },
+    "canned_query:genes_with_s_pombe_orthologs": {
+      "name": "Genes with S. pombe orthologs",
+      "constraints": {
+        "node_name": "has ortholog with: S. pombe",
+        "has_ortholog": {
+          "taxonid": 4896
+        }
+      }
+    },
+    "canned_query:genes_with_s_cerevisiae_orthologs": {
+      "name": "Genes with S. cerevisiae orthologs",
+      "constraints": {
+        "node_name": "has ortholog with: S. cerevisiae",
+        "has_ortholog": {
+          "taxonid": 4932
+        }
+      }
+    },
+    "canned_query:genes_with_human_orthologs": {
+      "name": "Genes with human orthologs",
+      "constraints": {
+        "node_name": "has ortholog with: human",
+        "has_ortholog": {
+          "taxonid": 9606
+        }
+      }
+    },
     "single_allele_chemical_resistance": {
       "name": "chemical resistance (single mutants)",
       "constraints": {
@@ -593,8 +620,9 @@
     }
   },
   "canned_query_ids": [
-    "all_genes", "all_protein_coding", "viable_deletions",
-    "inviable_deletions"
+    "all_genes", "all_protein_coding",
+    "genes_with_s_pombe_orthologs", "genes_with_s_cerevisiae_orthologs", "genes_with_human_orthologs",
+    "viable_deletions", "inviable_deletions"
   ],
   "api_seq_chunk_sizes": [10000, 200000],
   "chromosomes": [
