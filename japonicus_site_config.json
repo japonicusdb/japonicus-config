@@ -324,11 +324,11 @@
       },
       {
         "id": "has_ortholog",
-        "displayName": "Genes with orthologs",
+        "displayName": "Protein with orthologs",
         "nodeType": "has-ortholog",
         "topDescription": [
           {
-            "text": "Retrieve genes that have an ortholog in"
+            "text": "Retrieve proteins that have an ortholog in"
           }
         ]
       },
@@ -484,8 +484,8 @@
         }
       }
     },
-    "canned_query:genes_with_s_pombe_orthologs": {
-      "name": "Genes with S. pombe orthologs",
+    "canned_query:proteins_with_s_pombe_orthologs": {
+      "name": "Proteins with S. pombe orthologs",
       "constraints": {
         "node_name": "has ortholog with: S. pombe",
         "has_ortholog": {
@@ -493,8 +493,8 @@
         }
       }
     },
-    "canned_query:genes_with_s_cerevisiae_orthologs": {
-      "name": "Genes with S. cerevisiae orthologs",
+    "canned_query:proteins_with_s_cerevisiae_orthologs": {
+      "name": "Proteins with S. cerevisiae orthologs",
       "constraints": {
         "node_name": "has ortholog with: S. cerevisiae",
         "has_ortholog": {
@@ -502,8 +502,8 @@
         }
       }
     },
-    "canned_query:genes_with_human_orthologs": {
-      "name": "Genes with human orthologs",
+    "canned_query:proteins_with_human_orthologs": {
+      "name": "Proteins with human orthologs",
       "constraints": {
         "node_name": "has ortholog with: human",
         "has_ortholog": {
@@ -621,7 +621,7 @@
   },
   "canned_query_ids": [
     "all_genes", "all_protein_coding",
-    "genes_with_s_pombe_orthologs", "genes_with_s_cerevisiae_orthologs", "genes_with_human_orthologs",
+    "proteins_with_s_pombe_orthologs", "proteins_with_s_cerevisiae_orthologs", "proteins_with_human_orthologs",
     "viable_deletions", "inviable_deletions"
   ],
   "api_seq_chunk_sizes": [10000, 200000],
