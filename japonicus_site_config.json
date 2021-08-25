@@ -1662,7 +1662,8 @@
             "FYPO:0004942", "FYPO:0005156", "FYPO:0005157", "FYPO:0006297",
             "FYPO:0006790", "FYPO:0006793", "FYPO:0007135", "FYPO:0007170",
             "FYPO:0007394", "FYPO:0007477", "FYPO:0007479", "FYPO:0007491"],
-          "display_name": "Cell phenotype"
+            "FYPO:0007773", "FYPO:0007790"],
+          "display_name": "Organism-level phenotype"
         }
       ],
       "summary_relations_to_hide": [
