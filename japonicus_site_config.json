@@ -621,8 +621,7 @@
   },
   "canned_query_ids": [
     "all_genes", "all_protein_coding",
-    "proteins_with_s_pombe_orthologs", "proteins_with_s_cerevisiae_orthologs", "proteins_with_human_orthologs",
-    "viable_deletions", "inviable_deletions"
+    "proteins_with_s_pombe_orthologs", "proteins_with_s_cerevisiae_orthologs", "proteins_with_human_orthologs"
   ],
   "api_seq_chunk_sizes": [10000, 200000],
   "chromosomes": [
