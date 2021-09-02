@@ -56,14 +56,20 @@
     "term": "GO:0005759",
     "reference": "PMID:25866389"
   },
-  "social_media": false,
-  "twitter_account": "japonicusdb",
+  "social_media": {
+    "twitter": "japonicusdb",
+    "github": "japonicusdb"
+  },
   "has_disease_annotation": false,
   "news_on_front_page": true,
   "has_admin_curation": false,
   "ensembl_blast_url": "https://fungi.ensembl.org/Schizosaccharomyces_japonicus/Tools/Blast",
   "canto_url": "https://curation.pombase.org/japonicus",
-  "community_mailing_list": "https://mailman.kcl.ac.uk/mailman/listinfo/japonicus-list",
+  "community_mailing_list": {
+    "url": "https://mailman.kcl.ac.uk/mailman/listinfo/japonicus-list",
+    "icon": "japonicus_email_list_icon.png",
+    "title": "S. japonicus community mailing list"
+  },
   "canto_data_config": {
     "browser_track_triage_types": [
       "Browser datasets, to host",
