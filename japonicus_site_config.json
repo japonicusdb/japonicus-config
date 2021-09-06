@@ -2213,6 +2213,7 @@
       "binds": 10,
       "transported by": 9,
       "localized by": 8,
+      "recruited by": 8,
       "anchored by": 8,
       "sequestered by": 8,
       "transcription activated by": 7,
@@ -2588,6 +2589,10 @@
         {
           "name": "lipid metabolic process",
           "termid": "GO:0006629"
+        },
+        {
+          "name": "lipoprotein biosynthetic process",
+          "termid": "GO:0042158"
         },
         {
           "name": "mRNA metabolic process",
