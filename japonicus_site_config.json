@@ -2287,6 +2287,14 @@
       "url": "https://www.ebi.ac.uk/QuickGO/annotations?geneProductId=<<IDENTIFIER>>"
     },
     {
+      "ref_type": "GO annotation",
+      "feature_types": ["mRNA gene"],
+      "name": "AmiGO",
+      "field_name": "uniquename",
+      "description": "GO Consortium browser",
+      "url": "http://amigo.geneontology.org/amigo/gene_product/PomBase:<<IDENTIFIER>>"
+    },
+    {
       "ref_type": "Interactions",
       "feature_types": ["ALL"],
       "name": "STRING",
