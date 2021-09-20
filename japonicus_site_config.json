@@ -3630,8 +3630,7 @@
       "protein_length_bin"
     ],
     "visualisation_extra_column_cv_names": [
-      "molecular_function", "biological_process", "cellular_component",
-      "fission_yeast_phenotype"
+      "molecular_function", "biological_process", "cellular_component"
     ],
     "visualisation_field_names": [
       "ortholog_taxonids:4896",
