@@ -140,6 +140,69 @@
             "url": "/reference_list/admin"
           }
         ]
+      },
+      {
+        "header": "Downloads",
+        "entries": [
+          {
+            "title": "Datasets",
+            "url": "/datasets"
+          },
+          {
+            "title": "Documents",
+            "url": "/documents"
+          },
+          {
+            "title": "Chado database dumps",
+            "url": "/downloads/chado-database-dumps"
+          }
+        ]
+      },
+      {
+        "header": "Community",
+        "entries": [
+          {
+            "title": "Mailing list",
+            "url": "https://mailman.kcl.ac.uk/mailman/listinfo/japonicus-list"
+          },
+          {
+            "title": "Community curation project",
+            "url": "/community/fission-yeast-community-curation-project"
+          },
+          {
+            "title": "News archive",
+            "url": "/news"
+          },
+          {
+            "title": "Fission yeast community",
+            "url": "/community"
+          },
+          {
+            "title": "External resources",
+            "url": "/community/internet-resources"
+          }
+        ]
+      },
+      {
+        "header": "About",
+        "entries": [
+          {
+            "title": "About JaponicusDB",
+            "url": "/about"
+          },
+          {
+            "title": "JaponicusDB publications",
+            "url": "/about/published-by-japonicusdb"
+          },
+          {
+            "title": "Citing JaponicusDB",
+            "url": "/about/citing-japonicusdb"
+          },
+          {
+            "title": "Resource metrics",
+            "url": "/about/resource-metrics"
+          }
+        ]
       }
     ]
   },
