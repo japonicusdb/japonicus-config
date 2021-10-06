@@ -104,10 +104,6 @@
             "url": "/browse-curation/fission-yeast-cc-go-slim-terms"
           },
           {
-            "title": "Disease association overview",
-            "url": "/browse-curation/disease-slim"
-          },
-          {
             "title": "Genome updates",
             "url": "/status/sequencing-updates"
           },
@@ -124,20 +120,8 @@
             "url": "/status/new-and-removed-genes"
           },
           {
-            "title": "Gene characterization status",
-            "url": "/status/gene-characterisation"
-          },
-          {
-            "title": "Priority unstudied genes",
-            "url": "/status/priority-unstudied-genes"
-          },
-          {
             "title": "Community curated publications",
             "url": "/reference_list/community"
-          },
-          {
-            "title": "PomBase curated publications",
-            "url": "/reference_list/admin"
           }
         ]
       },
