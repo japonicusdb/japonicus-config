@@ -544,6 +544,17 @@
       "show_on_front_page": true
     },
     {
+      "title": "M. Sipiczki et al., 1998",
+      "title_link": null,
+      "panel_type": "spotlight",
+      "head_image": ["spotlight/2021-10-07-9611807-Sipicski-dimorphic.png"],
+      "content": "Environmentally controlled dimorphic cycle in a fission yeast.\nOriginally published in <a href='https://www.microbiologyresearch.org/content/journal/micro/10.1099/00221287-144-5-1319'>Microbiology (Reading)</a>.",
+      "reference_id": "PMID:9611807",
+      "link_label": "Publication record in PomBase ...",
+      "date_added": "2021-10-07",
+      "show_on_front_page": true
+    },
+    {
       "title": "Recent community curation",
       "panel_type": "community",
       "head_image": ["explore/2017-11-06-community_curation.png"],
