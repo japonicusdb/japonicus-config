@@ -292,182 +292,283 @@
         ]
       },
       {
-        "id": "gene_list",
-        "displayName": "Gene name and IDs",
-        "nodeType": "gene-list",
-        "topDescription": [
+        "id": "gene_list_queries",
+        "displayName": "Gene list queries",
+        "nodeType": "heading",
+        "topDescription": [],
+        "subNodes": [
           {
-            "text": "Enter or upload a list of systematic gene IDs or gene names"
-          }
-        ]
-      },
-      {
-        "id": "uniprot_id_list",
-        "displayName": "UniProt accessions",
-        "nodeType": "gene-list",
-        "topDescription": [
-          {
-            "text": "UniProt accession mapping has moved"
-          }
-        ],
-        "extraResultTableColumns": [
-          "uniprot_identifier"
-        ]
-      },
-      {
-        "id": "GO",
-        "displayName": "GO",
-        "nodeType": "ontology",
-        "ontologyName": "GO",
-        "topDescription": [
-          {
-            "text": "Retrieve genes via annotated Gene Ontology terms that describe the activity, process, or location of their products (protein or ncRNA)"
-          }
-        ]
-      },
-      {
-        "id": "FYPO",
-        "displayName": "phenotype",
-        "nodeType": "ontology",
-        "ontologyName": "FYPO",
-        "annotationFeatureType": "genotype",
-        "topDescription": [
-          {
-            "text": "Retrieve genes based on mutant phenotypes annotated using Fission Yeast Phenotype Ontology (FYPO)"
-          }
-        ],
-        "phenotypeConditionNamespace": "phenotype_condition"
-      },
-      {
-        "id": "product_type",
-        "displayName": "product type",
-        "nodeType": "subset-select",
-        "subsets": [
-          {
-            "name": "feature_type_pseudogene",
-            "displayName": "feature_type:pseudogene"
+            "id": "gene_list",
+            "displayName": "Gene name and IDs",
+            "nodeType": "gene-list",
+            "topDescription": [
+              {
+                "text": "Enter or upload a list of systematic gene IDs or gene names"
+              }
+            ]
           },
           {
-            "name": "feature_type_mRNA_gene",
-            "displayName": "feature_type:protein"
+            "id": "uniprot_id_list",
+            "displayName": "UniProt accessions",
+            "nodeType": "gene-list",
+            "topDescription": [
+              {
+                "text": "UniProt accession mapping has moved"
+              }
+            ],
+            "extraResultTableColumns": [
+              "uniprot_identifier"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ontology_queries",
+        "displayName": "Ontology queries",
+        "nodeType": "heading",
+        "topDescription": [],
+        "subNodes": [
+          {
+            "id": "GO",
+            "displayName": "GO",
+            "nodeType": "ontology",
+            "ontologyName": "GO",
+            "topDescription": [
+              {
+                "text": "Retrieve genes via annotated Gene Ontology terms that describe the activity, process, or location of their products (protein or ncRNA)"
+              }
+            ]
           },
           {
-            "name": "feature_type_tRNA_gene",
-            "displayName": "feature_type:tRNA"
+            "id": "FYPO",
+            "displayName": "phenotype",
+            "nodeType": "ontology",
+            "ontologyName": "FYPO",
+            "annotationFeatureType": "genotype",
+            "topDescription": [
+              {
+                "text": "Retrieve genes based on mutant phenotypes annotated using Fission Yeast Phenotype Ontology (FYPO)"
+              }
+            ],
+            "phenotypeConditionNamespace": "phenotype_condition"
+          }
+        ]
+      },
+      {
+        "id": "gene_product_queries",
+        "displayName": "Gene product queries",
+        "nodeType": "heading",
+        "topDescription": [],
+        "subNodes": [
+          {
+            "id": "product_type",
+            "displayName": "product type",
+            "nodeType": "subset-select",
+            "subsets": [
+              {
+                "name": "feature_type_pseudogene",
+                "displayName": "feature_type:pseudogene"
+              },
+              {
+                "name": "feature_type_mRNA_gene",
+                "displayName": "feature_type:protein"
+              },
+              {
+                "name": "feature_type_tRNA_gene",
+                "displayName": "feature_type:tRNA"
+              },
+              {
+                "name": "feature_type_ncRNA_gene",
+                "displayName": "feature_type:ncRNA"
+              },
+              {
+                "name": "feature_type_snoRNA_gene",
+                "displayName": "feature_type:snoRNA"
+              },
+              {
+                "name": "feature_type_snRNA_gene",
+                "displayName": "feature_type:snRNA"
+              },
+              {
+                "name": "feature_type_rRNA_gene",
+                "displayName": "feature_type:rRNA"
+              }
+            ],
+            "topDescription": [
+              {
+                "text": "Retrieve genes based on product type. Note that \"protein\" includes dubious and transposon protein-coding genes; there is a prepared query that excludes both in the list of commonly used queries"
+              }
+            ]
           },
           {
-            "name": "feature_type_ncRNA_gene",
-            "displayName": "feature_type:ncRNA"
+            "id": "domains_and_features",
+            "displayName": "domain, features and motifs",
+            "nodeType": "sub-nodes",
+            "topDescription": [
+              {
+                "text": "Retrieve protein domains, features and motifs"
+              }
+            ],
+            "subNodes": [
+              {
+                "id": "all_domains",
+                "displayName": "Domain ID",
+                "nodeType": "subset-input",
+                "subsetPrefix": null,
+                "placeholder": "eg. PF02373 or IPR001138",
+                "topDescription": [
+                  {
+                    "text": "Retrieve protein-coding genes by specific domains present in the products. To retrieve all domain-containing proteins, search for \"IPR*\" or \"PF*\""
+                  }
+                ]
+              },
+              {
+                "id": "SO_protein",
+                "displayName": "protein motifs",
+                "nodeType": "ontology",
+                "ontologyName": "SO-protein",
+                "topDescription": [
+                  {
+                    "text": "Retrieve protein-coding genes based on features annotated using the protein sequence feature branch of the Sequence Ontology (SO)"
+                  }
+                ],
+                "extraDescription": "Examples: short motifs such as NLS or KEN box, signal sequence, cleaved region, helix"
+              },
+              {
+                "id": "tm_domain_count",
+                "displayName": "TM domains",
+                "nodeType": "int-range",
+                "range_minimum": 0,
+                "range_any_and_none": true,
+                "topDescription": [
+                  {
+                    "text": "Retrieve protein-coding genes by number of predicted transmembrane domains in the product"
+                  }
+                ]
+              },
+              {
+                "id": "coiled_coils_count",
+                "displayName": "coiled-coil regions",
+                "nodeType": "int-range",
+                "range_minimum": 0,
+                "range_any_and_none": true,
+                "topDescription": [
+                  {
+                    "text": "Retrieve protein-coding genes by number of predicted coiled-coil domains in the product"
+                  }
+                ]
+              },
+              {
+                "id": "disordered_regions_count",
+                "displayName": "disordered regions",
+                "nodeType": "int-range",
+                "range_minimum": 0,
+                "range_any_and_none": true,
+                "topDescription": [
+                  {
+                    "text": "Retrieve protein-coding genes by number of disordered regions in the product"
+                  }
+                ]
+              },
+              {
+                "id": "low_complexity_regions_count",
+                "displayName": "low complexity regions",
+                "nodeType": "int-range",
+                "range_minimum": 0,
+                "range_any_and_none": true,
+                "topDescription": [
+                  {
+                    "text": "Retrieve protein-coding genes by number of low complexity regions in the product"
+                  }
+                ]
+              }
+            ]
           },
           {
-            "name": "feature_type_snoRNA_gene",
-            "displayName": "feature_type:snoRNA"
+            "id": "protein_properties",
+            "displayName": "protein properties",
+            "nodeType": "sub-nodes",
+            "subsetPrefix": null,
+            "topDescription": [
+              {
+                "text": "Retrieve protein properties"
+              }
+            ],
+            "subNodes": [
+              {
+                "id": "protein_length",
+                "displayName": "protein length",
+                "nodeType": "int-range",
+                "range_minimum": 1,
+                "range_any_and_none": false,
+                "topDescription": [
+                  {
+                    "text": "Retrieve protein-coding genes by product length (in amino acids)"
+                  }
+                ]
+              },
+              {
+                "id": "protein_mol_weight",
+                "displayName": "protein mol. weight",
+                "nodeType": "float-range",
+                "topDescription": [
+                  {
+                    "text": "Retrieve protein-coding genes by product molecular weight in kDa"
+                  }
+                ]
+              }
+            ]
           },
           {
-            "name": "feature_type_snRNA_gene",
-            "displayName": "feature_type:snRNA"
+            "id": "exon_count",
+            "displayName": "number of exons",
+            "nodeType": "int-range",
+            "range_minimum": 1,
+            "range_any_and_none": false,
+            "topDescription": [
+              {
+                "text": "Retrieve genes by number of exons in the primary transcript"
+              }
+            ]
           },
           {
-            "name": "feature_type_rRNA_gene",
-            "displayName": "feature_type:rRNA"
-          }
-        ],
-        "topDescription": [
-          {
-            "text": "Retrieve genes based on product type. Note that \"protein\" includes dubious and transposon protein-coding genes; there is a prepared query that excludes both in the list of commonly used queries"
-          }
-        ]
-      },
-      {
-        "id": "all_domains",
-        "displayName": "protein domain",
-        "nodeType": "subset-input",
-        "subsetPrefix": null,
-        "placeholder": "eg. PF02373 or IPR001138",
-        "topDescription": [
-          {
-            "text": "Retrieve protein-coding genes by specific domains present in the products. To retrieve all domain-containing proteins, search for \"IPR*\" or \"PF*\""
+            "id": "transcript_count",
+            "displayName": "Number of transcripts",
+            "nodeType": "int-range",
+            "range_minimum": 1,
+            "range_any_and_none": false,
+            "topDescription": [
+              {
+                "text": "Retrieve genes by number of annotated transcripts"
+              }
+            ]
           }
         ]
       },
       {
-        "id": "SO_protein",
-        "displayName": "protein feature",
-        "nodeType": "ontology",
-        "ontologyName": "SO-protein",
-        "topDescription": [
+        "id": "genome_overview_queries",
+        "displayName": "Genome overview queries",
+        "nodeType": "heading",
+        "subNodes": [
           {
-            "text": "Retrieve protein-coding genes based on features annotated using the protein sequence feature branch of the Sequence Ontology (SO)"
-          }
-        ]
-      },
-      {
-        "id": "protein_length",
-        "displayName": "protein length",
-        "nodeType": "int-range",
-        "topDescription": [
+            "id": "genome_range",
+            "displayName": "Genome location",
+            "nodeType": "genome-range",
+            "topDescription": [
+              {
+                "text": "Retrieve genes in a specified region of a chromosome"
+              }
+            ]
+          },
           {
-            "text": "Retrieve protein-coding genes by product length (in amino acids)"
-          }
-        ]
-      },
-      {
-        "id": "protein_mol_weight",
-        "displayName": "protein mol. weight",
-        "nodeType": "float-range",
-        "topDescription": [
-          {
-            "text": "Retrieve protein-coding genes by product molecular weight in kDa"
-          }
-        ]
-      },
-      {
-        "id": "tm_domain_count",
-        "displayName": "Number of TM domains",
-        "nodeType": "int-range",
-        "topDescription": [
-          {
-            "text": "Retrieve protein-coding genes by number of predicted transmembrane domains in the product"
-          }
-        ]
-      },
-      {
-        "id": "genome_range",
-        "displayName": "Genome location",
-        "nodeType": "genome-range",
-        "topDescription": [
-          {
-            "text": "Retrieve genes in a specified region of a chromosome"
-          }
-        ]
-      },
-      {
-        "id": "exon_count",
-        "displayName": "Number of exons",
-        "nodeType": "int-range",
-        "topDescription": [
-          {
-            "text": "Retrieve genes by number of exons in the primary transcript"
-          }
-        ]
-      },
-      {
-        "id": "has_ortholog",
-        "displayName": "Protein with orthologs",
-        "nodeType": "has-ortholog",
-        "topDescription": [
-          {
-            "text": "Retrieve proteins that have an ortholog in"
-          }
-        ]
-      },
-      {
-        "id": "transcript_count",
-        "displayName": "Number of transcripts",
-        "nodeType": "int-range",
-        "topDescription": [
-          {
-            "text": "Retrieve genes by number of annotated transcripts"
+            "id": "has_ortholog",
+            "displayName": "protein with orthologs",
+            "nodeType": "has-ortholog",
+            "topDescription": [
+              {
+                "text": "Retrieve proteins that have an ortholog in"
+              }
+            ]
           }
         ]
       }
