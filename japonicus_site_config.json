@@ -336,7 +336,7 @@
                 "text": "Retrieve genes based on mutant phenotypes annotated using Fission Yeast Phenotype Ontology (FYPO)"
               }
             ],
-            "phenotypeConditionNamespace": "phenotype_condition"
+            "phenotypeConditionNamespace": "fission_yeast_phenotype_condition"
           }
         ]
       },
@@ -2452,7 +2452,6 @@
     "cellular_component",
     "single_locus_phenotype",
     "multi_locus_phenotype",
-    "phenotype_condition",
     "complementation",
     "target_of",
     "transcript_view",
