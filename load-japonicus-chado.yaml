@@ -37,6 +37,7 @@ cvs:
       definition: The European Nucleotide Archive ID of the feature.
     - genotype_background
     - genotype_display_name
+    - genotype_comment
     - molecular_weight
     - average_residue_weight
     - charge_at_ph7
