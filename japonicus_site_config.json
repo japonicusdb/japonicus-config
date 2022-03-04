@@ -2615,7 +2615,7 @@
       "name": "AmiGO",
       "field_name": "uniquename",
       "description": "GO Consortium browser",
-      "url": "http://amigo.geneontology.org/amigo/gene_product/PomBase:<<IDENTIFIER>>"
+      "url": "http://amigo.geneontology.org/amigo/gene_product/JaponicusDB:<<IDENTIFIER>>"
     },
     {
       "ref_type": "Interactions",
