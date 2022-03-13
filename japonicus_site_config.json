@@ -658,6 +658,16 @@
       "show_on_front_page": true
     },
     {
+      "title": "E. Chapman et al. 2022",
+      "title_link": null,
+      "panel_type": "spotlight",
+      "head_image": ["spotlight/2022-03-13-35226668-Chapman-separate-roles-RNAi.png"],
+      "content": " Separable roles for RNAi in regulation of transposable elements and viability in the fission yeast Schizosaccharomyces japonicus.\nOriginally published in <a href='https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1010100'>PLOS Genetics</a>",
+      "link_label": "Publication record in PomBase ...",
+      "date_added": "2022-03-13",
+      "show_on_front_page": true
+    },
+    {
       "title": "Recent community curation",
       "panel_type": "community",
       "head_image": ["explore/2017-11-06-community_curation.png"],
