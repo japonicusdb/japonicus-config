@@ -2531,6 +2531,11 @@
       "details_only": true,
       "external_db_link_keys": ["MISO"]
     },
+    "warning": {
+      "feature_type": "gene",
+      "display_name": "Warnings",
+      "columns_to_show": ["desc-rel", "gene", "evidence", "qualifiers", "reference", "count", "extension"]
+    },
     "_DEFAULT_": {
       "feature_type": "gene",
       "display_name": null,
