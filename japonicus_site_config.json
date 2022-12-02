@@ -669,6 +669,17 @@
       "show_on_front_page": true
     },
     {
+      "title": "Okamoto S. et al. 2013",
+      "title_link": null,
+      "panel_type": "spotlight",
+      "head_image": ["spotlight/2022-12-02-23873862-Okamoto-Synchronous-activation.png"],
+      "content": "Synchronous activation of cell division by light or temperature stimuli in the dimorphic yeast Schizosaccharomyces japonicus.\nOriginally published in <a href='https://journals.asm.org/doi/10.1128/EC.00109-13'>Eukaryotic Cell</a>",
+      "reference_id": "PMID:23873862",
+      "link_label": "Publication record in JaponicusDB ...",
+      "date_added": "2022-12-02",
+      "show_on_front_page": true
+    },
+    {
       "title": "Recent community curation",
       "panel_type": "community",
       "head_image": ["explore/2017-11-06-community_curation.png"],
