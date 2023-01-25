@@ -60,6 +60,7 @@
     "twitter": "japonicusdb",
     "github": "japonicusdb"
   },
+  "alphafold_max_protein_length": 1280,
   "has_disease_annotation": false,
   "has_characterisation_status": false,
   "news_on_front_page": true,
