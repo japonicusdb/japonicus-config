@@ -69,6 +69,7 @@
   "ensembl_blast_url": "https://fungi.ensembl.org/Schizosaccharomyces_japonicus/Tools/Blast",
   "jackhmmer_search_url": "https://www.ebi.ac.uk/Tools/hmmer/search/jackhmmer",
   "ebi_tools_url": "https://www.ebi.ac.uk/Tools/services/web/toolform.ebi",
+  "pdbe_entry_url": "https://www.ebi.ac.uk/pdbe-srv/view/entry",
   "canto_url": "https://curation.pombase.org/japonicus",
   "community_mailing_list": {
     "url": "https://mailman.kcl.ac.uk/mailman/listinfo/japonicus-list",
