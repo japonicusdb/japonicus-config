@@ -70,6 +70,7 @@
   "jackhmmer_search_url": "https://www.ebi.ac.uk/Tools/hmmer/search/jackhmmer",
   "ebi_tools_url": "https://www.ebi.ac.uk/Tools/services/web/toolform.ebi",
   "pdbe_entry_url": "https://www.ebi.ac.uk/pdbe-srv/view/entry",
+  "pdbe_image_url": "https://www.ebi.ac.uk/pdbe/static/entry/<<PDB_ID>>_deposited_chain_front_image-200x200.png",
   "canto_url": "https://curation.pombase.org/japonicus",
   "community_mailing_list": {
     "url": "https://mailman.kcl.ac.uk/mailman/listinfo/japonicus-list",
