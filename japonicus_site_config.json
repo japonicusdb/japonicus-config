@@ -4234,6 +4234,7 @@
     "regional_centromere_central_core": "centromere central core"
   },
   "gene_expression": {
+    "max_gene_ex_plot_genes": 150,
     "datasets": [
     ]
   }
