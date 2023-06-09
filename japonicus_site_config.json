@@ -922,11 +922,23 @@
     "canned_query:inviable_deletions": {
       "name": "Inviable deletions and disruptions",
       "constraints": { "term": { "termid": "FYPO:0002061", "name": "inviable vegetative cell population", "single_or_multi_locus": "single", "expression": "null" } }
+    },
+    "canned_query:proteins_with_pdb_structures": {
+      "name": "Proteins with PDB structures",
+      "constraints": {
+        "node_name": "pdb_structure_count(≥1)",
+        "int_range": {
+          "range_type": "pdb_structure_count",
+          "start": 1,
+          "end": null
+        }
+      }
     }
   },
   "canned_query_ids": [
     "all_genes", "all_protein_coding",
-    "proteins_with_s_pombe_orthologs", "proteins_with_s_cerevisiae_orthologs", "proteins_with_human_orthologs"
+    "proteins_with_s_pombe_orthologs", "proteins_with_s_cerevisiae_orthologs", "proteins_with_human_orthologs",
+    "canned_query:proteins_with_pdb_structures"
   ],
   "api_seq_chunk_sizes": [10000, 200000],
   "chromosomes": [
