@@ -4250,5 +4250,17 @@
     "max_gene_ex_plot_genes": 150,
     "datasets": [
     ]
+  },
+  "protein_feature_view": {
+    "widget_track_names": [
+      "Mutant positions",
+      "Pfam families",
+      "TM domains",
+      "Disordered regions",
+      "Low complexity",
+      "Coiled coils"
+    ],
+    "full_display_excluded": [
+    ]
   }
 }
