@@ -95,7 +95,7 @@
   "nav_bar_config": {
     "nav_bar_menus": [
       {
-        "header": "Genome Status",
+        "header": "Overviews",
         "entries": [
           {
             "title": "GO molecular function overview",
@@ -114,24 +114,8 @@
             "url": "/browse-curation/fypo-slim"
           },
           {
-            "title": "Genome updates",
-            "url": "/status/sequencing-updates"
-          },
-          {
             "title": "Genome overview",
             "url": "/status/genome-overview"
-          },
-          {
-            "title": "Gene coordinate changes",
-            "url": "/status/gene-coordinate-changes"
-          },
-          {
-            "title": "New and removed genes",
-            "url": "/status/new-and-removed-genes"
-          },
-          {
-            "title": "Community curated publications",
-            "url": "/reference_list/community"
           }
         ]
       },
@@ -166,6 +150,10 @@
           {
             "title": "Fission yeast community",
             "url": "/community"
+          },
+          {
+            "title": "Community curated publications",
+            "url": "/reference_list/community"
           },
           {
             "title": "External resources",
