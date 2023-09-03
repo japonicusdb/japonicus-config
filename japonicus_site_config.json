@@ -1166,6 +1166,12 @@
   ],
   "extension_display_names": [
     {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0004721",
+      "display_name": "dephosphorylates",
+      "reciprocal_display": "dephosphorylated by"
+    },
+    {
       "rel_name": "activated_by",
       "display_name": "activated by"
     },
@@ -1196,55 +1202,49 @@
       "display_name": "during"
     },
     {
-      "rel_name": "has_regulation_target",
+      "rel_name": "has_input",
       "if_descendant_of": "GO:0000976",
       "display_name": "regulates transcription of",
       "reciprocal_display": "transcription regulated by"
     },
     {
-      "rel_name": "has_regulation_target",
-      "if_descendant_of": "GO:0001216",
-      "display_name": "activates transcription of",
-      "reciprocal_display": "transcription activated by"
-    },
-    {
-      "rel_name": "has_regulation_target",
-      "if_descendant_of": "GO:0001217",
-      "display_name": "represses transcription of",
-      "reciprocal_display": "transcription repressed by"
-    },
-    {
-      "rel_name": "has_regulation_target",
+      "rel_name": "has_input",
       "if_descendant_of": "GO:0003713",
       "display_name": "activates transcription of",
       "reciprocal_display": "transcription activated by"
     },
     {
-      "rel_name": "has_regulation_target",
+      "rel_name": "has_input",
       "if_descendant_of": "GO:0003714",
       "display_name": "represses transcription of",
       "reciprocal_display": "transcription repressed by"
     },
     {
-      "rel_name": "has_regulation_target",
+      "rel_name": "has_input",
       "if_descendant_of": "GO:0030234",
-      "display_name": "regulates activity of",
-      "reciprocal_display": "activity regulated by"
-    },
-    {
-      "rel_name": "has_regulation_target",
-      "if_descendant_of": "GO:0008047",
       "display_name": "activates",
       "reciprocal_display": "activated by"
     },
     {
-      "rel_name": "has_regulation_target",
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0001671",
+      "display_name": "activates",
+      "reciprocal_display": "activated by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0000772",
+      "display_name": "activates",
+      "reciprocal_display": "activated by"
+    },
+    {
+      "rel_name": "has_input",
       "if_descendant_of": "GO:0004857",
       "display_name": "inhibits",
       "reciprocal_display": "inhibited by"
     },
     {
-      "rel_name": "has_regulation_target",
+      "rel_name": "has_input",
       "if_descendant_of": "GO:0008150",
       "display_name": "regulates",
       "reciprocal_display": "regulated by"
@@ -1284,6 +1284,21 @@
     },
     {
       "rel_name": "part_of",
+      "if_descendant_of": "GO:0098772",
+      "display_name": "involved in"
+    },
+    {
+      "rel_name": "part_of",
+      "if_descendant_of": "GO:0140104",
+      "display_name": "involved in"
+    },
+    {
+      "rel_name": "part_of",
+      "if_descendant_of": "GO:0140223",
+      "display_name": "involved in"
+    },
+    {
+      "rel_name": "part_of",
       "if_descendant_of": "GO:0008150",
       "display_name": "part of"
     },
@@ -1317,12 +1332,6 @@
     },
     {
       "rel_name": "has_input",
-      "if_descendant_of": "GO:000472",
-      "display_name": "dephosphorylates",
-      "reciprocal_display": "dephosphorylated by"
-    },
-    {
-      "rel_name": "has_input",
       "if_descendant_of": "GO:0003824",
       "display_name": "has substrate",
       "reciprocal_display": "substrate of"
@@ -1348,48 +1357,24 @@
     {
       "rel_name": "has_input",
       "if_descendant_of": "GO:0005484",
+      "display_name": "recruits",
+      "reciprocal_display": "recruited by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0008093",
       "display_name": "anchors",
       "reciprocal_display": "anchored by"
     },
     {
       "rel_name": "has_input",
-      "if_descendant_of": "GO:8093",
-      "display_name": "anchors",
-      "reciprocal_display": "anchored by"
+      "if_descendant_of": "GO:0140566",
+      "display_name": "reads",
+      "reciprocal_display": "read by"
     },
     {
       "rel_name": "has_input",
-      "if_descendant_of": "GO:0043495",
-      "display_name": "anchors",
-      "reciprocal_display": "anchored by"
-    },
-    {
-      "rel_name": "has_input",
-      "if_descendant_of": "GO:0035991",
-      "display_name": "recruits",
-      "reciprocal_display": "recruited by"
-    },
-    {
-      "rel_name": "has_input",
-      "if_descendant_of": "GO:0140312",
-      "display_name": "recruits",
-      "reciprocal_display": "recruited by"
-    },
-    {
-      "rel_name": "has_input",
-      "if_descendant_of": "GO:0140463",
-      "display_name": "recruits",
-      "reciprocal_display": "recruited by"
-    },
-    {
-      "rel_name": "has_input",
-      "if_descendant_of": "GO:0140483",
-      "display_name": "recruits",
-      "reciprocal_display": "recruited by"
-    },
-    {
-      "rel_name": "has_input",
-      "if_descendant_of": "GO:1990756",
+      "if_descendant_of": "GO:0030674",
       "display_name": "recruits",
       "reciprocal_display": "recruited by"
     },
@@ -1401,93 +1386,39 @@
     },
     {
       "rel_name": "has_input",
-      "if_descendant_of": "GO:0001216",
-      "display_name": "activates transcription of",
-      "reciprocal_display": "transcription activated by"
-    },
-    {
-      "rel_name": "has_direct_input",
-      "if_descendant_of": "GO:0001217",
-      "display_name": "represses transcription of",
-      "reciprocal_display": "transcription repressed by"
-    },
-    {
-      "rel_name": "has_direct_input",
-      "if_descendant_of": "GO:0004842",
-      "display_name": "ubiquitinates",
-      "reciprocal_display": "ubiquitinated by"
-    },
-    {
-      "rel_name": "has_direct_input",
-      "if_descendant_of": "GO:0004672",
-      "display_name": "phosphorylates",
-      "reciprocal_display": "phosphorylated by"
-    },
-    {
-      "rel_name": "has_direct_input",
-      "if_descendant_of": "GO:000472i",
-      "display_name": "dephosphorylates",
-      "reciprocal_display": "dephosphorylated by"
-    },
-    {
-      "rel_name": "has_direct_input",
-      "if_descendant_of": "GO:0003824",
-      "display_name": "has substrate",
-      "reciprocal_display": "substrate of"
-    },
-    {
-      "rel_name": "has_direct_input",
-      "if_descendant_of": "GO:0030234",
-      "display_name": "has substrate",
-      "reciprocal_display": "substrate of"
-    },
-    {
-      "rel_name": "has_direct_input",
-      "if_descendant_of": "GO:0006810",
-      "display_name": "transports",
-      "reciprocal_display": "transported by"
-    },
-    {
-      "rel_name": "has_direct_input",
-      "if_descendant_of": "GO:0005215",
-      "display_name": "transports",
-      "reciprocal_display": "transported by"
-    },
-    {
-      "rel_name": "has_direct_input",
-      "if_descendant_of": "GO:0005488",
-      "display_name": "binds",
-      "reciprocal_display": "binds"
-    },
-    {
-      "rel_name": "has_direct_input",
-      "if_descendant_of": "GO:0051179",
-      "display_name": "localizes",
-      "reciprocal_display": "localized by"
-    },
-    {
-      "rel_name": "has_direct_input",
-      "if_descendant_of": "GO:0005085",
-      "display_name": "positively regulates",
-      "reciprocal_display": "positively regulated by"
-    },
-    {
-      "rel_name": "has_direct_input",
-      "if_descendant_of": "GO:0008047",
-      "display_name": "positively regulates",
-      "reciprocal_display": "positively regulated by"
-    },
-    {
-      "rel_name": "has_direct_input",
-      "if_descendant_of": "GO:0004857",
-      "display_name": "negatively regulates",
-      "reciprocal_display": "negatively regulated by"
-    },
-    {
-      "rel_name": "has_direct_input",
       "if_descendant_of": "GO:0140313",
       "display_name": "sequesters",
       "reciprocal_display": "sequestered by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0140677",
+      "display_name": "activates",
+      "reciprocal_display": "activated by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0140678",
+      "display_name": "inhibits",
+      "reciprocal_display": "inhibited by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0098772",
+      "display_name": "regulates",
+      "reciprocal_display": "regulated by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0140597",
+      "display_name": "chaperones",
+      "reciprocal_display": "chaperoned by"
+    },
+    {
+      "rel_name": "has_input",
+      "if_descendant_of": "GO:0140142",
+      "display_name": "carries",
+      "carries_display": "carried by"
     },
     {
       "rel_name": "assayed_using",
