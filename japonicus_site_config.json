@@ -4190,5 +4190,8 @@
     ],
     "full_display_excluded": [
     ]
+  },
+  "apicuron": {
+    "resource_id": "japonicusdb"
   }
 }
