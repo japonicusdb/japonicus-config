@@ -1668,13 +1668,13 @@
       "external_db_link_keys": ["BioPortal"],
       "filters": [
         {
-          "filter_name": "ploidiness",
+          "filter_type": "ploidiness",
           "display_name": "Haploid/Diploid",
           "scope": ["gene", "term", "reference"],
           "detailed_view_only": false
         },
         {
-          "filter_name": "term",
+          "filter_type": "term",
           "display_name": "Term",
           "scope": ["gene", "genotype", "reference"],
           "detailed_view_only": false,
@@ -1760,7 +1760,7 @@
           ]
         },
         {
-          "filter_name": "evidence",
+          "filter_type": "evidence",
           "display_name": "Evidence",
           "scope": ["gene", "term", "genotype", "reference"],
           "detailed_view_only": true,
@@ -1864,7 +1864,7 @@
           ]
         },
         {
-          "filter_name": "throughput",
+          "filter_type": "throughput",
           "display_name": "Throughput",
           "scope": ["gene", "term", "genotype", "reference"],
           "detailed_view_only": true,
@@ -1965,7 +1965,7 @@
       ],
       "filters": [
         {
-          "filter_name": "extension",
+          "filter_type": "extension",
           "display_name": "During",
           "scope": ["gene", "term", "genotype", "reference"],
           "detailed_view_only": true,
@@ -2050,7 +2050,7 @@
           ]
         },
         {
-          "filter_name": "throughput",
+          "filter_type": "throughput",
           "display_name": "Throughput",
           "scope": ["gene", "term", "genotype", "reference"],
           "detailed_view_only": true,
@@ -2093,7 +2093,7 @@
       "slim_no_category_text": "biological process GO Slim category",
       "filters": [
         {
-          "filter_name": "extension",
+          "filter_type": "extension",
           "display_name": "During",
           "scope": ["gene", "term", "genotype", "reference"],
           "detailed_view_only": true,
@@ -2178,7 +2178,7 @@
           ]
         },
         {
-          "filter_name": "throughput",
+          "filter_type": "throughput",
           "display_name": "Throughput",
           "scope": ["gene", "term", "genotype", "reference"],
           "detailed_view_only": true,
@@ -2217,7 +2217,7 @@
       ],
       "filters": [
         {
-          "filter_name": "extension",
+          "filter_type": "extension",
           "display_name": "During",
           "scope": ["gene", "term", "genotype", "reference"],
           "detailed_view_only": true,
@@ -2302,7 +2302,7 @@
           ]
         },
         {
-          "filter_name": "throughput",
+          "filter_type": "throughput",
           "display_name": "Throughput",
           "scope": ["gene", "term", "genotype", "reference"],
           "detailed_view_only": true,
@@ -2331,7 +2331,7 @@
                           "evidence", "reference", "count", "extension"],
       "filters": [
         {
-          "filter_name": "extension",
+          "filter_type": "extension",
           "display_name": "During",
           "scope": ["gene", "term", "genotype", "reference"],
           "detailed_view_only": true,
@@ -2416,7 +2416,7 @@
           ]
         },
         {
-          "filter_name": "throughput",
+          "filter_type": "throughput",
           "display_name": "Throughput",
           "scope": ["gene", "term", "genotype", "reference"],
           "detailed_view_only": true,
@@ -2479,7 +2479,7 @@
       "columns_to_show": ["gene", "gene-product", "interactor", "interactor-product", "evidence", "reference"],
       "filters": [
         {
-          "filter_name": "throughput",
+          "filter_type": "throughput",
           "display_name": "Throughput",
           "throughput_categories": [
             {
@@ -2500,7 +2500,7 @@
       "columns_to_show": ["gene", "gene-product", "interactor", "interactor-product", "evidence", "reference"],
       "filters": [
         {
-          "filter_name": "throughput",
+          "filter_type": "throughput",
           "display_name": "Throughput",
           "throughput_categories": [
             {
