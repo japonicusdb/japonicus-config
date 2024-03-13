@@ -2037,6 +2037,10 @@
       "feature_type": "genotype",
       "display_name": "Single locus phenotype",
       "inherits_from": "fission_yeast_phenotype",
+      "downstream_query_title": "Send all downstream (affected) genes to the Advanced Search ...",
+      "downstream_relations": [
+        "assayed_using", "assayed_substrate", "assayed_protein", "assayed_transcript", "assayed_enzyme"
+      ],
       "single_or_multi_locus": "single",
       "slim_subset_name": "fypo_slim",
       "slim_description": "Fission yeast phenotype overview",
