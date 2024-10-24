@@ -935,6 +935,27 @@
   "api_seq_chunk_sizes": [10000, 200000],
   "chromosomes": [
     {
+      "name": "chromosome_1",
+      "export_id": "I",
+      "export_file_id": "chromosome_I",
+      "short_display_name": "I",
+      "long_display_name": "Chromosome I"
+    },
+    {
+      "name": "chromosome_2",
+      "export_id": "II",
+      "export_file_id": "chromosome_II",
+      "short_display_name": "II",
+      "long_display_name": "Chromosome II"
+    },
+    {
+      "name": "chromosome_3",
+      "export_id": "III",
+      "export_file_id": "chromosome_III",
+      "short_display_name": "III",
+      "long_display_name": "Chromosome III"
+    },
+    {
       "name": "supercont5.1",
       "export_id": "I",
       "export_file_id": "chromosome_I",
@@ -2216,6 +2237,7 @@
     "PSI-MOD": {
       "feature_type": "gene",
       "display_name": "Modification",
+      "protein_viewer_type": "modifications",
       "columns_to_show": [
         "term_id",
         "desc-rel",
@@ -2324,7 +2346,7 @@
     },
     "protein_domains_and_properties": {
       "feature_type": "gene",
-      "display_name": "Protein domains and properties"
+      "display_name": "Protein domains and features"
     },
     "PomBase family or domain": {
       "feature_type": "gene",
@@ -3410,58 +3432,22 @@
     "mobidblt": "MobiDB",
     "amigo": "GO",
     "cathgene3d": "Gene3D",
-    "scanprosite": "Prosite"
+    "scanprosite": "Prosite",
+    "prositeprofiles": "Prosite",
+    "prositepatterns": "Prosite",
+    "coils": "Coiled coils"
   },
   "misc_external_links": {
   },
   "interpro": {
-    "dbnames_to_filter": []
-  },
-  "protein_features": {
-    "track_config": {
-      "CATHGENE3D": {
-        "colour": "#228b22"
-      },
-      "PFAM": {
-        "colour": "#884"
-      },
-      "PROSITE": {
-        "colour": "#ffa500"
-      },
-      "PROFILE": {
-        "colour": "#368ec9"
-      },
-      "PANTHER": {
-        "colour": "#a2d"
-      },
-      "SMART": {
-        "colour": "#66cd00"
-      },
-      "SSF": {
-        "colour": "#0000ff"
-      },
-      "TIGRFAMs": {
-        "colour": "#ff0000"
-      },
-      "CDD": {
-        "colour": "#926b22"
-      },
-      "Pfam-disordered": {
-        "colour": "#b54"
-      },
-      "Pfam-low-complexity": {
-        "colour": "#25a"
-      },
-      "ncoils": {
-        "colour": "#492"
-      }
-    }
+    "dbnames_to_filter": ["PIRSR"]
   },
   "server": {
     "subsets": {
       "prefixes_to_remove": [
         "interpro:CDD", "interpro:MOBIDBLT", "interpro:PANTHER",
         "interpro:PANTHER", "interpro:PFAM", "interpro:PIRSF",
+        "interpro:PIRSR",
         "interpro:PRINTS", "interpro:PRODOM", "interpro:PROFILE",
         "interpro:PROSITE", "interpro:SFLD", "interpro:SMART",
         "interpro:SSF", "interpro:TIGRFAMs", "interpro"
@@ -4035,6 +4021,13 @@
     "regional_centromere": "centromere",
     "regional_centromere_central_core": "centromere central core"
   },
+  "protein_feature_table": {
+    "feature_types": {
+      "PRINTS": {
+        "min_max_only": true
+      }
+    }
+  },
   "gene_expression": {
     "max_gene_ex_plot_genes": 150,
     "datasets": [
@@ -4044,7 +4037,7 @@
     "modification_extension_rel_types": [
       "added_during", "added_by", "affected_by"
     ],
-    "widget_track_names": [
+    "widget_tracks": [
       "AA substitution positions",
       "Modifications",
       "Pfam domains",
@@ -4052,6 +4045,38 @@
       "Disordered regions",
       "Low complexity",
       "Coiled coils"
+    ],
+    "domains_and_features_tracks": [
+      "Binding sites",
+      "Active sites",
+      "MOBIDB-Disorder",
+      "MOBIDB-Negative-Polyelectrolyte",
+      "MOBIDB-Polar",
+      "MOBIDB-Polyampholyte",
+      "MOBIDB-Positive-Polyelectrolyte",
+      "MOBIDB-Proline-rich",
+      "CDD",
+      "FUNFAM",
+      "GENE3D",
+      "HAMAP",
+      "NCBIFAM",
+      "PANTHER",
+      "PFAM",
+      "PIRSF",
+      "PRINTS",
+      "PROSITE_PATTERNS",
+      "PROSITE_PROFILES",
+      "Pfam domains",
+      "SFLD",
+      "SMART",
+      "SUPERFAMILY",
+      "Disordered regions",
+      "Low complexity",
+      "Coiled coils"
+    ],
+    "modification_section_tracks": [
+      "Modifications",
+      "Disulfide bonds"
     ],
     "modification_groups": [
       {
