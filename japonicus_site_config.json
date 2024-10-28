@@ -4033,6 +4033,19 @@
     "datasets": [
     ]
   },
+  "protein_feature_db_order": [
+    "PFAM",
+    "CDD",
+    "PROSITE",
+    "SMART",
+    "PRINTS",
+    "FUNFAM",
+    "SUPERFAMILY",
+    "GENE3D",
+    "PANTHER",
+    "PIRSF",
+    "OTHER"
+  ],
   "protein_feature_view": {
     "modification_extension_rel_types": [
       "added_during", "added_by", "affected_by"
