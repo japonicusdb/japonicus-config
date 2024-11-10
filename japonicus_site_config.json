@@ -2034,7 +2034,7 @@
         {
           "config_name": "population_phenotype",
           "termids": ["FYPO:0000003", "FYPO:0001155"],
-          "display_name": "Population phenotype"
+          "display_name": "phenotype"
         },
         {
           "config_name": "cell_phenotype",
@@ -2047,7 +2047,7 @@
             "FYPO:0006790", "FYPO:0006793", "FYPO:0007135", "FYPO:0007170",
             "FYPO:0007394", "FYPO:0007477", "FYPO:0007479", "FYPO:0007491",
             "FYPO:0007773", "FYPO:0007790"],
-          "display_name": "Organism-level phenotype"
+          "display_name": "organism-level"
         }
       ],
       "summary_relations_to_hide": [
@@ -2063,6 +2063,7 @@
     "single_locus_phenotype": {
       "feature_type": "genotype",
       "display_name": "Single locus phenotype",
+      "menu_item_label": "single locus",
       "inherits_from": "fission_yeast_phenotype",
       "downstream_query_title": "Send all downstream (affected) genes to the Advanced Search ...",
       "downstream_relations": [
@@ -2078,6 +2079,7 @@
     "multi_locus_phenotype": {
       "feature_type": "genotype",
       "display_name": "Multi-locus phenotype",
+      "menu_item_label": "multi-locus",
       "inherits_from": "fission_yeast_phenotype",
       "single_or_multi_locus": "multi",
       "help_route": "/documentation/gene-page-phenotypes"
@@ -2085,6 +2087,7 @@
     "molecular_function": {
       "feature_type": "gene",
       "display_name": "GO molecular function",
+      "menu_item_label": "Molecular function",
       "columns_to_show": ["term_id", "desc-rel", "gene", "evidence", "qualifiers", "reference", "count", "extension"],
       "external_db_link_keys": ["AmiGO", "QuickGO", "BioPortal"],
       "slim_subset_name": "mf_goslim_japonicus",
@@ -2095,12 +2098,12 @@
         {
           "config_name": "NOT binding",
           "termids": ["NOT GO:0005488"],
-          "display_name": "Activities"
+          "display_name": "activities"
         },
         {
           "config_name": "Binding",
           "termids": ["GO:0005488"],
-          "display_name": "Binds"
+          "display_name": "binds"
         }
       ],
       "summary_relations_to_hide": [],
@@ -2147,6 +2150,7 @@
     "biological_process": {
       "feature_type": "gene",
       "display_name": "GO biological process",
+      "menu_item_label": "Biological process",
       "columns_to_show": ["term_id", "desc-rel", "gene", "evidence", "qualifiers", "reference", "count", "extension"],
       "external_db_link_keys": ["AmiGO", "QuickGO", "BioPortal"],
       "external_link_config": [
@@ -2197,6 +2201,7 @@
     "cellular_component": {
       "feature_type": "gene",
       "display_name": "GO cellular component",
+      "menu_item_label": "Cellular component",
       "columns_to_show": ["term_id", "desc-rel", "gene", "evidence", "qualifiers", "reference", "count", "extension"],
       "external_db_link_keys": ["AmiGO", "QuickGO", "BioPortal"],
       "slim_subset_name": "cc_goslim_japonicus",
@@ -2297,6 +2302,7 @@
     "qualitative_gene_expression": {
       "feature_type": "gene",
       "display_name": "Qualitative gene expression",
+      "menu_item_label": "Qualitative", 
       "columns_to_show": ["desc-rel", "gene",
                           "evidence", "reference", "count", "extension"],
       "filters": [
@@ -2464,31 +2470,37 @@
   },
   "phenotype_id_prefixes": ["FYPO"],
   "annotation_type_order": [
-    "molecular_function",
-    "biological_process",
-    "cellular_component",
-    "single_locus_phenotype",
-    "multi_locus_phenotype",
-    "complementation",
-    "target_of",
-    "transcript_view",
-    "protein_domains_and_properties",
-    "PSI-MOD",
-    "qualitative_gene_expression",
-    "quantitative_gene_expression",
-    "PomBase family or domain",
-    "misc",
-    "cat_act",
-    "m_f_g",
-    "genome_org",
-    "ex_tools",
-    "physical_interactions",
-    "genetic_interactions",
-    "orthologs",
-    "paralogs",
-    "species_dist",
-    "warning",
-    "subunit_composition"
+    { "name": "Gene Ontology",
+      "sub_types": ["molecular_function", "biological_process", "cellular_component" ]
+    },
+    { "name": "target_of" },
+    { "name": "phenotype",
+      "sub_types": ["single_locus_phenotype", "multi_locus_phenotype"]
+    },
+    { "name": "fission_yeast_phenotype_condition" },
+    { "name": "complementation" },
+    { "name": "protein_domains_and_properties" },
+    { "name": "PSI-MOD" },
+    { "name": "qualitative_gene_expression" },
+    { "name": "pombase_family_or_domain" },
+    { "name": "cat_act" },
+    { "name": "m_f_g" },
+    { "name": "genome_org" },
+    { "name": "ex_tools" },
+    { "name": "sequence and transcripts",
+      "sub_types": ["transcript_view", "sequence"]
+    },
+    { "name": "interactions",
+      "sub_types": ["physical_interactions", "genetic_interactions"]
+    },
+    { "name": "double_mutant_genetic_interactions" },
+    { "name": "single_allele_genetic_interactions" },
+    { "name": "homologs and conservation",
+      "sub_types": ["orthologs", "paralogs", "species_dist"]
+    },
+    { "name": "Comments and warnings",
+      "sub_types": ["misc", "warning"] },
+    { "name": "subunit_composition" }
   ],
   "interesting_parents": [
     {
