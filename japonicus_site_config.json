@@ -2103,7 +2103,7 @@
         {
           "config_name": "Binding",
           "termids": ["GO:0005488"],
-          "display_name": "binds"
+          "display_name": "binding"
         }
       ],
       "summary_relations_to_hide": [],
