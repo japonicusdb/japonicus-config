@@ -2302,7 +2302,6 @@
     "qualitative_gene_expression": {
       "feature_type": "gene",
       "display_name": "Qualitative gene expression",
-      "menu_item_label": "Qualitative", 
       "columns_to_show": ["desc-rel", "gene",
                           "evidence", "reference", "count", "extension"],
       "filters": [
