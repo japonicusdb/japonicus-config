@@ -4127,6 +4127,8 @@
       }
     ],
     "full_display_excluded": [
+      "MOBIDB-Low-complexity",
+      "Pfam domains"
     ]
   },
   "stats": {
