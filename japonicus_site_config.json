@@ -4079,7 +4079,9 @@
     "domains_and_features_tracks": [
       "Binding sites",
       "Active sites",
+      "Conserved motifs",
       "MOBIDB-Disorder",
+      "MOBIDB-Glycine-rich",
       "MOBIDB-Negative-Polyelectrolyte",
       "MOBIDB-Polar",
       "MOBIDB-Polyampholyte",
@@ -4096,10 +4098,11 @@
       "PRINTS",
       "PROSITE_PATTERNS",
       "PROSITE_PROFILES",
-      "Pfam domains",
       "SFLD",
       "SMART",
       "SUPERFAMILY",
+      "Localization signals",
+      "TM domains",
       "Disordered regions",
       "Low complexity",
       "Coiled coils"
