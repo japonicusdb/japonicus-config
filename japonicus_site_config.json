@@ -978,7 +978,7 @@
         ],
         "node_name": "genes annotated with \"disease\" (MONDO:0000001) OR genes annotated with \"disease susceptibility\" (MONDO:0042489)"
       }
-    },
+    }
   },
   "canned_query_ids": [
     "all_genes", "all_protein_coding",
