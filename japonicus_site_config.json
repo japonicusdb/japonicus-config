@@ -62,7 +62,7 @@
     "github": "japonicusdb"
   },
   "alphafold_max_protein_length": 1280,
-  "has_disease_annotation": false,
+  "has_disease_annotation": true,
   "has_unknowns_list": false,
   "has_characterisation_status": false,
   "news_on_front_page": true,
@@ -114,6 +114,10 @@
           {
             "title": "Fission yeast phenotype overview",
             "url": "/browse-curation/fypo-slim"
+          },
+          {
+            "title": "Disease association overview",
+            "url": "/browse-curation/disease-slim"
           },
           {
             "title": "Genome overview",
@@ -254,8 +258,9 @@
   ],
   "missing_browser_images": [
   ],
-  "search_box_cv_names": ["molecular_function", "biological_process", "cellular_component",
-                         "fission_yeast_phenotype"],
+  "search_box_cv_names": ["molecular_function", "biological_process",
+                          "cellular_component", "fission_yeast_phenotype",
+                          "mondo"],
   "search_box_config": {
     "suffixes_to_trim": ["\\\\.1", "\\\\.1:pep"],
     "ortholog_organisms_to_always_show": [4932]
@@ -352,7 +357,19 @@
               }
             ],
             "phenotypeConditionNamespace": "fission_yeast_phenotype_condition"
+          },
+          {
+            "id": "disease_associated",
+            "displayName": "disease",
+            "nodeType": "ontology",
+            "ontologyName": "mondo",
+            "topDescription": [
+              {
+                "text": "Retrieve genes for which the curated human ortholog is associated with a disease. To find all disease gene orthologs, search for \"disease\""
+              }
+            ]
           }
+
         ]
       },
       {
@@ -905,6 +922,10 @@
       "name": "rRNA genes",
       "constraints": {"subset":{"subset_name":"feature_type_rRNA_gene"}}
     },
+    "cancer": {
+      "name": "cancer",
+      "constraints": {"term": {"termid": "MONDO:0004992", "name": "cancer", "single_or_multi_locus": null, "expression": null}}
+    },
     "snorna_genes": {
       "name": "snoRNA genes",
       "constraints": {"subset":{"subset_name":"feature_type_snoRNA_gene"}}
@@ -931,12 +952,38 @@
           "end": null
         }
       }
-    }
+    },
+    "canned_query:all_diseases": {
+      "name": "All disease associated genes",
+      "constraints": {
+        "or": [
+          {
+            "node_name": "genes annotated with \"disease susceptibility\" (MONDO:0042489)",
+            "term": {
+              "termid": "MONDO:0042489",
+              "name": "disease susceptibility",
+              "ploidiness": null,
+              "expression": null
+            }
+          },
+          {
+            "node_name": "genes annotated with \"disease\" (MONDO:0000001)",
+            "term": {
+              "termid": "MONDO:0000001",
+              "name": "disease",
+              "ploidiness": null,
+              "expression": null
+            }
+          }
+        ],
+        "node_name": "genes annotated with \"disease\" (MONDO:0000001) OR genes annotated with \"disease susceptibility\" (MONDO:0042489)"
+      }
+    },
   },
   "canned_query_ids": [
     "all_genes", "all_protein_coding",
     "proteins_with_s_pombe_orthologs", "proteins_with_s_cerevisiae_orthologs", "proteins_with_human_orthologs",
-    "canned_query:proteins_with_pdb_structures"
+    "canned_query:proteins_with_pdb_structures", "all_diseases"
   ],
   "api_seq_chunk_sizes": [10000, 200000],
   "chromosomes": [
@@ -2334,6 +2381,50 @@
         }
       ]
     },
+    "mondo": {
+      "feature_type": "gene",
+      "display_name": "Disease association",
+      "columns_to_show": [
+        "term_id",
+        "desc-rel",
+        "gene",
+        "qualifiers",
+        "term-xref",
+        "reference",
+        "count"
+      ],
+      "external_db_link_keys": [
+        "Monarch Disease Ontology"
+      ],
+      "source_config": {
+        "Monarch": {
+          "id_source": "ACCESSION",
+          "condition": "reference=PB_REF:0000006"
+        },
+        "PomBase": {
+          "condition": "reference=PB_REF:0000003"
+        },
+        "Cancer census": {
+          "condition": "reference=PMID:30371878"
+        }
+      },
+      "slim_subset_name": "pombe_mondo_slim",
+      "slim_description": "Disease ontology overview",
+      "slim_link": "/browse-curation/disease-slim",
+      "slim_no_category_text": "disease ontology overview category",
+      "filters": [
+        {
+          "filter_type": "term",
+          "display_name": "Slim term",
+          "scope": [
+            "gene",
+            "reference"
+          ],
+          "detailed_view_only": false,
+          "slim_name": "pombe_mondo_slim"
+        }
+      ]
+    },
     "misc": {
       "feature_type": "gene",
       "display_name": "Comment",
@@ -2494,6 +2585,7 @@
     },
     { "name": "double_mutant_genetic_interactions" },
     { "name": "single_allele_genetic_interactions" },
+    { "name": "mondo" },
     { "name": "homologs and conservation",
       "sub_types": ["orthologs", "paralogs", "species_dist"]
     },
@@ -2612,6 +2704,10 @@
     {
       "name": "Reactome",
       "url": "https://reactome.org/content/query?species=Schizosaccharomyces+japonicus&q=[example_id]"
+    },
+    {
+      "name": "Monarch Disease Ontology",
+      "url": "https://monarchinitiative.org/disease/[example_id]"
     }
   ],
   "external_term_link_prefixes": ["CHEBI", "CL"],
@@ -3438,6 +3534,172 @@
           "termid": "FYPO:0005568"
         }
       ]
+    },
+    "pombe_mondo_slim": {
+      "slim_display_name": "Disease slim",
+      "doc_path": "/browse-curation/disease-slim",
+      "full_slim_path": "/browse-curation/disease-slim",
+      "description": "High level disease terms",
+      "slim_results_description": "A \"slim\" is a high-level subset of terms from an ontology, used to analyze sets of annotated genes. PomBase has created a slim from the Mondo Disease Ontology (Mondo) to provide a simple summary of S. pombe genes with human orthologs implicated in disease.",
+      "cv_name": "mondo",
+      "terms": [
+        {
+          "name": "premature aging syndrome",
+          "termid": "MONDO:0019303"
+        },
+        {
+          "name": "DNA repair disease",
+          "termid": "MONDO:0021190"
+        },
+        {
+          "name": "diabetes mellitus (disease)",
+          "termid": "MONDO:0005015"
+        },
+        {
+          "name": "inherited amino acid metabolic disorder",
+          "termid": "MONDO:0004736"
+        },
+        {
+          "name": "inborn disorder of purine or pyrimidine metabolism",
+          "termid": "MONDO:0019254"
+        },
+        {
+          "name": "peroxisomal disease",
+          "termid": "MONDO:0019053"
+        },
+        {
+          "name": "inherited lipid metabolism disorder",
+          "termid": "MONDO:0002525"
+        },
+        {
+          "name": "inborn mitochondrial metabolism disorder",
+          "termid": "MONDO:0004069"
+        },
+        {
+          "name": "lysosomal storage disease",
+          "termid": "MONDO:0002561"
+        },
+        {
+          "name": "carbohydrate metabolism disease",
+          "termid": "MONDO:0037792"
+        },
+        {
+          "name": "peripheral neuropathy",
+          "termid": "MONDO:0005244"
+        },
+        {
+          "name": "neurodegenerative disease",
+          "termid": "MONDO:0005559"
+        },
+        {
+          "name": "dystonic disorder",
+          "termid": "MONDO:0003441"
+        },
+        {
+          "name": "epilepsy",
+          "termid": "MONDO:0005027"
+        },
+        {
+          "name": "cognitive disorder",
+          "termid": "MONDO:0002039"
+        },
+        {
+          "name": "bone development disease",
+          "termid": "MONDO:0005497"
+        },
+        {
+          "name": "anemia (disease)",
+          "termid": "MONDO:0002280"
+        },
+        {
+          "name": "nonsyndromic genetic deafness",
+          "termid": "MONDO:0019497"
+        },
+        {
+          "name": "eye disease",
+          "termid": "MONDO:0005328"
+        },
+        {
+          "name": "skin disease",
+          "termid": "MONDO:0005093"
+        },
+        {
+          "name": "kidney disease",
+          "termid": "MONDO:0005240"
+        },
+        {
+          "name": "hepatobiliary disease",
+          "termid": "MONDO:0002515"
+        },
+        {
+          "name": "heart disease",
+          "termid": "MONDO:0005267"
+        },
+        {
+          "name": "myopathy",
+          "termid": "MONDO:0005336"
+        },
+        {
+          "name": "proteostasis deficiencies",
+          "termid": "MONDO:0021179"
+        },
+        {
+          "name": "inherited porphyria",
+          "termid": "MONDO:0019142"
+        },
+        {
+          "name": "immune system disease",
+          "termid": "MONDO:0005046"
+        },
+        {
+          "name": "cancer",
+          "termid": "MONDO:0004992"
+        },
+        {
+          "name": "autosomal dominant disease",
+          "termid": "MONDO:0000426"
+        },
+        {
+          "name": "autosomal recessive disease",
+          "termid": "MONDO:0006025"
+        },
+        {
+          "name": "gamma-glutamyl cycle",
+          "termid": "MONDO:0019241"
+        },
+        {
+          "name": "digestive system disease",
+          "termid": "MONDO:0004335"
+        },
+        {
+          "name": "hematologic disease",
+          "termid": "MONDO:0005570"
+        },
+        {
+          "name": "infertility disorder",
+          "termid": "MONDO:0005047"
+        },
+        {
+          "name": "central nervous system malformation",
+          "termid": "MONDO:0020022"
+        },
+        {
+          "name": "disorder of glycosylation",
+          "termid": "MONDO:0024322"
+        },
+        {
+          "name": "neurodevelopmental disorder",
+          "termid": "MONDO:0700092"
+        },
+        {
+          "name": "congenital nervous system disorder",
+          "termid": "MONDO:0002320"
+        },
+        {
+          "name": "metabolic disease",
+          "termid": "MONDO:0005066"
+        }
+      ]
     }
   },
   "reference_page_config": {
@@ -3475,7 +3737,7 @@
     "close_synonym_boost": 0.3,
     "distant_synonym_boost": 0.1,
     "term_definition_boost": 0.05,
-    "cv_name_for_terms_search": "(molecular_function OR biological_process OR cellular_component)",
+    "cv_name_for_terms_search": "(molecular_function OR biological_process OR cellular_component OR fission_yeast_phenotype OR mondo)",
     "gene_uniquename_re": "^SJAG_\\d+$"
   },
   "gene_results": {
@@ -3929,7 +4191,7 @@
       "protein_length_bin"
     ],
     "visualisation_extra_column_cv_names": [
-      "molecular_function", "biological_process", "cellular_component"
+      "molecular_function", "biological_process", "cellular_component", "mondo"
     ],
     "visualisation_field_names": [
       "ortholog_taxonids:4896",
@@ -3941,7 +4203,7 @@
       "go_function",
       "protein_length_bin"
     ],
-    "slim_table_slim_names": ["mf_goslim_japonicus", "bp_goslim_japonicus", "cc_goslim_japonicus", "fypo_slim"]
+    "slim_table_slim_names": ["mf_goslim_japonicus", "bp_goslim_japonicus", "cc_goslim_japonicus", "fypo_slim", "pombe_mondo_slim"]
   },
   "file_exports": {
     "site_map_term_prefixes": ["GO:", "FYPO:"],
