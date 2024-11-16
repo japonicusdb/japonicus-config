@@ -4327,16 +4327,23 @@
   ],
   "protein_feature_view": {
     "modification_extension_rel_types": [
-      "added_during", "added_by", "affected_by"
+      "added_during", "added_by", "affected_by", "removed_by"
     ],
     "widget_tracks": [
       "AA substitution positions",
       "Modifications",
+      "Glycosylation sites",
       "Pfam domains",
       "TM domains",
       "Disordered regions",
       "Low complexity",
-      "Coiled coils"
+      "Coiled coils",
+      "Disulfide bonds",
+      "Binding sites",
+      "Active sites",
+      "Localization signals",
+      "Propeptides",
+      "Cleavage sites"
     ],
     "domains_and_features_tracks": [
       "Binding sites",
@@ -4375,6 +4382,18 @@
     ],
     "modification_groups": [
       {
+        "termid": "MOD:01875",
+        "name": "N6-acylated L-lysine"
+      },
+      {
+        "termid": "MOD:01155",
+        "name": "lipoconjugated residue"
+      },
+      {
+        "termid": "MOD:00408",
+        "name": "N-acetylated residue"
+      },
+      {
         "termid": "MOD:00696",
         "name": "phosphorylated residue"
       },
@@ -4383,12 +4402,12 @@
         "name": "methylated residue"
       },
       {
-        "termid": "MOD:00693",
-        "name": "glycosylated residue"
+        "termid": "MOD:00764",
+        "name": "glycoconjugated residue"
       },
       {
-        "termid": "MOD:00649",
-        "name": "acylated residue"
+        "termid": "MOD:00905",
+        "name": "modified L-cysteine residue"
       }
     ],
     "full_display_excluded": [
