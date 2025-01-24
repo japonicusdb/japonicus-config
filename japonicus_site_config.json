@@ -4209,6 +4209,7 @@
   "file_exports": {
     "site_map_term_prefixes": ["GO:", "FYPO:"],
     "site_map_reference_prefixes": ["PMID:"],
+    "exclude_references": ["GO_REF:0000107"],
     "macromolecular_complexes": {
       "parent_complex_termid": "GO:0032991",
       "excluded_terms": [
