@@ -755,6 +755,17 @@
       "show_on_front_page": true
     },
     {
+      "title": "Rao BD et al. 2025",
+      "title_link": null,
+      "panel_type": "spotlight",
+      "head_image": ["spotlight/2025-04-15-40195311-Rao.png"],
+      "content": "Horizontal acquisition of prokaryotic hopanoid biosynthesis reorganizes membrane physiology driving lifestyle innovation in a eukaryote.\nOriginally published in <a href='https://journals.asm.org/doi/10.1038/s41467-025-58515-w'>Nature Communications</a>",
+      "reference_id": "PMID:40195311",
+      "link_label": "Publication record in JaponicusDB ...",
+      "date_added": "2025-04-15",
+      "show_on_front_page": true
+    },
+    {
       "title": "Recent community curation",
       "panel_type": "community",
       "head_image": ["explore/2017-11-06-community_curation.png"],
