@@ -10,6 +10,7 @@
   "funder": "Wellcome Trust",
   "site_description": "A database for the fission yeast Schizosaccharomyces japonicus",
   "welcome_message": "JaponicusDB is a comprehensive knowledgebase for the fission yeast <i>Schizosaccharomyces japonicus</i>, providing literature curation, analysis tools, and genome annotation.  JaponicusDB is currently the only knowledgebase maintained entirely by community curation.",
+  "jbrowse_track_picker_base_url": "/jbrowse/?loc=III:1038085..1054085",
   "footer": {
     "funders": "JaponicusDB was established with support from the <a href='https://wellcome.org/'>Wellcome Trust</a>.</br>The <i>S. japonicus</i> community maintains JaponicusDB, led by the <a href='https://www.crick.ac.uk/'>Francis Crick Institute</a> and <a href='https://www.kcl.ac.uk/'>King's College London</a>, with contributions from <a href='https://www.pombase.org'>PomBase</a> (<a href='http://www.cam.ac.uk/'>University of Cambridge</a>).",
     "is_elixir_node": false,
