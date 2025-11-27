@@ -996,9 +996,19 @@
     }
   },
   "canned_query_ids": [
-    "all_genes", "all_protein_coding",
-    "proteins_with_s_pombe_orthologs", "proteins_with_s_cerevisiae_orthologs", "proteins_with_human_orthologs",
-    "canned_query:proteins_with_pdb_structures", "all_diseases"
+    {
+      "heading": "Gene number",
+      "query_ids": [
+        "all_genes", "all_protein_coding"
+      ]
+    },
+    {
+      "heading": "Homology and Disease queries",
+      "query_ids": [
+        "proteins_with_s_pombe_orthologs", "proteins_with_s_cerevisiae_orthologs", "proteins_with_human_orthologs",
+        "canned_query:proteins_with_pdb_structures", "all_diseases"
+      ]
+    }
   ],
   "api_seq_chunk_sizes": [10000, 200000],
   "chromosomes": [
