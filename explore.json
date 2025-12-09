@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Data mining",
+    "title_link": null,
+    "panel_type": "explore",
+    "head_image": ["explore/2017-10-13-data_mining.png"],
+    "content": "Use the [Advanced Search](/query) to construct complex queries (GO, phenotypes, taxonomic distribution, domain, chromosomal location).",
+    "date_added": "2017-10-13",
+    "show_on_front_page": true
+  },
+  {
+    "title": "Help!",
+    "title_link": null,
+    "panel_type": "explore",
+    "head_image": ["explore/2017-11-06-help.png"],
+    "content": "JaponicusDB provides extensive documentation and answers many questions in the [FAQ](faq). For any information you can't find there, please <app-contact-email [linkName]=\"'contact the helpdesk'\" [subject]=\"'JaponicusDB question'\"></app-contact-email>.",
+    "date_added": "2017-11-06",
+    "show_on_front_page": false
+  },
+  {
+    "title": "Community curation in Canto",
+    "title_link": null,
+    "panel_type": "explore",
+    "head_image": ["explore/2017-11-06-community_curation.png"],
+    "content": "PomBase has pioneered a community curation system that enables researchers to contribute publication-based annotations directly to database curators. To participate, search for the PubMed ID of your paper [in Canto](https://curation.pombase.org/pombe) or <app-contact-email [linkName]=\"'contact the helpdesk'\" [subject]=\"'PomBase question'\"></app-contact-email>.",
+    "date_added": "2017-11-06",
+    "show_on_front_page": false
+  }
+]

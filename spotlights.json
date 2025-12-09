@@ -1,0 +1,90 @@
+[
+  {
+    "title": "Gu et al., 2015",
+    "title_link": null,
+    "panel_type": "spotlight",
+    "head_image": ["spotlight/2021-05-17-25866389-Mid1-Gu-Oliferenko.png"],
+    "content": "Rewiring of cellular division site selection in evolution of fission yeasts.\nOriginally published in <a href='https://doi.org/10.1016/j.cub.2015.02.056'>Curr Biol</a>.",
+    "reference_id": "PMID:25866389",
+    "link_label": "Publication record in JaponicusDB ...",
+    "date_added": "2021-05-12",
+    "show_on_front_page": true
+  },
+  {
+    "title": "Gómez-Gil et al., 2020",
+    "title_link": null,
+    "panel_type": "spotlight",
+    "head_image": ["spotlight/2021-05-17-32915139-Sty1-Cansando.png"],
+    "content": "Stress-activated MAPK signalling controls fission yeast actomyosin ring integrity by modulating formin For3 levels.\nOriginally published in <a href='https://elifesciences.org/articles/57951'>eLife</a>. Image from [eLife 2020;9:e57951](https://elifesciences.org/articles/57951#fig8), used under [CC-BY](https://creativecommons.org/licenses/by/4.0/) license terms.",
+    "reference_id": "PMID:32915139",
+    "link_label": "Publication record in JaponicusDB ...",
+    "date_added": "2021-05-13",
+    "show_on_front_page": true
+  },
+  {
+    "title": "An et al., 2021",
+    "title_link": null,
+    "panel_type": "spotlight",
+    "head_image": ["spotlight/2021-05-17-26343758-Mis16-An_Cho.png"],
+    "content": "Mis16 Independently Recognizes Histone H4 and the CENP-ACnp1-Specific Chaperone Scm3sp.\nOriginally published in <a href='https://www.sciencedirect.com/science/article/abs/pii/S0022283615004878'>J Mol Biol</a>.",
+    "reference_id": "PMID:26343758",
+    "link_label": "Publication record in JaponicusDB ...",
+    "date_added": "2021-05-13",
+    "show_on_front_page": true
+  },
+  {
+    "title": "Kinnaer et al., 2021",
+    "title_link": null,
+    "panel_type": "spotlight",
+    "head_image": ["/media/2021-08-18-30726171-Kinnear-Martin.mp4"],
+    "content": "Yeast-to-hypha transition of Schizosaccharomyces japonicus in response to environmental stimuli.\nOriginally published in <a href='https://www.molbiolcell.org/doi/10.1091/mbc.E18-12-0774'>Mol Biol Cell</a>.",
+    "reference_id": "PMID:30726171",
+    "link_label": "Publication record in JaponicusDB ...",
+    "date_added": "2021-08-18",
+    "show_on_front_page": true
+  },
+  {
+    "title": "M. Sipiczki et al., 1998",
+    "title_link": null,
+    "panel_type": "spotlight",
+    "head_image": ["spotlight/2021-10-07-9611807-Sipicski-dimorphic.png"],
+    "content": "Environmentally controlled dimorphic cycle in a fission yeast.\nOriginally published in <a href='https://www.microbiologyresearch.org/content/journal/micro/10.1099/00221287-144-5-1319'>Microbiology (Reading)</a>.",
+    "reference_id": "PMID:9611807",
+    "link_label": "Publication record in JaponicusDB ...",
+    "date_added": "2021-10-07",
+    "show_on_front_page": true
+  },
+  {
+    "title": "E. Chapman et al. 2022",
+    "title_link": null,
+    "panel_type": "spotlight",
+    "head_image": ["spotlight/2022-03-13-35226668-Chapman-separate-roles-RNAi.png"],
+    "content": " Separable roles for RNAi in regulation of transposable elements and viability in the fission yeast Schizosaccharomyces japonicus.\nOriginally published in <a href='https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1010100'>PLOS Genetics</a>",
+    "reference_id": "PMID:35226668",
+    "link_label": "Publication record in JaponicusDB ...",
+    "date_added": "2022-03-13",
+    "show_on_front_page": true
+  },
+  {
+    "title": "Okamoto S. et al. 2013",
+    "title_link": null,
+    "panel_type": "spotlight",
+    "head_image": ["spotlight/2022-12-02-23873862-Okamoto-Synchronous-activation.png"],
+    "content": "Synchronous activation of cell division by light or temperature stimuli in the dimorphic yeast Schizosaccharomyces japonicus.\nOriginally published in <a href='https://journals.asm.org/doi/10.1128/EC.00109-13'>Eukaryotic Cell</a>",
+    "reference_id": "PMID:23873862",
+    "link_label": "Publication record in JaponicusDB ...",
+    "date_added": "2022-12-02",
+    "show_on_front_page": true
+  },
+  {
+    "title": "Rao BD et al. 2025",
+    "title_link": null,
+    "panel_type": "spotlight",
+    "head_image": ["spotlight/2025-04-15-40195311-Rao.png"],
+    "content": "Horizontal acquisition of prokaryotic hopanoid biosynthesis reorganizes membrane physiology driving lifestyle innovation in a eukaryote.\nOriginally published in <a href='https://journals.asm.org/doi/10.1038/s41467-025-58515-w'>Nature Communications</a>",
+    "reference_id": "PMID:40195311",
+    "link_label": "Publication record in JaponicusDB ...",
+    "date_added": "2025-04-15",
+    "show_on_front_page": true
+  }
+]
