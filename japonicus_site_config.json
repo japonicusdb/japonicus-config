@@ -291,10 +291,30 @@
       {
         "id": "canned_queries",
         "displayName": "Commonly used queries",
-        "nodeType": "canned-queries",
+        "nodeType": "sub-nodes",
         "topDescription": [
           {
             "text": "Shortcuts for commonly used queries"
+          }
+        ],
+        "subNodes": [
+          {
+            "id": "canned_queries_gene_number",
+            "displayName": "Gene number",
+            "nodeType": "canned-queries",
+            "query_ids": [
+              "all_genes", "all_protein_coding"
+            ]
+          },
+          {
+            "id": "canned_queries_homology_and_disease",
+            "displayName": "Homology and Disease queries",
+            "nodeType": "canned-queries",
+            "query_ids": [
+              "proteins_with_s_pombe_orthologs", "proteins_with_s_cerevisiae_orthologs",
+              "proteins_with_human_orthologs",
+              "proteins_with_pdb_structures", "all_diseases"
+            ]
           }
         ]
       },
