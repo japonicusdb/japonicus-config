@@ -77,6 +77,8 @@ cvs:
       description: An allele whose type has not been established.
     - name: other
     - name: unspecified
+    - name: schizosaccharomyces_orthogroup
+      definition: SOG IDs from www.sogweb.org
   PomBase annotation extension terms: []
   PomBase gene products: []
   PomBase family or domain: []
