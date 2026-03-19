@@ -56,6 +56,7 @@ cvs:
       definition: The date that this feature was added to the database.
     - name: kegg_pathway
     - name: rnacentral_identifier
+    - name: schizosaccharomyces_orthogroup
   PomBase allele types:
     - name: amino_acid_deletion_and_mutation
     - name: amino_acid_insertion
