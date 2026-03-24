@@ -2583,6 +2583,24 @@
       "field_name": "uniquename",
       "url": "http://fungi.ensembl.org/Schizosaccharomyces_japonicus/Location/View?db=core;g=<<IDENTIFIER>>"
     },
+    {
+      "ref_type": "Orthologs",
+      "feature_types": ["mRNA gene", "pseudogene"],
+      "name": "SOG",
+      "description": "Schizosaccharomyces OrthoGroup - orthologs, gene trees, alignments, synteny (Schizosaccharomyces)",
+      "field_name": "schizosaccharomyces_orthogroup",
+      "show_in_sections": ["orthologs"],
+      "url": "https://www.sogweb.org/iSOG/<<IDENTIFIER>>.html"
+    },
+    {
+      "ref_type": "Orthologs",
+      "feature_types": ["mRNA gene", "pseudogene"],
+      "name": "OMA",
+      "description": "Orthologous MAtrix - orthologs, gene trees , alignments (Fungal)",
+      "field_name": "uniquename",
+      "show_in_sections": ["orthologs"],
+      "url": "https://omabrowser.org/oma/hogs/<<IDENTIFIER>>/Fungi/"
+    },
    {
       "ref_type": "Orthologs",
       "feature_types": ["mRNA gene", "pseudogene"],
@@ -2592,7 +2610,6 @@
       "show_in_sections": ["orthologs"],
       "url": "http://fungi.ensembl.org/Schizosaccharomyces_japonicus/Gene/Compara?db=core;g=<<IDENTIFIER>>"
     },
-
    {
       "ref_type": "Orthologs",
       "feature_types": ["mRNA gene", "pseudogene"],
@@ -2604,12 +2621,17 @@
    },
     {
       "ref_type": "Orthologs",
-      "feature_types": ["mRNA gene", "pseudogene"],
-      "name": "SOG",
-      "description": "Schizosaccharomyces OrthoGroup - orthologs, gene trees, alignments, synteny (Schizosaccharomyces)",
-      "field_name": "schizosaccharomyces_orthogroup",
-      "show_in_sections": ["orthologs"],
-      "url": "https://www.sogweb.org/iSOG/<<IDENTIFIER>>.html"
+      "feature_types": [
+        "mRNA gene",
+        "pseudogene"
+      ],
+      "name": "PANTHER",
+      "description": "Orthologs, gene trees, alignments (selected species, pan kingdom, eukaryotic focus)",
+      "field_name": "uniprot_identifier",
+      "show_in_sections": [
+        "orthologs"
+      ],
+      "url": "http://www.pantherdb.org/genes/gene.do?acc=SCHJY%7CEnsemblGenome%3D<<UNIQUENAME>>%7CUniProtKB%3D<<IDENTIFIER>>"
     }
   ],
   "external_term_references": [
