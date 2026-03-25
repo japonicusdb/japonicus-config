@@ -2610,15 +2610,6 @@
       "show_in_sections": ["orthologs"],
       "url": "http://fungi.ensembl.org/Schizosaccharomyces_japonicus/Gene/Compara?db=core;g=<<IDENTIFIER>>"
     },
-   {
-      "ref_type": "Orthologs",
-      "feature_types": ["mRNA gene", "pseudogene"],
-      "name": "Ensembl Pan-taxonomic Compara",
-      "description": " Gene tree, orthologs",
-      "field_name": "uniquename",
-      "show_in_sections": ["orthologs"],
-      "url": "http://fungi.ensembl.org/Schizosaccharomyces_japonicus/Gene/PanCompara?db=core;g=<<IDENTIFIER>>"
-   },
     {
       "ref_type": "Orthologs",
       "feature_types": [
