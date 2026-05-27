@@ -50,6 +50,8 @@ cvs:
     - codon_adaptation_index
     - name: sgd_identifier
       definition: "An ID like SGD:S000005390"
+    - name: agr_identifier
+      definition: "An ID like SGD:S000005390 or HGNC:3942"
     - name: partial_sequence
       definition: This qualifier is present if the source feature has the EMBL /partial qualifer.
     - name: annotation_date
@@ -367,6 +369,7 @@ db_dest_tables:
   "EnsemblGenomes-Gn": dbxref
   "EnsemblGenomes-Tr": dbxref
   "UniProtKB/Swiss-Prot": dbxref
+  GeneID: dbxref
   PDB: dbxref
   GOA: dbxref
   Rfam: dbxref
