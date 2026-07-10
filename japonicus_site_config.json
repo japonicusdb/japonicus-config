@@ -136,6 +136,10 @@
           {
             "title": "Chado database dumps",
             "url": "/downloads/chado-database-dumps"
+          },
+          {
+            "title": "JaponicusDB user API",
+            "url": "/documentation/api"
           }
         ]
       },
