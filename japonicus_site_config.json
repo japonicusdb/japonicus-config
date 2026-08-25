@@ -1,6 +1,7 @@
 {
   "site_name": "JaponicusDB",
   "database_name": "JaponicusDB",
+  "database_prefix": "JaponicusDB",
   "database_long_name": "The Schizosaccharomyces japonicus genome database",
   "database_citation": "PMID:35380656",
   "logo_file_name": "japonicus-logo.png",
