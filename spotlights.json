@@ -86,5 +86,18 @@
     "link_label": "Publication record in JaponicusDB ...",
     "date_added": "2025-04-15",
     "show_on_front_page": true
+  },
+  {
+    "title": "Gomez-Gil et al, 2026",
+    "title_link": null,
+    "panel_type": "spotlight",
+    "head_image": [
+      "spotlight/2026-09-03-PMID42562571.png"
+    ],
+    "content": "Adaptation of eukaryotic membrane homeostasis to species-specific cellular lipid landscapes.\n\nOriginally published in <a href='https://doi.org/10.1101/gad.353500.125'>Genes Dev</a>.",
+    "reference_id": "PMID:42562571",
+    "link_label": "Publication record in JaponicusDB ...",
+    "date_added": "2026-09-07",
+    "show_on_front_page": true
   }
 ]
