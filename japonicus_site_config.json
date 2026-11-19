@@ -59,6 +59,7 @@
     "term": "GO:0005759",
     "reference": "PMID:25866389"
   },
+  "top_level_complex_termid": "GO:0032991",
   "social_media": {
     "twitter": "japonicusdb",
     "github": "japonicusdb"
