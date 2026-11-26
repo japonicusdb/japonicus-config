@@ -55,9 +55,18 @@
     "interactions": []
   },
   "example_pages": {
-    "gene": "SJAG_01143",
-    "term": "GO:0005759",
-    "reference": "PMID:25866389"
+    "gene": {
+      "title": "Visit the gene page for mid1 / SJAG_01143",
+      "id": "SJAG_01143"
+    },
+    "term": {
+      "title": "Visit the ontology term page for mitochondrial matrix (GO:0005759)",
+      "id": "GO:0005759"
+    },
+    "reference": {
+      "title": "Visit the publication page for \"Rewiring of cellular division site selection in evolution of fission yeasts\" - PMID:25866389",
+      "id": "PMID:25866389"
+    }
   },
   "top_level_complex_termid": "GO:0032991",
   "social_media": {
