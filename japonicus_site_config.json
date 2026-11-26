@@ -68,6 +68,7 @@
       "id": "PMID:25866389"
     }
   },
+  "search_box_examples": "mid1, SJAG_01143, GO:0005759, mitochondrial matrix, PMID:25866389, Gomez-Gil",
   "top_level_complex_termid": "GO:0032991",
   "social_media": {
     "twitter": "japonicusdb",
